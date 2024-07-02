@@ -19,13 +19,13 @@ Apache 2.0
 * Lecture
 * Questions
 * Training (?)
-### 6. DRC reading (IHP130)
-* Lecture
-* Questions
-### 7. The generated data in Openroad
+### 6. The generated data in Openroad
 * Lecture
 * Questions
 * Training
+### 7. LVS/DRC reading (IHP130)
+* Lecture
+* Questions
 ### 8. Simulation and PPA
 * Lecture
 * Questions
@@ -43,9 +43,9 @@ Apache 2.0
 | 2 | L2 | Q2 | - |
 | 3 | L3 | Q3 | T3 |
 | 4 | L4 | Q4 | T4 |
-| 5 | L5 | Q5 | T5 |
-| 6 | L6 | Q6 | - |
-| 7 | L7 | Q7 | T7 |
+| 5 | L5 | Q5 | T5 (?) |
+| 6 | L6 | Q6 | T6 |
+| 7 | L7 | Q7 | - |
 | 8 | L8 | Q8 | T8 |
 | 9 | L9 | Q9 | - |
 | 10 | L10 | Q10 | - |
