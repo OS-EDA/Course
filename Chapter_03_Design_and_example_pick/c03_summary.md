@@ -1,3 +1,5 @@
+# Chapter 3 - Digital design and example pick
+
 ## Description
 
 #### Summary part A
