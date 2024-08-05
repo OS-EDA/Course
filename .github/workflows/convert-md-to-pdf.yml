@@ -19,12 +19,22 @@ jobs:
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: Chapter_01_Introduction
+          output_dir: md
+          build_html: false
+      - uses: baileyjm02/markdown-to-pdf@v1
+          with:
           input_dir: Chapter_02_Workflow
           output_dir: md
-          images_dir: docs/images
-          # for example <img src="./images/file-name.png">
-          image_import: ./images
-          # Default is true, can set to false to only get PDF files
+          build_html: false
+      - uses: baileyjm02/markdown-to-pdf@v1
+          with:
+          input_dir: Chapter_03_Design_and_example_pick
+          output_dir: md
+          build_html: false
+      - uses: baileyjm02/markdown-to-pdf@v1
+          with:
+          input_dir: Chapter_04_Openroad_first_run
+          output_dir: md
           build_html: false
       - uses: actions/upload-artifact@v3
         with:
