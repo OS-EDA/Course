@@ -51,6 +51,6 @@ Apache 2.0
 | 10 | L10 | Q10 | - |
 
 ## Course instance: 5 days, Full hands on
-![5days](instances/5_days_full_hands_on.png)
+![5days](pics/5_days_full_hands_on.png)
 ## Course instance: 2 days, Executive version
-![5days](instances/2_days_executive_version.png)
+![5days](pics/2_days_executive_version.png)
