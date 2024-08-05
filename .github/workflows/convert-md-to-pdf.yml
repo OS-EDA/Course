@@ -27,5 +27,5 @@ jobs:
           build_html: false
       - uses: actions/upload-artifact@v3
         with:
-          name: docs
-          path: pdfs
+          name: mdtopdfs
+          path: md
