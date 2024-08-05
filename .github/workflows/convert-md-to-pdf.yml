@@ -106,8 +106,11 @@ jobs:
         with:
           path: md
 
+      - name: Rename summary pdf
+        run: mv md/combined.pdf md/course_summary.pdf
+
       - name: upload
         uses: actions/upload-artifact@v4
         with:
-          name: mdtopdfs
-          path: md
+          name: course_summary
+          path: md/course_summary.pdf
