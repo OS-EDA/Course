@@ -2,7 +2,7 @@
 
 #### Summary part A
 #### Summary part B
-#### Summary ....
+#### Summary part C
 
 ## Goals
 #### Trainer goals
