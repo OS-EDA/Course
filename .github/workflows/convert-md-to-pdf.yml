@@ -92,12 +92,13 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}/md
+          on: [push]
 
-      - name: Combine pdfs
-        uses: elMuso/MergePDFs-action@1.1
+      - name: Combine PDFs
+        id: combine
+        uses: amoeba/combine-pdf-action@v1
         with:
           path: md
-          filename: course_summary.pdf
 
       - name: upload
         uses: actions/upload-artifact@v4
