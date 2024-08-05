@@ -7,17 +7,17 @@ An interactive session for welcoming and warm-up starts the course. The particip
 * Participants backgrounds and motivations
 
 #### Introduction to open-source EDA and the course, addressing the following topics:
-* Whats the new things with this course?
-* Advantages of Open-Source in EDA
-* The actual state of o.-s. EDA
+* What is the new thing with this course?
+* Advantages of open-source in EDA
+* The actual state of open-source EDA
 * Goals of this course.
-* Producing chips at IHP 
+* Producing chips at IHP with the open PDK 
 
 #### Overview of the course structure::
-* Table of content (Chapternames and short description)
+* Table of content (Chapter names and short descriptions)
 * Hands on sessions (Trainings)
 * Schedule for the course
-* Success points inbetween
+* Success points inbetween lectures
 
 #### Questions from the participants
 * Opportunity to ask questions about chapter 1.
