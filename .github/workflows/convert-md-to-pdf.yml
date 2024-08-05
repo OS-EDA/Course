@@ -92,7 +92,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}/md
-          on: [push]
 
       - name: Combine PDFs
         id: combine
