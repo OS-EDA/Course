@@ -1,3 +1,4 @@
+# Chapter 1 - Introduction and overview
 ## Description
 An interactive session for welcoming and warm-up starts the course. The participants and the trainer get to know each other. The first lecture is an introduction to the course, followed by an overview of the contents. The course schedule gets explained including the mix of lecture-, training- and question-units.
 
