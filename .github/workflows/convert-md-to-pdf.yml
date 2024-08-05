@@ -16,23 +16,32 @@ jobs:
     name: Build PDF
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: baileyjm02/markdown-to-pdf@v1
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: chapter2
+        uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: Chapter_02_Workflow
           output_dir: md
           build_html: false
-      - uses: baileyjm02/markdown-to-pdf@v1
+
+      - name: chapter3
+        uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: Chapter_03_Design_and_example_pick
           output_dir: md
           build_html: false
-      - uses: baileyjm02/markdown-to-pdf@v1
+
+      - name: chapter4
+        uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: Chapter_04_Openroad_first_run
           output_dir: md
           build_html: false
-      - uses: actions/upload-artifact@v4
+
+      - name: upload
+        uses: actions/upload-artifact@v4
         with:
           name: mdtopdfs
           path: md
