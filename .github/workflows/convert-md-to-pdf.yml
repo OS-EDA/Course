@@ -22,21 +22,21 @@ jobs:
       - name: chapter2
         uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: Chapter_02_Workflow
+          input_path: Chapter_02_Workflow
           output_dir: md
           build_html: false
 
       - name: chapter3
         uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: Chapter_03_Design_and_example_pick
+          input_path: Chapter_03_Design_and_example_pick
           output_dir: md
           build_html: false
 
       - name: chapter4
         uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: Chapter_04_Openroad_first_run
+          input_path: Chapter_04_Openroad_first_run
           output_dir: md
           build_html: false
 
