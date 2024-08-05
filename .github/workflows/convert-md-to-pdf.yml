@@ -40,6 +40,10 @@ jobs:
           output_dir: md
           build_html: false
 
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+
       - name: upload
         uses: actions/upload-artifact@v4
         with:
