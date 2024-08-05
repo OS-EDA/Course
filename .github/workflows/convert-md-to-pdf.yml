@@ -19,11 +19,18 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
+      - name: chapter1
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: Chapter_01_Introduction
+          output_dir: md
+          build_html: false
+
       - name: chapter2
         uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_path: Chapter_02_Workflow
-          output_dir: md
+          output_dir: md/
           build_html: false
 
       - name: chapter3
@@ -40,12 +47,54 @@ jobs:
           output_dir: md/
           build_html: false
 
+      - name: chapter5
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: Chapter_05_PDK_Examination
+          output_dir: md/
+          build_html: false
+  
+      - name: chapter6
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: Chapter_06_Data_in_Openroad
+          output_dir: md/
+          build_html: false
+
+      - name: chapter7
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: Chapter_07_LVS_and_DRC
+          output_dir: md/
+          build_html: false
+            
+      - name: chapter8
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: Chapter_08_Simulatino_and_PPA
+          output_dir: md/
+          build_html: false
+
+      - name: chapter9
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: Chapter_09_Scripting
+          output_dir: md/
+          build_html: false
+            
+      - name: chapter10
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: Chapter_10_GDS_and_Tapeout
+          output_dir: md/
+          build_html: false
+  
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}
+          ls ${{ github.workspace }}/md
 
       - name: upload
         uses: actions/upload-artifact@v4
         with:
           name: mdtopdfs
-          path: .
+          path: md
