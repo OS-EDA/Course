@@ -3,7 +3,7 @@ Home of the open-source EDA course.
 ### License
 Apache 2.0
 ## Content
-### 1. Intro and Overview
+### 1. Introduction and Overview
 * Lecture
 * Questions
 ### 2. Workflow RTL-to-GDS (Openroad)
