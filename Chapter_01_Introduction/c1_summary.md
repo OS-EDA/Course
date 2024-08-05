@@ -57,4 +57,4 @@ No trainings for chapter 1
     * IHP PDK
 
 ## Time estimation
-tbd
+tbd 
