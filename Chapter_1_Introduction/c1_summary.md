@@ -1,5 +1,5 @@
 ## Description
-An interactive session for welcoming and warm-up starts the course. The participants and the trainer get to know each other. The first lecture is an introduction to the course, followed by an overview of the contents. The schedule gets explained including the mix of lecture-, training- and question-units.
+An interactive session for welcoming and warm-up starts the course. The participants and the trainer get to know each other. The first lecture is an introduction to the course, followed by an overview of the contents. The course schedule gets explained including the mix of lecture-, training- and question-units.
 
 #### Welcoming:
 * Trainer profile
@@ -28,25 +28,26 @@ The participants will get an idea of the challenges ahead and how they will be g
 
 After Chapter 1, the course class should be in a ready state to start learning.
 
-## Lectures
+## Materials
+### Lectures
 #### L1 - Slides:
 * Introduction
 * Overview
 * Schedule
-## Interactive
+### Interactive
 #### I1.1 - Session:
 * Welcoming with trainer introduction and pariticpants onboarding. Using prepared warm-up questions.
 #### I1.2 - Session:
 * Questions, Suggestions and Feedback for chapter 1
-## Trainings
+### Trainings
 No trainings for chapter 1
 
-## Questions
+### Questions
 #### Q1 - List:
 * List of questions for repetition of chapter 1
 * Starting the next day
 
-## Ressources
+### Ressources
 #### R1 - Compendium
 * Links to talks:
     * A.Khang, Hannover Kickoff, 2024
@@ -54,3 +55,6 @@ No trainings for chapter 1
 * Links to projects:
     * OPENROAD
     * IHP PDK
+
+## Time estimation
+tbd
