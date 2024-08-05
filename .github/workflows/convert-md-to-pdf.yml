@@ -104,10 +104,7 @@ jobs:
         id: course_summary
         uses: amoeba/combine-pdf-action@v1
         with:
-          path: md
-
-      - name: Rename summary pdf
-        run: mv md/combined.pdf md/course_summary.pdf
+          path: md/course_summary.pdf
 
       - name: upload
         uses: actions/upload-artifact@v4
