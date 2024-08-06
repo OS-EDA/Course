@@ -21,7 +21,9 @@
 #### T - Trainings
 
 ### Questions
-#### Q - List:
+#### Q8 - List:
+* List of questions for repetition of chapter 8
+* Starting the next day
 
 ### Ressources
 #### R - Compendium

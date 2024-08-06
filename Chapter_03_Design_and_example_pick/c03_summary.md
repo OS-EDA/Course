@@ -38,7 +38,9 @@ The training of chapter 3 is the first session in which the participants will wo
 #### T - Trainings
 
 ### Questions
-#### Q - List:
+#### Q3 - List:
+* List of questions for repetition of chapter 3
+* Starting the next day
 
 ### Ressources
 #### R - Compendium

@@ -22,7 +22,9 @@ Chapter 2 contains a very zoomed-out and minor detailed overview of the steps fr
 #### T - Trainings
 
 ### Questions
-#### Q - List:
+#### Q2 - List:
+* List of questions for repetition of chapter 2
+* Starting the next day
 
 ### Ressources
 #### R - Compendium
