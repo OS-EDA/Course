@@ -12,7 +12,7 @@ The topics to be covered are:
 References for selfstudying digital design are listed. 
 
 #### Set of ready-to-use design examples
-The available set of design examples for the training sessions gets introduced. The features and complexity of each of the design examples will be examined and displayed in a training session.
+The available set of design examples for the training sessions gets introduced. The features and complexity of each of the design examples will be examined and displayed in a training session. Each participant will choose one example to work with for the duration of the course.
 
 #### choosing an example
 The training of chapter 3 is the first session in which the participants will work on the computer workstations. A set of basic explanations and system tools gets introduced. This includes the following items:
@@ -21,6 +21,7 @@ The training of chapter 3 is the first session in which the participants will wo
 * Console
 * Filesystem and Workdata
 * Designexmaples Exploration
+* Each participant chooses one design example to work with
 
 ## Goals
 #### Trainer goals
