@@ -20,24 +20,42 @@ https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/docs/u
 
 ### Installation of ORFS:
 Navigate to a folder where you want the installation to reside in. The install will need some Gigabytes space.
-```cd <INSERT PATH TO YOUR FOLDER HERE>```
+```
+cd <INSERT PATH TO YOUR FOLDER HERE>
+```
 
 Clone the repository to your computer:
 
-```git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts```
+```
+git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
+```
 
 Run the setup script to install the dependecies:
-```cd OpenROAD-flow-scripts```
-```sudo ./setup.sh```
+```
+cd OpenROAD-flow-scripts
+```
+```
+sudo ./setup.sh
+```
 
 Build all tools. This will take a while, depending on the computer:
-```./build_openroad.sh --local```
+```
+./build_openroad.sh --local
+```
 
 Verify that the tools are available. You should get version informations of the tools with the following commands:
-```source ./env.sh```
-```klayout -v```
-```yosys --version```
-```openroad --version```
+```
+source ./env.sh
+```
+```
+klayout -v
+```
+```
+yosys --version
+```
+```
+openroad --version
+```
 
 Close openroad with ```exit```
 
@@ -63,11 +81,21 @@ Weblink for detailed informations:
 https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
 Add Docker's official GPG key:
-```sudo apt-get update ```
-```sudo apt-get install ca-certificates curl```
-```sudo install -m 0755 -d /etc/apt/keyrings```
-```sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc```
-```sudo chmod a+r /etc/apt/keyrings/docker.asc```
+```
+sudo apt-get update
+```
+```
+sudo apt-get install ca-certificates curl
+```
+```
+sudo install -m 0755 -d /etc/apt/keyrings
+```
+```
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+```
+```
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+```
 
 Add the repository to apt sources:
 ```
@@ -76,24 +104,36 @@ echo \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
-```sudo apt-get update```
+```
+sudo apt-get update
+```
 
 Install the latest version of docker:
-```sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin```
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
 
 **Step 2 -** Manage docker as a non-root user
 
 Weblink for detailed informations:
 https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
 
-```sudo groupadd docker```
-```sudo usermod -aG docker $USER```
-```newgrp docker```
+```
+sudo groupadd docker
+```
+```
+sudo usermod -aG docker $USER
+```
+```
+newgrp docker
+```
 
 **Step 3 -** Run the hello-world docker:
 
 Run the hello-world example docker (without the need of sudo user):
-```docker run hello-world```
+```
+docker run hello-world
+```
 
 No errors should be displayed in running the hello-world example. The output in the shell should contain this message:
 ```
@@ -123,16 +163,24 @@ https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/README.md
 
 
 Install git:
-```sudo apt install git```
+```
+sudo apt install git
+```
 
 Navigate to a folder where you want the repository to be in:
-```cd <INSERT PATH TO YOUR FOLDER HERE>```
+```
+cd <INSERT PATH TO YOUR FOLDER HERE>
+```
 
 Clone the IIC-OSIC-TOOLS:
-```git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git```
+```
+git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git
+```
 
 **Step 5 -** Start the docker
-```./start_x.sh```
+```
+./start_x.sh
+```
 A shell window pops up, in which the docker runs. 
 
 **Step 6 -** Get the OpenROAD flow scripts
