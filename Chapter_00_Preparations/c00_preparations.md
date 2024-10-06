@@ -186,7 +186,7 @@ A shell window pops up, in which the docker runs.
 **Step 6 -** Get the OpenROAD flow scripts
 -To be written-
 
-## Option 2: Guide to use an IHP server with installed EDA tools
+## Option 3: Guide to use an IHP server with installed EDA tools
 ### Ask at IHP for a login
 ### Getting started on the server
 
