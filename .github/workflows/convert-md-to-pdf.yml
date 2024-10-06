@@ -7,6 +7,7 @@ on:
     branches:
       - main
     paths:
+      - 'Chapter_00_Preparations/**.md'
       - 'Chapter_01_Introduction/**.md'
       - 'Chapter_02_Workflow/**.md'
       - 'Chapter_03_Design_and_example_pick/**.md'
@@ -25,6 +26,13 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
+
+     - name: chapter0
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: Chapter_00_Preparations
+          output_dir: md
+          build_html: false
 
       - name: chapter1
         uses: baileyjm02/markdown-to-pdf@v1
