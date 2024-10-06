@@ -38,7 +38,7 @@ jobs:
         uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_path: Chapter_01_Introduction
-          output_dir: md
+          output_dir: md/
           build_html: false
 
       - name: chapter2
