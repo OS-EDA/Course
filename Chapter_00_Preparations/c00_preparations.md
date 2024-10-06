@@ -1,9 +1,47 @@
 # Optional preparations for the course
-Before the course starts, you can take some optional preparations regarding the EDA software tools that will be used during the course. Either you can install them locally on your own computer or get access to a preconfigured server from IHP. Here is a short description of the two options:
-**1. IIC-OSIC-TOOLS:** The local installation might give a little more individualization and flexibility. It requires the permissions to install software on your computer. The guide makes use of Ubuntu Linux.
-**2. IHP server:** Working on the IHP server is the more convenient approach and does not require to install the tools by yourself. The toools are ready to use installed on the server. A permanent connnection to the server is needed (reliable internet connection).
+Before the course starts, you can take some optional preparations regarding the EDA software tools that will be used during the course. Either you can install them locally on your own computer or get access to a preconfigured server from IHP. Here is a short description of the three options:
 
-## 1.Guide to install the EDA tools on your computer (IIC-OSIC-TOOLS docker)
+**Option 1: OpenROAD Flow Scripts (ORFS) on your computer -**
+A plain installation of OpenROAD, Yosys, Klayout and some flow scripts into your system. This option puts everything directly under your control and only installs the minimum toolset neccessary for the course. It requires the permissions to install software on your computer. The guide makes use of Ubuntu Linux.
+
+**Option 2: IIC-OSIC-TOOLS in a docker container on your computer -** This docker container is like a swiss knife for EDA tools. It can be configured in many ways and contains a lot of useful tools. All the tools for the course are in it. It requires the permissions to install software on your computer. The guide makes use of Ubuntu Linux.
+
+**Option 3: IHP server with installed tools -** Working on the IHP server is the more convenient approach and does not require to install anything on your computer. The tools are ready to use installed on the IHP server. A permanent connnection to the server is needed (reliable internet connection). This option will work on various computers and operating systems (Linux/Win/Mac).
+
+## Option 1: OpenROAD Flow Scripts (ORFS) on your computer 
+
+### Prerequisites:
+Ubuntu LTS 24.04.1 (should work on other Linux too, see weblink)
+Permission to install software (sudo rights)
+Reliable internet connection
+
+Weblink for detailed information:
+https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/docs/user/BuildLocally.md
+
+### Installation of ORFS:
+Navigate to a folder where you want the installation to reside in. The install will need some Gigabytes space.
+```cd <INSERT PATH TO YOUR FOLDER HERE>```
+
+Clone the repository to your computer:
+
+```git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts```
+
+Run the setup script to install the dependecies:
+```cd OpenROAD-flow-scripts```
+```sudo ./setup.sh```
+
+Build all tools. This will take a while, depending on the computer:
+```./build_openroad.sh --local```
+
+Verify that the tools are available. You should get version informations of the tools with the following commands:
+```source ./env.sh```
+```klayout -v```
+```yosys --version```
+```openroad --version```
+
+Close openroad with ```exit```
+
+## Option 2: Guide to install the IIC-OSIC-TOOLS docker container on your computer
 This guide is a list of shell commands with some short explanations and weblinks. This was tested on a freshly installed Ubuntu LTS 24.04.1. The order of the commands is crucial and must not be skipped. For more explanations look into the documentations and README files of the tools, the weblinks are given.
 
 ### Prerequisites:
@@ -11,7 +49,7 @@ This guide is a list of shell commands with some short explanations and weblinks
 * Permission to install software (sudo rights)
 * Reliable internet connection
 
-### The docker container IIC-OSIC-TOOLS
+### The IIC-OSIC-TOOLS docker container:
 With the following steps a preconfigured docker gets installed. The docker is created and maintained by:
 
 Institute for Integrated Circuits (IIC) at the Johannes Kepler University Linz (JKU)
@@ -89,29 +127,20 @@ https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/README.md
 Install git:
 ```sudo apt install git```
 
+Navigate to a folder where you want the repository to be in:
+```cd <INSERT PATH TO YOUR FOLDER HERE>```
+
 Clone the IIC-OSIC-TOOLS:
 ```git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git```
 
-**Step 5 -** Environment, Readme chapter 4.1 
+**Step 5 -** Start the docker
+```./start_x.sh```
+A shell window pops up, in which the docker runs. 
 
-Weblink for detailed informations:
-https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/README.md#41-customizing-environment
+**Step 6 -** Get the OpenROAD flow scripts
+-To be written-
 
-**Step 6 -** X-Server variant, Readme chapter 4.3 + 4.3.1 + 4.3.3 
-
-Weblink for detailed informations:
-https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/README.md#43-using-a-local-x-server
-
-**Step 7 -** Shell variables, Readme chapter 4.4.1
-
-Weblink for detailed informations:
-https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/README.md#441-for-the-linuxmacos-bash-scripts
-
-**Step 8 -** Start the docker
-
-
-
-## 2. Use an IHP server for the EDA tools
+## Option 2: Guide to use an IHP server with installed EDA tools
 ### Ask at IHP for a login
 ### Getting started on the server
 
