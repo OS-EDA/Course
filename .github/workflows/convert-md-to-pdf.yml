@@ -27,7 +27,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
-     - name: chapter0
+      - name: chapter0
         uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_path: Chapter_00_Preparations
