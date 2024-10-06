@@ -51,11 +51,9 @@ This guide is a list of shell commands with some short explanations and weblinks
 
 ### The IIC-OSIC-TOOLS docker container:
 With the following steps a preconfigured docker gets installed. The docker is created and maintained by:
-
 Institute for Integrated Circuits (IIC) at the Johannes Kepler University Linz (JKU)
 
 and is avaiable in their Github with more detailed installation instructions:
-
 https://github.com/iic-jku/IIC-OSIC-TOOLS
 
 ### Installation steps:
