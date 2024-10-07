@@ -11,7 +11,9 @@ toc: true
 
 ## Open Klayout
 
-* Viewer mode and edit mode
+* ```klayout``` in console shell.
+* Klayout starts in viewer mode.
+* Edit mode can be started with ```klayout -e``` but is not needed for this training.
 
 ## Load the GDS from the example
 
