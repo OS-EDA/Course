@@ -34,7 +34,8 @@ jobs:
         id: pdf_folder
         run: |
           mkdir pdf
-          echo "files=$(find -type f -name "*.md")" > $GITHUB_OUTPUT
+          files=$(find -type f -name "*.md")
+          echo "$files" > $GITHUB_OUTPUT
 
       - name: chapter0
         uses: docker://pandoc/latex:3.5
