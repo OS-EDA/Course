@@ -36,7 +36,7 @@ jobs:
           mkdir pdf
           list0=$(find Chapter* -type f -name "*.md")
           echo $list0
-          echo 'list1=$list0' >> $GITHUB_OUTPUT
+          echo list1=$list0 >> $GITHUB_OUTPUT
 
       - name: chapter0
         uses: docker://pandoc/latex:3.5
