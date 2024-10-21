@@ -35,12 +35,12 @@ jobs:
         run: |
           mkdir pdf
           files=$(find Chapter* -type f -name '*.md')
-          echo "$files" > $GITHUB_OUTPUT
+          echo "list1=$files" > $GITHUB_OUTPUT
 
       - name: chapter0
         uses: docker://pandoc/latex:3.5
         with:
-          args: --output=pdf/result.pdf ${{ steps.pdf_folder.outputs.files }}
+          args: --output=pdf/result.pdf ${{ steps.pdf_folder.outputs.list1 }}
 
       - name: upload
         uses: actions/upload-artifact@v4
