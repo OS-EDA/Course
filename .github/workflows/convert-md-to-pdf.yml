@@ -34,7 +34,7 @@ jobs:
         id: pdf_folder
         run: |
           mkdir pdf
-          files=$(find -type f -name "*.md")
+          files=$(find Chapter* -type f -name "*.md")
           echo "$files" > $GITHUB_OUTPUT
 
       - name: chapter0
