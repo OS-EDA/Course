@@ -22,7 +22,7 @@ on:
 on: 
   workflow_dispatch:
     branches:
-      - maina
+      - main
 
 jobs:
   converttopdf:
