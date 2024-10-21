@@ -21,7 +21,7 @@ toc: true
 
 ## 2. Load example GDS
 
-* Search for the final GDS from your example run and load it into Klayout
+* Search for the final GDS from your example run and load it into Klayoutv
 
 ### 2. Load example GDS
 
