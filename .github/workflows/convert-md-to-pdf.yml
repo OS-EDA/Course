@@ -38,11 +38,16 @@ jobs:
           echo $list0
           echo list1=$list0 >> $GITHUB_OUTPUT
 
-      - name: chapter0
+      - name: combined
         uses: docker://pandoc/latex:3.5
         with:
-          args: --output=pdf/result.pdf ${{ steps.pdf_folder.outputs.list1 }}
+          args: --output=pdf/combined.pdf ${{ steps.pdf_folder.outputs.list1 }}
 
+      - name: c00
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: --output=pdf/c00.pdf Chapter_00*/*.md
+  
       - name: upload
         uses: actions/upload-artifact@v4
         with:
