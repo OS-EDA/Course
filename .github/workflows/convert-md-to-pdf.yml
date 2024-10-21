@@ -37,6 +37,7 @@ jobs:
           list0=$(find Chapter* -type f -name "*.md")
           echo $list0
           echo list1=$list0 >> $GITHUB_OUTPUT
+          echo c00=$('Chapter_00_Preparations/c00_preparations.md') >> $GITHUB_OUTPUT
 
       - name: combined
         uses: docker://pandoc/latex:3.5
@@ -46,7 +47,7 @@ jobs:
       - name: c00
         uses: docker://pandoc/latex:3.5
         with:
-          args: --output=pdf/c00.pdf Chapter_00*/*.md
+          args: --output=pdf/c00.pdf ${{ steps.pdf_folder.outputs.c00 }}
   
       - name: upload
         uses: actions/upload-artifact@v4
