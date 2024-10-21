@@ -18,8 +18,6 @@ on:
       - 'Chapter_08_Simulation_and_PPA/**.md'
       - 'Chapter_09_Scripting/**.md'
       - 'Chapter_10_GDS_and_Tapeout/**.md'
-      
-on: 
   workflow_dispatch:
     branches:
       - main
