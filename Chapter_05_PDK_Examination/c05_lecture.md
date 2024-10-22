@@ -29,7 +29,7 @@ Image of the border between development and production
 ## Difference from closed source
 With publishing a PDK under a open-source license, the development from there on becomes a worldwide visible joint effort. The number of contributors and authors of the PDK can only increase from here on. 
 
-## GitHub workflow with examples
+## Collaborative workflow in GitHub
 Some of the main principles of open-source are the permissions to use, study, change and re-distribute the published code and data according to the license. This leads to a open collaboration in which everyone can participate.
 
 GitHub enables a workflow that was designed and build with these principles and opportunities in mind. A good starting point to explore the open collaboration in the IHP PDK are
@@ -118,6 +118,7 @@ ToDo:
 * Pictures of the layers of the cell
     * Klayout
     * 3D Rederings?
+* Schematic of the cell
 
 ## Layer stack
 IHP sg13g2 Layers in a picture.
