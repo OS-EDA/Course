@@ -6,6 +6,28 @@ An interactive session for welcoming and warm-up starts the course. The particip
 * Trainer profile
 * Participants backgrounds and motivations
 
+#### Explain the categories of the course parts.
+- Chapters
+- Lectures
+- Trainings
+- Cheat Sheets
+- Questions
+
+#### Overview of the course:
+* Table of content (Chapter names and short descriptions)
+* Schedule for the course
+
+#### The Trainings
+* Success points inbetween lectures
+- This is too fast
+- This is too slow
+
+#### Login at IHP
+- Onboarding for everyone to the computers
+
+#### Availablitily GitHub PDF Downloads
+- Link / QR to the course materials
+
 #### Introduction to open-source EDA and the course, addressing the following topics:
 * What is the new thing with this course?
 * Advantages of open-source in EDA
@@ -13,12 +35,6 @@ An interactive session for welcoming and warm-up starts the course. The particip
 * Goals of this course.
 * How to participate and interact with this course.
 * Producing chips at IHP with the open PDK 
-
-#### Overview of the course structure::
-* Table of content (Chapter names and short descriptions)
-* Hands on sessions (Trainings)
-* Schedule for the course
-* Success points inbetween lectures
 
 #### Questions from the participants
 * Opportunity to ask questions about chapter 1.
