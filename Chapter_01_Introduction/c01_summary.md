@@ -11,6 +11,7 @@ An interactive session for welcoming and warm-up starts the course. The particip
 * Advantages of open-source in EDA
 * The actual state of open-source EDA
 * Goals of this course.
+* How to participate and interact with this course.
 * Producing chips at IHP with the open PDK 
 
 #### Overview of the course structure::
