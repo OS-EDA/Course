@@ -44,15 +44,15 @@ jobs:
       #   with:
       #     args: --output=pdf/combined.pdf ${{ steps.pdf_folder.outputs.list1 }}
 
-      - name: c00
-        uses: docker://pandoc/latex:3.5
-        with:
-          args: --output=pdf/c00.pdf ${{ steps.pdf_folder.outputs.c00 }}
+      # - name: c00
+      #   uses: docker://pandoc/latex:3.5
+      #   with:
+      #     args: --output=pdf/c00.pdf ${{ steps.pdf_folder.outputs.c00 }}
 
       - name: c01
         uses: docker://pandoc/latex:3.5
         with:
-          args: --output=pdf/c01.pdf Chapter_01_Introduction/c01_lecture.md
+          args: --output=pdf/c01.pdf /Chapter_01_Introduction/c01_lecture.md
 
       - name: upload
         uses: actions/upload-artifact@v4
