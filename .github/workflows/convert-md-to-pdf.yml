@@ -39,20 +39,20 @@ jobs:
           echo list1=$list0 >> $GITHUB_OUTPUT
           echo c00=$('Chapter_00_Preparations/c00_preparations.md') >> $GITHUB_OUTPUT
 
-      # - name: combined
-      #   uses: docker://pandoc/latex:3.5
-      #   with:
-      #     args: --output=pdf/combined.pdf ${{ steps.pdf_folder.outputs.list1 }}
+      - name: combined
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: --output=pdf/combined.pdf --from=markdown+rebase_relative_paths ${{ steps.pdf_folder.outputs.list1 }}
 
-      # - name: c00
-      #   uses: docker://pandoc/latex:3.5
-      #   with:
-      #     args: --output=pdf/c00.pdf ${{ steps.pdf_folder.outputs.c00 }}
+      - name: c00
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: --output=pdf/c00.pdf --from=markdown+rebase_relative_paths ${{ steps.pdf_folder.outputs.c00 }}
 
       - name: c01
         uses: docker://pandoc/latex:3.5
         with:
-          args: --output=pdf/c01.pdf --resource-path=Chapter_01_Introduction/pics_lecture Chapter_01_Introduction/c01_lecture.md
+          args: --output=pdf/c01.pdf --from=markdown+rebase_relative_paths Chapter_01_Introduction/c01_lecture.md
 
       - name: upload
         uses: actions/upload-artifact@v4
