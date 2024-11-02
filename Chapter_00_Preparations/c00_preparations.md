@@ -11,9 +11,10 @@ A plain installation of OpenROAD, Yosys, Klayout and some flow scripts into your
 ## Option 1: OpenROAD Flow Scripts (ORFS) on your computer 
 
 ### Prerequisites:
-Ubuntu LTS 24.04.1 (should work on other Linux too, see weblink)
-Permission to install software (sudo rights)
-Reliable internet connection
+* Ubuntu LTS 24.04.1 (should work on other Linux too, see weblink)
+* Permission to install software (sudo rights)
+* Reliable internet connection
+* git installed: ```sudo apt install git```
 
 Weblink for detailed information:
 https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/docs/user/BuildLocally.md
@@ -21,7 +22,7 @@ https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/docs/u
 ### Installation of ORFS:
 Navigate to a folder where you want the installation to reside in. The install will need some Gigabytes space.
 ```
-cd <INSERT PATH TO YOUR FOLDER HERE>
+cd <PATH TO YOUR INSTALL FOLDER>
 ```
 
 Clone the repository to your computer:
@@ -54,10 +55,8 @@ klayout -v
 yosys --version
 ```
 ```
-openroad --version
+openroad -version
 ```
-
-Close openroad with ```exit```
 
 ## Option 2: Guide to install the IIC-OSIC-TOOLS docker container on your computer
 This guide is a list of shell commands with some short explanations and weblinks. This was tested on a freshly installed Ubuntu LTS 24.04.1. The order of the commands is crucial and must not be skipped. For more explanations look into the documentations and README files of the tools, the weblinks are given.

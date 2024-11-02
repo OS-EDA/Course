@@ -2,7 +2,7 @@
 * One of the options of chapter 00 is needed.
 * Navigate to the ```/flow``` folder
 * Edit the Makefile:
-    * Uncomment the line wirh your choosen DESIGN_CONFIG from ihp-sg13g2.
+    * Uncomment the line with your choosen DESIGN_CONFIG from ihp-sg13g2.
     For example the gcd design:
         ```
         DESIGN_CONFIG=./designs/ihp-sg13g2/gcd/config.mk

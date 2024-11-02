@@ -10,6 +10,8 @@ Openroad is a script and command driven toolchain. For participants that are use
 * How to start an Openroad run
 * What to expect as output from an Openroad run
 * Examining a GDS with a viewer
+#### Insert, config and run your own design
+A short tutorial for running an own design with OpenROAD. The data structure and most basic configurations will be shown. 
 #### Success point: My first GDS
 This training session will create a correct GDS file of the choosen example. The generated data from the Openroad run will be examined on a basic level. Regarding to the overall top-to-down approach, this is still one of the top parts in the course. A successful and fast to reach result is the goal. All steps for the deeper dive in the upcoming chapters can be seen and motivated here.   
 
