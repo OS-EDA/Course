@@ -29,6 +29,10 @@ An interactive session for welcoming and warm-up starts the course. The particip
 - Link / QR to the course materials
 
 ## Introduction to open-source EDA and the course, addressing the following topics:
+![Microchip Creation](pics_lecture/rtl_to_gds.png)
+![RTL 2 GDS and this course](pics_lecture/rtl_to_gds_1.png)
+
+
 * What is the new thing with this course?
 * Advantages of open-source in EDA
 * The actual state of open-source EDA
