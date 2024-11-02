@@ -3,7 +3,7 @@ title: "Chapter 05 Training"
 subtitle: "Process Design Kit (PDK) Examination"
 author: "Thorsten Knoll"
 aspectratio: 169
-logo: img/hsrm_small.jpg
+logo: icons/training.jpg
 date:
 section-titles: false
 toc: true
