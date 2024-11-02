@@ -39,17 +39,17 @@ GitHub enables a workflow that was designed and build with these principles and 
 
 The topics and discussions that you can read and study there will draw a picture of how the process of open collaboration works for the PDK.
 
-## Issues open
+## Issues openss
 
-![Issues open](pics/issues_open.png "Issues open")
+![Issues open](pics_lecture/issues_open.png "Issues open")
 
 ## Issues closed
 
-![Issues clsoed](pics/issues_closed.png "Issues closed")
+![Issues clsoed](pics_lecture/issues_closed.png "Issues closed")
 
 ## Pull requests closed
 
-![Pull requests closed](pics/pull_requests_closed.png "Pull requests closed")
+![Pull requests closed](pics_lecture/pull_requests_closed.png "Pull requests closed")
 
 ## Resources for you
  
@@ -64,14 +64,14 @@ The Readme file in the PDKs repository is the starting point for information abo
 
 [https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/README.md](https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/README.md)
 
-![Readme](pics/readme_0.png "Readme")
+![Readme](pics_lecture/readme_0.png "Readme")
 
 ## Project roadmap
 A GANTT chart of the roadmap for the open-source PDK is available under this weblink. It shows the projects timeline (2022 - 2026):
 
 [https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/roadmap/open_PDK_gantt.png](https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/roadmap/open_PDK_gantt.png)
 
-![Gantt chart](pics/gantt_0.png "Gantt chart")
+![Gantt chart](pics_lecture/gantt_0.png "Gantt chart")
 
 ## Cells in the PDK
 There are four different sets of cells (or devices) in the PDK:
@@ -123,7 +123,7 @@ ToDo:
 ## Layer stack
 IHP sg13g2 Layers in a picture.
 
-![Layer stack](pics/layer_stack_0.png "Layer stack")
+![Layer stack](pics_lecture/layer_stack_0.png "Layer stack")
 
 Source: https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_process_spec.pdf
 
