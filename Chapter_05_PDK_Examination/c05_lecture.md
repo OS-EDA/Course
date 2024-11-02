@@ -38,7 +38,7 @@ GitHub enables a workflow that was designed and build with these principles and 
 
 The topics and discussions that you can read and study there will draw a picture of how the process of open collaboration works for the PDK.
 
-## Issues open
+## Issues openss
 
 ![Issues open](pics_lecture/issues_open.png "Issues open")
 
