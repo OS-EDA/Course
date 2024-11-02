@@ -3,7 +3,7 @@ title: "Chapter 05 Training"
 subtitle: "Process Design Kit (PDK) Examination"
 author: "Thorsten Knoll"
 aspectratio: 169
-logo: img/hsrm_small.jpg
+theme: "CambridgeUS"
 date:
 section-titles: false
 toc: true
@@ -17,7 +17,7 @@ toc: true
 
 ### 1. Open Klayout
 
-![Start Klayout](pics_training/01_klayout.png "Start Klayout")
+![Start Klayout](pics_training/01_klayout.png "Start Klayout") { heigth=70% }
 
 ## 2. Load example GDS
 
