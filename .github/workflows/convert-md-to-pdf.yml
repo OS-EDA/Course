@@ -54,6 +54,11 @@ jobs:
         with:
           args: --output=pdf/c01.pdf --from=markdown+rebase_relative_paths Chapter_01_Introduction/c01_lecture.md
 
+      - name: c05_t
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: --output=pdf/c05_t.pdf --slide-level 2 --shift-heading-level=-1 --toc --columns=50 -t beamer --from=markdown+rebase_relative_paths Chapter_05_PDK_Examination/c05_training.md 
+
       - name: upload
         uses: actions/upload-artifact@v4
         with:
