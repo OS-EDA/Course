@@ -122,31 +122,31 @@ jobs:
             --from=markdown+rebase_relative_paths 
             Chapter_00_Preparations/c00_preparations.md 
 
-      - name: c01_t
-        uses: docker://pandoc/latex:3.5
-        with:
-          args: >-
-            --output=pdf/c01_training.pdf 
-            --slide-level 2 
-            --shift-heading-level=-1 
-            --toc 
-            --columns=50 
-            -t beamer 
-            --from=markdown+rebase_relative_paths 
-            Chapter_01_Introduction/c01_training.md 
+      # - name: c01_t
+      #   uses: docker://pandoc/latex:3.5
+      #   with:
+      #     args: >-
+      #       --output=pdf/c01_training.pdf 
+      #       --slide-level 2 
+      #       --shift-heading-level=-1 
+      #       --toc 
+      #       --columns=50 
+      #       -t beamer 
+      #       --from=markdown+rebase_relative_paths 
+      #       Chapter_01_Introduction/c01_training.md 
 
-      - name: c02_t
-        uses: docker://pandoc/latex:3.5
-        with:
-          args: >-
-            --output=pdf/c02_training.pdf 
-            --slide-level 2 
-            --shift-heading-level=-1 
-            --toc 
-            --columns=50 
-            -t beamer 
-            --from=markdown+rebase_relative_paths 
-            Chapter_02_Workflow/c02_training.md 
+      # - name: c02_t
+      #   uses: docker://pandoc/latex:3.5
+      #   with:
+      #     args: >-
+      #       --output=pdf/c02_training.pdf 
+      #       --slide-level 2 
+      #       --shift-heading-level=-1 
+      #       --toc 
+      #       --columns=50 
+      #       -t beamer 
+      #       --from=markdown+rebase_relative_paths 
+      #       Chapter_02_Workflow/c02_training.md 
 
       - name: c03_t
         uses: docker://pandoc/latex:3.5
