@@ -34,9 +34,9 @@ jobs:
         id: pdf_folder
         run: |
           mkdir pdf
-          list0=$(find Chapter* -type f -name "*.md")
-          echo $list0
-          echo list1=$list0 >> $GITHUB_OUTPUT
+          list_trainings=$(find Chapter* -type f -name "*training.md")
+          echo $list_trainings
+          echo list_t=$list_trainings >> $GITHUB_OUTPUT
           echo c00=$('Chapter_00_Preparations/c00_preparations.md') >> $GITHUB_OUTPUT
 
       - name: combined
@@ -44,20 +44,148 @@ jobs:
         with:
           args: --output=pdf/combined.pdf --from=markdown+rebase_relative_paths ${{ steps.pdf_folder.outputs.list1 }}
 
-      - name: c00
+      - name: c01_l
         uses: docker://pandoc/latex:3.5
         with:
-          args: --output=pdf/c00.pdf --from=markdown+rebase_relative_paths ${{ steps.pdf_folder.outputs.c00 }}
+          args: >-
+          --output=pdf/c01_lecture.pdf 
+          --slide-level 2 
+          --shift-heading-level=-1 
+          --toc 
+          --columns=50 
+          -t beamer 
+          --from=markdown+rebase_relative_paths 
+          Chapter_01_Introduction/c01_lecture.md 
 
-      - name: c01
+      - name: c02_l
         uses: docker://pandoc/latex:3.5
         with:
-          args: --output=pdf/c01.pdf --from=markdown+rebase_relative_paths Chapter_01_Introduction/c01_lecture.md
+          args: >-
+          --output=pdf/c02_lecture.pdf 
+          --slide-level 2 
+          --shift-heading-level=-1 
+          --toc 
+          --columns=50 
+          -t beamer 
+          --from=markdown+rebase_relative_paths 
+          Chapter_02_Workflow/c02_lecture.md 
+
+      - name: c03_l
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: >-
+          --output=pdf/c03_lecture.pdf 
+          --slide-level 2 
+          --shift-heading-level=-1 
+          --toc 
+          --columns=50 
+          -t beamer 
+          --from=markdown+rebase_relative_paths 
+          Chapter_03_Design_and_example_pick/c03_lecture.md 
+
+      - name: c04_l
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: >-
+          --output=pdf/c04_lecture.pdf 
+          --slide-level 2 
+          --shift-heading-level=-1 
+          --toc 
+          --columns=50 
+          -t beamer 
+          --from=markdown+rebase_relative_paths 
+          Chapter_04_Openroad_first_run/c04_lecture.md 
+
+      - name: c05_l
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: >-
+          --output=pdf/c05_lecture.pdf 
+          --slide-level 2 
+          --shift-heading-level=-1 
+          --toc 
+          --columns=50 
+          -t beamer 
+          --from=markdown+rebase_relative_paths 
+          Chapter_05_PDK_Examination/c05_lecture.md 
+
+      - name: c00_t
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: >-
+          --output=pdf/c00_preparations.pdf 
+          --slide-level 2 
+          --shift-heading-level=-1 
+          --toc 
+          --columns=50 
+          -t beamer 
+          --from=markdown+rebase_relative_paths 
+          Chapter_00_Preparations/c00_preparations.md 
+
+      - name: c01_t
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: >-
+          --output=pdf/c01_training.pdf 
+          --slide-level 2 
+          --shift-heading-level=-1 
+          --toc 
+          --columns=50 
+          -t beamer 
+          --from=markdown+rebase_relative_paths 
+          Chapter_01_Introduction/c01_training.md 
+
+      - name: c02_t
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: >-
+          --output=pdf/c02_training.pdf 
+          --slide-level 2 
+          --shift-heading-level=-1 
+          --toc 
+          --columns=50 
+          -t beamer 
+          --from=markdown+rebase_relative_paths 
+          Chapter_02_Workflow/c02_training.md 
+
+      - name: c03_t
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: >-
+          --output=pdf/c03_training.pdf 
+          --slide-level 2 
+          --shift-heading-level=-1 
+          --toc 
+          --columns=50 
+          -t beamer 
+          --from=markdown+rebase_relative_paths 
+          Chapter_03_Design_and_example_pick/c03_training.md 
+
+      - name: c04_t
+        uses: docker://pandoc/latex:3.5
+        with:
+          args: >-
+          --output=pdf/c04_training.pdf 
+          --slide-level 2 
+          --shift-heading-level=-1 
+          --toc 
+          --columns=50 
+          -t beamer 
+          --from=markdown+rebase_relative_paths 
+          Chapter_04_Openroad_first_run/c04_training.md 
 
       - name: c05_t
         uses: docker://pandoc/latex:3.5
         with:
-          args: --output=pdf/c05_t.pdf --slide-level 2 --shift-heading-level=-1 --toc --columns=50 -t beamer --from=markdown+rebase_relative_paths Chapter_05_PDK_Examination/c05_training.md 
+          args: >-
+          --output=pdf/c05_training.pdf 
+          --slide-level 2 
+          --shift-heading-level=-1 
+          --toc 
+          --columns=50 
+          -t beamer 
+          --from=markdown+rebase_relative_paths 
+          Chapter_05_PDK_Examination/c05_training.md 
 
       - name: upload
         uses: actions/upload-artifact@v4
