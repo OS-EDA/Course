@@ -1,3 +1,15 @@
+---
+title: "Chapter 03 Lecture"
+subtitle: "Design and example pick"
+author: "Thorsten Knoll"
+aspectratio: 169
+theme: "CambridgeUS"
+logo: icons/lecture.jpg
+date:
+section-titles: false
+toc: true
+---
+
 # Examples
 ## Openroad GUI
 ```

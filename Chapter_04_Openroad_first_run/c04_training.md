@@ -1,3 +1,15 @@
+---
+title: "Chapter 04 Training"
+subtitle: "OpenROAD first run"
+author: "Thorsten Knoll"
+aspectratio: 169
+theme: "CambridgeUS"
+logo: icons/training.jpg
+date:
+section-titles: false
+toc: true
+---
+
 # Chapter 04 - OpenROAD first run - TRAINING
 * One of the options of chapter 00 is needed.
 * Navigate to the ```/flow``` folder

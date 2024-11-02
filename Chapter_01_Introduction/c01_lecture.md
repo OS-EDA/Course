@@ -1,3 +1,15 @@
+---
+title: "Chapter 01 Lecture"
+subtitle: "Introduction"
+author: "Thorsten Knoll"
+aspectratio: 169
+theme: "CambridgeUS"
+logo: icons/lecture.jpg
+date:
+section-titles: false
+toc: true
+---
+
 # Chapter 1 - Introduction and overview
 ## Description
 An interactive session for welcoming and warm-up starts the course. The participants and the trainer get to know each other. The first lecture is an introduction to the course, followed by an overview of the contents. The course schedule gets explained including the mix of lecture-, training- and question-units.
