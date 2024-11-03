@@ -45,7 +45,7 @@ jobs:
             --listings
             --toc 
             --columns=50
-            --template default_mod.latex
+            --template /.pandoc/templates/default_mod.latex
             --pdf-engine lualatex
             -t beamer 
             --from=markdown+rebase_relative_paths 

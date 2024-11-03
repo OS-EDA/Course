@@ -18,6 +18,7 @@ pandoc -s \
     --toc \
     --columns=50 \
     -f "$SOURCE_FORMAT" \
+    --template pandoc/templates/default_mod.latex \
     --pdf-engine lualatex \
     -t beamer \
     --from=markdown+rebase_relative_paths \
