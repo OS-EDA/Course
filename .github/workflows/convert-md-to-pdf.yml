@@ -34,7 +34,6 @@ jobs:
         id: pdf_folder
         run: |
           mkdir pdf
-          tlmgr install zref
 
       - name: c00
         uses: docker://pandoc/latex:3.5
