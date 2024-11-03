@@ -38,17 +38,21 @@ An interactive session for welcoming and warm-up starts the course. The particip
 :::
 
 ## Course components
+
 ### Chapters
 
 ### Lectures
 ![Icon lecture](pics_lecture/lecture.jpg)
+
 ### Trainings
 ![Icon training](pics_lecture/training.jpg)
 ![Icon common](pics_lecture/common.jpg)
 ![Icon advanced](pics_lecture/advanced.jpg)
 ![Icon bonus](pics_lecture/bonus.jpg)
+
 ### Cheat Sheets
 ![Icon cheatsheet](pics_lecture/cheatsheet.jpg)
+
 ### Questions
 ![Icon questions](pics_lecture/questions.jpg)
 The questions are meant for re-visiting and remembering a previous chapter. 
