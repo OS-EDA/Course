@@ -1,5 +1,5 @@
 pandoc -s \
-    --output=pdf/c01_lecture.pdf \
+    --output=build/c01_lecture.pdf \
     --slide-level 2 \
     --shift-heading-level=-1 \
     --toc \
