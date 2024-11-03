@@ -11,14 +11,16 @@ toc: true
 ---
 
 # Chapter 1 - Introduction and overview
-## Description
-An interactive session for welcoming and warm-up starts the course. The participants and the trainer get to know each other. The first lecture is an introduction to the course, followed by an overview of the contents. The course schedule gets explained including the mix of lecture-, training- and question-units.
 
-## Welcoming:
-* Trainer profile
-* Participants backgrounds and motivations
+## Welcome
 
-## Columms example
+### Trainer profile
+
+### Participants backgrounds and motivations
+
+## Course components
+
+### Columms example
 ::: columns
 
 :::: {.column width=20%}
@@ -36,8 +38,6 @@ An interactive session for welcoming and warm-up starts the course. The particip
 ::::
 
 :::
-
-## Course components
 
 ### Chapters
 
@@ -60,26 +60,30 @@ They should be a guide for an interactive session between the trainer and the ro
 * Trainer: The trainer asks the questions.
 * Room: Answers the questions. If no answer can be found, the trainer helps with the answer.  
 
-## Overview of the course:
-* Table of content (Chapter names and short descriptions)
-* Schedule for the course
+## Course overview:
+
+### Table of content (Chapter names and short descriptions)
+
+### Schedule for the course
 ![Course week](pics_lecture/course_week.png)
 
-## The Trainings
+## The Training sessions
+
+### Login at IHP
+- Onboarding for everyone to the computers
+
+### Levels
 * Success points inbetween lectures
 - This is too fast
 - This is too slow
 
-## Login at IHP
-- Onboarding for everyone to the computers
-
-## Availablitily GitHub PDF Downloads
+### Availablitily GitHub PDF Downloads
+- Follow in your own tempo. Get all the data here:
 - Link / QR to the course materials
 
-## Introduction to open-source EDA and the course, addressing the following topics:
+## Open-source EDA for digital designs:
 ![Microchip Creation](pics_lecture/rtl_to_gds.png)
 ![RTL 2 GDS and this course](pics_lecture/rtl_to_gds_1.png)
-
 
 * What is the new thing with this course?
 * Advantages of open-source in EDA
@@ -88,5 +92,5 @@ They should be a guide for an interactive session between the trainer and the ro
 * How to participate and interact with this course.
 * Producing chips at IHP with the open PDK 
 
-## Questions from the participants
-* Opportunity to ask questions about chapter 1.
+## AMA (Ask me anything)
+* Opportunity to ask questions about everything (chapter 1 ?).
