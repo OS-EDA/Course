@@ -20,7 +20,7 @@ toc: true
 
 ### 1. Open Klayout
 
-![Start Klayout](pics_training/01_klayout.png "Start Klayout") { heigth=70% }
+![Start Klayout](pics_training/01_klayout.png "Start Klayout")
 
 ## 2. Load example GDS
 

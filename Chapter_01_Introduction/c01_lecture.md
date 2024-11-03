@@ -6,7 +6,7 @@ aspectratio: 169
 theme: "AnnArbor"
 colortheme: "crane"
 fonttheme: "professionalfonts"
-logo: icons/lecture.jpg
+logo: icons/lecture.png
 date:
 section-titles: false
 toc: true
@@ -41,13 +41,13 @@ toc: true
 ### Columms example
 ::: columns
 
-:::: {.column width=20%}
+:::: {.column width=50%}
 
-![](pics_lecture/lecture.jpg)
+![](pics_lecture/lecture.png)
 
 ::::
 
-:::: {.column width=80%}
+:::: {.column width=50%}
 
 - Item 1.
 - Item 2.
@@ -60,22 +60,22 @@ toc: true
 ### Chapters
 
 ### Lectures
-![](pics_lecture/lecture.jpg)
+![](pics_lecture/lecture.png)
 
 ### Trainings
-![](pics_lecture/training.jpg)
+![](pics_lecture/training.png)
 
-![](pics_lecture/common.jpg)
+![](pics_lecture/common.png)
 
-![](pics_lecture/advanced.jpg)
+![](pics_lecture/advanced.png)
 
-![](pics_lecture/bonus.jpg)
+![](pics_lecture/bonus.png)
 
 ### Cheat Sheets
-![](pics_lecture/cheatsheet.jpg)
+![](pics_lecture/cheatsheet.png)
 
 ### Questions
-![](pics_lecture/questions.jpg)
+![](pics_lecture/questions.png)
 The questions are meant for re-visiting and remembering a previous chapter. 
 They should be a guide for an interactive session between the trainer and the room:
 * Trainer: The trainer asks the questions.
@@ -86,7 +86,7 @@ They should be a guide for an interactive session between the trainer and the ro
 ### Table of content (Chapter names and short descriptions)
 
 ### Schedule for the course
-![Course week](pics_lecture/course_week.png)
+![](pics_lecture/course_week.pdf)
 
 ## The Training sessions
 
@@ -105,10 +105,10 @@ They should be a guide for an interactive session between the trainer and the ro
 ## Open-source EDA for digital designs
 
 ### From Design to Microchip
-![Microchip Creation](pics_lecture/rtl_to_gds.png)
+![](pics_lecture/rtl_to_gds.pdf)
 
 ### RTL to GDS - Workflow
-![RTL 2 GDS and this course](pics_lecture/rtl_to_gds_1.png)
+![](pics_lecture/rtl_to_gds_1.pdf)
 
 ### The cheatsheet
 First usage of the cheatsheet:
