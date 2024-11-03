@@ -8,7 +8,7 @@ colortheme: "crane"
 fonttheme: "professionalfonts"
 logo: icons/lecture.png
 date:
-section-titles: false
+section-titles: true
 toc: true
 ---
 
@@ -18,15 +18,7 @@ toc: true
 
 ### Trainer profile
 
-#### Name, Company / Uni
-
-#### Why i'm here. My motivation.
-
-#### What i've done before.
-
-#### What interests me most.
-
-### Participants backgrounds and motivations
+Me:
 
 ##### Name, Company / Uni
 
@@ -36,28 +28,89 @@ toc: true
 
 ##### What interests me most.
 
-## Course components
+### Participants backgrounds and motivations
 
-### Columms example
+You:
+
+##### Name, Company / Uni
+
+##### Why i'm here. My motivation.
+
+##### What i've done before.
+
+##### What interests me most.
+
+## Course overview
+
+### Chapter names
+
 ::: columns
 
 :::: {.column width=50%}
 
-![](pics_lecture/lecture.png)
+* 01 Introduction
+
+* 02 Workflow
+
+* 03 Design and example pick
+
+* 04 OpenROAD first run
+
+* 05 PDK Examination
 
 ::::
 
 :::: {.column width=50%}
 
-- Item 1.
-- Item 2.
-- Item 3.
+* 06 Data in OpenROAD
+* 07 LVS and DRC
+* 08 Simulation and PPA
+* 09 Scripting
+* 10 GDS and Tapeout
 
 ::::
 
 :::
 
-### Chapters
+### Chapter names
+
+::: columns
+
+:::: {.column width=50%}
+
+* 01 Introduction
+
+* 02 Workflow
+
+* 03 Design and example pick
+
+* 04 OpenROAD first run
+
+* 05 PDK Examination
+
+Day 1 - 2
+
+::::
+
+:::: {.column width=50%}
+
+* 06 Data in OpenROAD
+* 07 LVS and DRC
+* 08 Simulation and PPA
+* 09 Scripting
+* 10 GDS and Tapeout
+
+Day 3 - 5
+
+::::
+
+:::
+
+
+### Schedule for the course
+![](pics_lecture/course_week.png)
+
+## Course components
 
 ### Lectures
 ![](pics_lecture/lecture.png)
@@ -72,21 +125,47 @@ toc: true
 ![](pics_lecture/bonus.png)
 
 ### Cheat Sheets
+
+::: columns
+
+:::: {.column width=30%}
+
 ![](pics_lecture/cheatsheet.png)
+
+::::
+
+:::: {.column width=70%}
+
+Some things are really hard to remember:
+
+* Abbreviations 
+* Complex relations and graphics
+* Mathematics (joking, wer're not doing math here)
+* ...
+
+::::
+
+:::
+
+#####
+ 
+* That is why we have Cheat Sheets.
+* They're made for cheating the hard parts.
+* Cheatsheets work best when printed as handouts. 
+* You should have them nearby the computer during the course.
 
 ### Questions
 ![](pics_lecture/questions.png)
-The questions are meant for re-visiting and remembering a previous chapter. 
-They should be a guide for an interactive session between the trainer and the room:
-* Trainer: The trainer asks the questions.
-* Room: Answers the questions. If no answer can be found, the trainer helps with the answer.  
 
-## Course overview:
-
-### Table of content (Chapter names and short descriptions)
-
-### Schedule for the course
-![](pics_lecture/course_week.pdf)
+* The questions are for re-visiting and remembering a previous chapter. 
+* They guide an interactive session between the trainer and the room:
+    * Trainer: Asks the questions.
+    * Room: Answers the questions. 
+        * Skipping a question is fine. 
+        * Not knowing the answer is fine.
+        * This is not a test nor a challenge.
+        * Think of this as a helpfull recap of yesterdays content.
+    * If no answer is found, the trainer helps with the answer.
 
 ## The Training sessions
 
@@ -105,10 +184,10 @@ They should be a guide for an interactive session between the trainer and the ro
 ## Open-source EDA for digital designs
 
 ### From Design to Microchip
-![](pics_lecture/rtl_to_gds.pdf)
+![](pics_lecture/rtl_to_gds.png)
 
 ### RTL to GDS - Workflow
-![](pics_lecture/rtl_to_gds_1.pdf)
+![](pics_lecture/rtl_to_gds_1.png)
 
 ### The cheatsheet
 First usage of the cheatsheet:
