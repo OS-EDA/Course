@@ -23,4 +23,5 @@ openroad -gui
 
 ### Example: masked_aes (from the Sign:HEP research project)
 [HEP Alliance - Masked AES](https://github.com/HEP-Alliance/masked-aes-tapeout)
-![GDS masked_aes](pics_lecture/gds_masked_aes.png "GDS from masked_aes example")
+
+![GDS masked_aes](pics_lecture/gds_masked_aes.png)
