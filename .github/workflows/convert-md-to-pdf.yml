@@ -36,7 +36,7 @@ jobs:
           mkdir pdf
 
       - name: c00
-        uses: docker://pandoc/latex:3.5
+        uses: docker://pandoc/latex:3
         with:
           args: >-
             --output=pdf/c00_preparations.pdf 
