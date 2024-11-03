@@ -37,20 +37,24 @@ An interactive session for welcoming and warm-up starts the course. The particip
 
 :::
 
-## Explain the categories of the course parts.
-- Chapters
+## Course components
+### Chapters
 
-- Lectures
+### Lectures
 ![Icon lecture](pics_lecture/lecture.jpg)
-- Trainings
+### Trainings
 ![Icon training](pics_lecture/training.jpg)
 ![Icon common](pics_lecture/common.jpg)
 ![Icon advanced](pics_lecture/advanced.jpg)
 ![Icon bonus](pics_lecture/bonus.jpg)
-- Cheat Sheets
+### Cheat Sheets
 ![Icon cheatsheet](pics_lecture/cheatsheet.jpg)
-- Questions
+### Questions
 ![Icon questions](pics_lecture/questions.jpg)
+The questions are meant for re-visiting and remembering a previous chapter. 
+They should be a guide for an interactive session between the trainer and the room:
+* Trainer: The trainer asks the questions.
+* Room: Answers the questions. If no answer can be found, the trainer helps with the answer.  
 
 ## Overview of the course:
 * Table of content (Chapter names and short descriptions)
