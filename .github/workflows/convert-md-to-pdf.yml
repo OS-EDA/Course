@@ -41,9 +41,12 @@ jobs:
           args: >-
             --output=pdf/c00_preparations.pdf 
             --slide-level 2 
-            --shift-heading-level=-1 
+            --shift-heading-level=-1
+            --listings
             --toc 
-            --columns=50 
+            --columns=50
+            --template latex/default_mod.latex
+            --pdf-engine lualatex
             -t beamer 
             --from=markdown+rebase_relative_paths 
             Chapter_00_Preparations/c00_preparations.md 

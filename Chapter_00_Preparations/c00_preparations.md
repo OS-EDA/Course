@@ -8,7 +8,7 @@ colortheme: "rose"
 fonttheme: "professionalfonts"
 date:
 section-titles: false
-toc: false
+toc: true
 ---
 
 # Preparations - Before the course (Optional)
