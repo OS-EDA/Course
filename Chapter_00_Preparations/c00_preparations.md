@@ -1,3 +1,16 @@
+---
+title: "Preparations"
+subtitle: "Before the course (Optional)"
+author: "Thorsten Knoll"
+aspectratio: 169
+theme: "CambridgeUS"
+colortheme: "rose"
+fonttheme: "professionalfonts"
+date:
+section-titles: false
+toc: true
+---
+
 # Optional preparations for the course
 Before the course starts, you can take some optional preparations regarding the EDA software tools that will be used during the course. Either you can install them locally on your own computer or get access to a preconfigured server from IHP. Here is a short description of the three options:
 
