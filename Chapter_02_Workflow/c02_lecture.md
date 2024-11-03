@@ -3,7 +3,9 @@ title: "Chapter 02 Lecture"
 subtitle: "OpenROAD Workflow"
 author: "Thorsten Knoll"
 aspectratio: 169
-theme: "CambridgeUS"
+theme: "AnnArbor"
+colortheme: "crane"
+fonttheme: "professionalfonts"
 logo: icons/lecture.jpg
 date:
 section-titles: false

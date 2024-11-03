@@ -4,6 +4,8 @@ subtitle: "OpenROAD first run"
 author: "Thorsten Knoll"
 aspectratio: 169
 theme: "CambridgeUS"
+colortheme: "rose"
+fonttheme: "professionalfonts"
 logo: icons/training.jpg
 date:
 section-titles: false

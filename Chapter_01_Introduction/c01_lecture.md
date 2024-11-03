@@ -3,7 +3,9 @@ title: "Chapter 01 Lecture"
 subtitle: "Introduction"
 author: "Thorsten Knoll"
 aspectratio: 169
-theme: "CambridgeUS"
+theme: "AnnArbor"
+colortheme: "crane"
+fonttheme: "professionalfonts"
 logo: icons/lecture.jpg
 date:
 section-titles: false
@@ -16,7 +18,23 @@ toc: true
 
 ### Trainer profile
 
+#### Name, Company / Uni
+
+#### Why i'm here. My motivation.
+
+#### What i've done before.
+
+#### What interests me most.
+
 ### Participants backgrounds and motivations
+
+##### Name, Company / Uni
+
+##### Why i'm here. My motivation.
+
+##### What i've done before.
+
+##### What interests me most.
 
 ## Course components
 
@@ -42,19 +60,22 @@ toc: true
 ### Chapters
 
 ### Lectures
-![Icon lecture](pics_lecture/lecture.jpg)
+![](pics_lecture/lecture.jpg)
 
 ### Trainings
-![Icon training](pics_lecture/training.jpg)
-![Icon common](pics_lecture/common.jpg)
-![Icon advanced](pics_lecture/advanced.jpg)
-![Icon bonus](pics_lecture/bonus.jpg)
+![](pics_lecture/training.jpg)
+
+![](pics_lecture/common.jpg)
+
+![](pics_lecture/advanced.jpg)
+
+![](pics_lecture/bonus.jpg)
 
 ### Cheat Sheets
-![Icon cheatsheet](pics_lecture/cheatsheet.jpg)
+![](pics_lecture/cheatsheet.jpg)
 
 ### Questions
-![Icon questions](pics_lecture/questions.jpg)
+![](pics_lecture/questions.jpg)
 The questions are meant for re-visiting and remembering a previous chapter. 
 They should be a guide for an interactive session between the trainer and the room:
 * Trainer: The trainer asks the questions.
@@ -81,10 +102,23 @@ They should be a guide for an interactive session between the trainer and the ro
 - Follow in your own tempo. Get all the data here:
 - Link / QR to the course materials
 
-## Open-source EDA for digital designs:
+## Open-source EDA for digital designs
+
+### From Design to Microchip
 ![Microchip Creation](pics_lecture/rtl_to_gds.png)
+
+### RTL to GDS - Workflow
 ![RTL 2 GDS and this course](pics_lecture/rtl_to_gds_1.png)
 
+### The cheatsheet
+First usage of the cheatsheet:
+
+- EDA
+- RTL
+- GDS II
+- ....
+
+### Further topics
 * What is the new thing with this course?
 * Advantages of open-source in EDA
 * The actual state of open-source EDA

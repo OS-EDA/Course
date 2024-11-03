@@ -3,7 +3,9 @@ title: "Chapter 05 Lecture"
 subtitle: "Process Design Kit (PDK) Examination"
 author: "Thorsten Knoll"
 aspectratio: 169
-theme: "CambridgeUS"
+theme: "AnnArbor"
+colortheme: "crane"
+fonttheme: "professionalfonts"
 logo: icons/lecture.jpg
 date:
 section-titles: false
