@@ -18,12 +18,39 @@ An interactive session for welcoming and warm-up starts the course. The particip
 * Trainer profile
 * Participants backgrounds and motivations
 
+## Columms example
+::: columns
+
+:::: {.column width=20%}
+
+![](pics_lecture/lecture.jpg)
+
+::::
+
+:::: {.column width=80%}
+
+- Item 1.
+- Item 2.
+- Item 3.
+
+::::
+
+:::
+
 ## Explain the categories of the course parts.
 - Chapters
+
 - Lectures
+![Icon lecture](pics_lecture/lecture.jpg)
 - Trainings
+![Icon training](pics_lecture/training.jpg)
+![Icon common](pics_lecture/common.jpg)
+![Icon advanced](pics_lecture/advanced.jpg)
+![Icon bonus](pics_lecture/bonus.jpg)
 - Cheat Sheets
+![Icon cheatsheet](pics_lecture/cheatsheet.jpg)
 - Questions
+![Icon questions](pics_lecture/questions.jpg)
 
 ## Overview of the course:
 * Table of content (Chapter names and short descriptions)
