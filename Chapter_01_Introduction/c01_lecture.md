@@ -28,6 +28,7 @@ An interactive session for welcoming and warm-up starts the course. The particip
 ## Overview of the course:
 * Table of content (Chapter names and short descriptions)
 * Schedule for the course
+![Course week](pics_lecture/course_week.png)
 
 ## The Trainings
 * Success points inbetween lectures
