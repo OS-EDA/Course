@@ -5,13 +5,13 @@ aspectratio: 169
 theme: "CambridgeUS"
 colortheme: "rose"
 fonttheme: "professionalfonts"
-logo: icons/training.jpg
+logo: icons/common.jpg
 date:
 section-titles: false
 toc: true
 ---
 
-# Chapter 04 - OpenROAD first run - TRAINING
+# Chapter 04 - OpenROAD first run - TRAINING - Common
 
 ## Start the first run
 
@@ -23,14 +23,18 @@ toc: true
 * Edit the Makefile:
     * Uncomment the line with your choosen DESIGN_CONFIG from ihp-sg13g2.
     For example the gcd design:
+
         ```
         DESIGN_CONFIG=./designs/ihp-sg13g2/gcd/config.mk
         ```
+
     * Re-comment the previous uncommented line with DESIGN_CONFIG.
     For example the gcd on SKY130 design:
+
         ```
         # DESIGN_CONFIG=./designs/asap7/gcd/config.mk
         ```
+        
     * The line with the default design does not need to be commented. This only applies when no previous line with DESIGN_CONFIG is set.
 
 
