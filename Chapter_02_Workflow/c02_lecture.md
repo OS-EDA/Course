@@ -1,7 +1,6 @@
 ---
 title: "Chapter 02 Lecture"
-subtitle: "OpenROAD Workflow"
-author: "Thorsten Knoll"
+author: "Course authors (Git file)"
 aspectratio: 169
 theme: "AnnArbor"
 colortheme: "crane"
@@ -12,12 +11,12 @@ section-titles: false
 toc: true
 ---
 
-## OpenROAD flow 
+# Chapter 2 - OpenROAD workflow 
 
-### Flow steps
+## Flow steps
 
 ![OpenROAD flow 1](pics_lecture/flow_01.png "OpenROAD flow 1")
 
-### Flow components
+## Flow components
 
 ![OpenROAD flow 2](pics_lecture/flow_02.png "OpenROAD flow 2")

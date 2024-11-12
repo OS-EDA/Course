@@ -1,16 +1,17 @@
 ---
 title: "Chapter 05 Training"
-subtitle: "Process Design Kit (PDK) Examination"
 author: "Course authors (Git file)"
 aspectratio: 169
 theme: "CambridgeUS"
 colortheme: "rose"
 fonttheme: "professionalfonts"
-logo: icons/training.jpg
+logo: icons/common.jpg
 date:
 section-titles: false
 toc: true
 ---
+
+# Chapter 5 - PDK Examination - TRAINING - Common
 
 ## 1. Open Klayout
 
@@ -79,50 +80,3 @@ toc: true
 ### 6. Pick a cell
 
 ![Single cell](pics_training/06_klayout.png "Single cell")
-
-## 7. Bonus: Matchmaking a cell
-
-* Here is a 3D rendering of a standard cell (Insert name? Or find name?)
-* ToDo: Insert cell picture
-* Can you identify the layers and their order from the cell?
-
-### 7. Bonus: Matchmaking a cell
-
-ToDo.
-
-## 8. Bonus (Advanced): Transistor count
-
-* Load the gds of the standard cell AND4_1.
-* How many transistors are in the cell?
-* How to verify this with the use of another file from the PDK?
-
-### 8. Bonus (Advanced): Transistor count
-
-![AND4_1](pics_training/08_klayout.png "AND4_1")
-
-### 8. Bonus (Advanced): Transistor count
-
-File: sg13g2_sdtcell.cdl
-
-```
-************************************************************************
-* Library Name: sg13g2_stdcell
-* Cell Name:    sg13g2_and4_1
-* View Name:    schematic
-************************************************************************
-
-.SUBCKT sg13g2_and4_1 A B C D VDD VSS X
-*.PININFO A:I B:I C:I D:I X:O VDD:B VSS:B
-MN4 net17 D VSS VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
-MN3 net16 C net17 VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
-MN2 net15 B net16 VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
-MN1 net1 A net15 VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
-MN0 X net1 VSS VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
-MP0 net1 A VDD VDD sg13_lv_pmos m=1 w=840.00n l=130.00n ng=1
-MP4 X net1 VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
-MP3 net1 D VDD VDD sg13_lv_pmos m=1 w=840.00n l=130.00n ng=1
-MP2 net1 C VDD VDD sg13_lv_pmos m=1 w=840.00n l=130.00n ng=1
-MP1 net1 B VDD VDD sg13_lv_pmos m=1 w=840.00n l=130.00n ng=1
-.ENDS
-```
-

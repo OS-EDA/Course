@@ -1,7 +1,6 @@
 ---
 title: "Chapter 05 Lecture"
-subtitle: "Process Design Kit (PDK) Examination"
-author: "Thorsten Knoll"
+author: "Course authors (Git file)"
 aspectratio: 169
 theme: "AnnArbor"
 colortheme: "crane"
@@ -12,27 +11,29 @@ section-titles: false
 toc: true
 ---
 
-# What is a PDK?
+# Chapter 5 - Process Design Kit (PDK) Examination
 
-## Wikipedia definition
+## What is a PDK? 
+
+### Wikipedia definition
 __A process design kit (PDK)__ is a set of files used within the semiconductor industry to model a fabrication process for the design tools used to design an integrated circuit. The PDK is created by the foundry defining a certain technology variation for their processes. ... 
 
 ... The designers use the PDK to design, simulate, draw and verify the design before handing the design back to the foundry to produce chips. The data in the PDK is specific to the foundry's process variation and is chosen early in the design process, influenced by the market requirements for the chip. An accurate PDK will increase the chances of first-pass successful silicon.
 
 Source: [https://en.wikipedia.org/wiki/Process_design_kit](https://en.wikipedia.org/wiki/Process_design_kit)
 
-## Open-source viewpoint
+### Open-source viewpoint
 ToDo: 
 Image of the border between development and production
 
-## In the context of this course
+### In the context of this course
 
-# Open-Source PDK and GitHub
+## Open-Source PDK and GitHub
 
-## Difference from closed source
+### Difference from closed source
 With publishing a PDK under a open-source license, the development from there on becomes a worldwide visible joint effort. The number of contributors and authors of the PDK can only increase from here on. 
 
-## Collaborative workflow in GitHub
+### Collaborative workflow in GitHub
 Some of the main principles of open-source are the permissions to use, study, change and re-distribute the published code and data according to the license. This leads to a open collaboration in which everyone can participate.
 
 GitHub enables a workflow that was designed and build with these principles and opportunities in mind. A good starting point to explore the open collaboration in the IHP PDK are
@@ -42,41 +43,41 @@ GitHub enables a workflow that was designed and build with these principles and 
 
 The topics and discussions that you can read and study there will draw a picture of how the process of open collaboration works for the PDK.
 
-## Issues openss
+### Issues openss
 
 ![Issues open](pics_lecture/issues_open.png "Issues open")
 
-## Issues closed
+### Issues closed
 
 ![Issues clsoed](pics_lecture/issues_closed.png "Issues closed")
 
-## Pull requests closed
+### Pull requests closed
 
 ![Pull requests closed](pics_lecture/pull_requests_closed.png "Pull requests closed")
 
-## Resources for you
+### Resources for you
  
 
-## Contributing?
+### Contributing?
 Wiki
 
-# Content of the PDK ihp-sg13g2
+## Content of the PDK ihp-sg13g2
 
-## The README
+### The README
 The Readme file in the PDKs repository is the starting point for information about the content of the PDK. 
 
 [https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/README.md](https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/README.md)
 
 ![Readme](pics_lecture/readme_0.png "Readme")
 
-## Project roadmap
+### Project roadmap
 A GANTT chart of the roadmap for the open-source PDK is available under this weblink. It shows the projects timeline (2022 - 2026):
 
 [https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/roadmap/open_PDK_gantt.png](https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/roadmap/open_PDK_gantt.png)
 
 ![Gantt chart](pics_lecture/gantt_0.png "Gantt chart")
 
-## Cells in the PDK
+### Cells in the PDK
 There are four different sets of cells (or devices) in the PDK:
 
 * Base cellset with limited set of standard logic cells
@@ -90,7 +91,7 @@ There are four different sets of cells (or devices) in the PDK:
     * GDSII
 
 
-## Other data in the PDK
+### Other data in the PDK
 * KLayout tool data:
     * layer property and tech files
     * DRC rules (minimal set)
@@ -105,7 +106,7 @@ There are four different sets of cells (or devices) in the PDK:
 * MOS/HBT Measurements in MDM format
 * Project Roadmap Gantt chart
 
-## Standard cell library
+### Standard cell library
 
 ToDo:
 
@@ -113,7 +114,7 @@ ToDo:
 * Design to cells to GDS and Tapeout
 * Naming of the cells
 
-## A single cell from the library
+### A single cell from the library
 
 ToDo:
 
@@ -123,16 +124,16 @@ ToDo:
     * 3D Rederings?
 * Schematic of the cell
 
-## Layer stack
+### Layer stack
 IHP sg13g2 Layers in a picture.
 
 ![Layer stack](pics_lecture/layer_stack_0.png "Layer stack")
 
 Source: https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_process_spec.pdf
 
-# File formats
+## File formats
 
-## Cell AO21: VERILOG HDL language
+### Cell AO21: VERILOG HDL language
 ```
 // type: AO21 
 `timescale 1ns/10ps
@@ -161,7 +162,7 @@ endmodule
 `endcelldefine
 ```
 
-## Cell AO21: SPICE Netlist
+### Cell AO21: SPICE Netlist
 ```
 * Library name: sg13g2_stdcell
 * Cell name: sg13g2_a21o_1
@@ -181,7 +182,7 @@ XP3 X net1 VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
 * End of subcircuit definition.
 ```
 
-## Cell AO21: Circuit design language
+### Cell AO21: Circuit design language
 ```
 ************************************************************************
 * Library Name: sg13g2_stdcell
@@ -202,4 +203,4 @@ MP3 X net1 VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
 .ENDS
 ```
 
-# Ruleset documents
+## Ruleset documents

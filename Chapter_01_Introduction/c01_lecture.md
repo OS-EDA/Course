@@ -1,7 +1,6 @@
 ---
 title: "Chapter 01 Lecture"
-subtitle: "Introduction"
-author: "Thorsten Knoll"
+author: "Course authors (Git file)"
 aspectratio: 169
 theme: "AnnArbor"
 colortheme: "crane"
@@ -113,22 +112,110 @@ Day 3 - 5
 ## Course components
 
 ### Lectures
+::: columns
+
+:::: {.column width=15%}
+
+::::
+
+:::: {.column width=15%}
+
 ![](pics_lecture/lecture.png)
 
+::::
+
+:::: {.column width=70%}
+#####
+Lectures:
+
+* All the chapters start with a lecture slide deck.
+* The trainer will walk you trough the content of the lectures.
+* Whenever you have a question inbetween: ask directly.
+* The lectures contain the base knowledge of the course.
+
+::::
+
+:::
+
+
+
 ### Trainings
-![](pics_lecture/training.png)
+
+::: columns
+
+:::: {.column width=10%}
+
+::::
+
+:::: {.column width=10%}
 
 ![](pics_lecture/common.png)
 
+::::
+
+:::: {.column width=80%}
+#####
+Common training tasks:
+
+Every training sessions starts with the common part. The tasks of the common part are sufficient to follow along the content of the course. If you're a beginner, these trainings should be your goal to reach.
+
+::::
+
+:::
+
+::: columns
+
+:::: {.column width=10%}
+
+::::
+
+:::: {.column width=10%}
+
 ![](pics_lecture/advanced.png)
 
+::::
+
+:::: {.column width=80%}
+#####
+Advanced training tasks:
+
+The advanced training sessions are for those With pre knowledge. If the common training was finished fast or was just to easy, the advanced sessions get you convered. 
+
+::::
+
+:::
+
+::: columns
+
+:::: {.column width=10%}
+
+::::
+
+:::: {.column width=10%}
+
 ![](pics_lecture/bonus.png)
+
+::::
+
+:::: {.column width=80%}
+#####
+Bonus training tasks:
+
+Still time left to do some tasks? Want something to take with you as homework? Please enjoy the bonus rounds of the training sessions.
+
+::::
+
+:::
 
 ### Cheat Sheets
 
 ::: columns
 
-:::: {.column width=30%}
+:::: {.column width=15%}
+
+::::
+
+:::: {.column width=15%}
 
 ![](pics_lecture/cheatsheet.png)
 
@@ -140,6 +227,8 @@ Some things are really hard to remember:
 
 * Abbreviations 
 * Complex relations and graphics
+* EDA tools workflow
+* Schedule of the week
 * Mathematics (joking, wer're not doing math here)
 * ...
 
@@ -155,7 +244,21 @@ Some things are really hard to remember:
 * You should have them nearby the computer during the course.
 
 ### Questions
+::: columns
+
+:::: {.column width=15%}
+
+::::
+
+:::: {.column width=85%}
+
 ![](pics_lecture/questions.png)
+
+::::
+
+:::
+
+Questions:
 
 * The questions are for re-visiting and remembering a previous chapter. 
 * They guide an interactive session between the trainer and the room:

@@ -1,22 +1,19 @@
 ---
 title: "Chapter 03 Lecture"
-subtitle: "Design and example pick"
-author: "Thorsten Knoll"
+author: "Course authors (Git file)"
 aspectratio: 169
 theme: "AnnArbor"
 colortheme: "crane"
 fonttheme: "professionalfonts"
 logo: icons/lecture.jpg
 date:
-section-titles: false
+section-titles: true
 toc: true
 ---
 
-# Examples
-## Openroad GUI
-```
-openroad -gui
-```
+# Chapter 3 - Design and example pick
+
+## Example pick
 
 ### Example: gcd (from the OpenROAD-flow-script examples)
 ![GDS gcd](pics_lecture/gds_gcd.png "GDS from gcd example")

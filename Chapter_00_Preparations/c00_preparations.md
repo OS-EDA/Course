@@ -1,7 +1,7 @@
 ---
 title: "Preparations"
 subtitle: "Before the course (Optional)"
-author: "Thorsten Knoll"
+author: "Course authors (Git file)"
 aspectratio: 169
 theme: "CambridgeUS"
 colortheme: "rose"

@@ -95,6 +95,7 @@ pandoc -s \
     --output=build/c03_training.pdf \
     --slide-level 2 \
     --shift-heading-level=-1 \
+    --listings \
     --toc \
     --columns=50 \
     -f "$SOURCE_FORMAT" \
@@ -108,6 +109,7 @@ pandoc -s \
     --output=build/c04_training.pdf \
     --slide-level 2 \
     --shift-heading-level=-1 \
+    --listings \
     --toc \
     --columns=50 \
     -f "$SOURCE_FORMAT" \
@@ -118,15 +120,43 @@ pandoc -s \
 
 pandoc -s \
     --verbose \
-    --output=build/c05_training.pdf \
+    --output=build/c05_training_common.pdf \
     --slide-level 2 \
     --shift-heading-level=-1 \
+    --listings \
     --toc \
     --columns=50 \
     -f "$SOURCE_FORMAT" \
     --template pandoc/templates/default_mod.latex \
     -t beamer \
     --from=markdown+rebase_relative_paths \
-    Chapter_05_PDK_Examination/c05_training.md 
+    Chapter_05_PDK_Examination/c05_training_common.md 
 
+pandoc -s \
+    --verbose \
+    --output=build/c05_training_advanced.pdf \
+    --slide-level 2 \
+    --shift-heading-level=-1 \
+    --listings \
+    --toc \
+    --columns=50 \
+    -f "$SOURCE_FORMAT" \
+    --template pandoc/templates/default_mod.latex \
+    -t beamer \
+    --from=markdown+rebase_relative_paths \
+    Chapter_05_PDK_Examination/c05_training_advanced.md 
+
+pandoc -s \
+    --verbose \
+    --output=build/c05_training_bonus.pdf \
+    --slide-level 2 \
+    --shift-heading-level=-1 \
+    --listings \
+    --toc \
+    --columns=50 \
+    -f "$SOURCE_FORMAT" \
+    --template pandoc/templates/default_mod.latex \
+    -t beamer \
+    --from=markdown+rebase_relative_paths \
+    Chapter_05_PDK_Examination/c05_training_bonus.md 
 

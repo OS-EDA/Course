@@ -1,7 +1,6 @@
 ---
 title: "Chapter 04 Training"
-subtitle: "OpenROAD first run"
-author: "Thorsten Knoll"
+author: "Course authors (Git file)"
 aspectratio: 169
 theme: "CambridgeUS"
 colortheme: "rose"
@@ -13,8 +12,14 @@ toc: true
 ---
 
 # Chapter 04 - OpenROAD first run - TRAINING
-* One of the options of chapter 00 is needed.
+
+## Start the first run
+
+### EDA tools
+* One of the options of chapter 0 (preparations) is needed.
 * Navigate to the ```/flow``` folder
+
+### Enable the design in the Makefile
 * Edit the Makefile:
     * Uncomment the line with your choosen DESIGN_CONFIG from ihp-sg13g2.
     For example the gcd design:
@@ -28,7 +33,11 @@ toc: true
         ```
     * The line with the default design does not need to be commented. This only applies when no previous line with DESIGN_CONFIG is set.
 
+
+### Run the flowscript
 * Run ```make``` from inside the ```/flow``` folder.
+
+### Success
 * The choosen design should finish after a while and a lot of console output with a table (time/memory) like this:
 ```
 Log                            Elapsed seconds Peak Memory/MB
