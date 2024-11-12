@@ -7,36 +7,36 @@ theme: "CambridgeUS"
 colortheme: "rose"
 fonttheme: "professionalfonts"
 date:
-section-titles: false
+section-titles: true
 toc: true
 ---
 
-# Preparations - Before the course (Optional)
+# Chapter 0 - Preparations
 
 ## Description
-Before the course starts, you can take some optional preparations regarding the EDA software tools that will be used during the course. Either you can install them locally on your own computer or get access to a preconfigured server from IHP. 
+Before the course starts, you can take some optional preparations regarding the open-source EDA software tools that will be used during the course. Either you can install them locally on your own computer or get access to a preconfigured server from IHP. 
 
 Here comes a short description of the three options, followed by their detailed guides:
 
-### Option 1: OpenROAD Flow Scripts (ORFS) on your computer
+### Option A: OpenROAD Flow Scripts (ORFS) on your computer
 * A plain installation of OpenROAD, Yosys, Klayout and some flow scripts into your system. 
 * This option puts everything directly under your control and only installs the minimum toolset neccessary for the course. 
 * It requires the permissions to install software on your computer. 
 * The guide makes use of Ubuntu Linux.
 
-### Option 2: IIC-OSIC-TOOLS in a docker container on your computer 
+### Option B: IIC-OSIC-TOOLS in a docker container on your computer 
 * This docker container is like a swiss knife for EDA tools. It can be configured in many ways and contains a lot of useful tools. 
 * All the tools for the course are in it. 
 * It requires the permissions to install software on your computer. 
 * The guide makes use of Ubuntu Linux.
 
-### Option 3: IHP server with installed tools 
+### Option C: IHP server with installed tools 
 * Working on the IHP server is the more convenient approach and does not require to install anything on your computer. 
 * The tools are ready to use installed on the IHP server. 
 * A permanent connnection to the server is needed (reliable internet connection). 
 * This option will work on various computers and operating systems (Linux/Win/Mac).
 
-## Option 1: OpenROAD Flow Scripts (ORFS) on your computer 
+## Install Option A: OpenROAD Flow Scripts (ORFS) on your computer 
 * This guide is a list of shell commands with some short explanations and weblinks. 
 * This was tested on a freshly installed Ubuntu LTS 24.04.1. 
 * The order of the commands is crucial and must not be skipped. 
@@ -55,7 +55,7 @@ Weblink for detailed information:
 ### Your install folder
 Navigate to a folder where you want the installation to reside in. The install will need some Gigabytes space.
 ```
-cd <PATH TO YOUR INSTALL FOLDER>
+cd <INSERT PATH TO YOUR INSTALL FOLDER HERE>
 ```
 
 ### Clone the ORFS repo
@@ -95,7 +95,7 @@ yosys --version
 openroad -version
 ```
 
-## Option 2: IIC-OSIC-TOOLS in a docker container on your computer
+## Install Option B: IIC-OSIC-TOOLS in a docker container on your computer
 * This guide is a list of shell commands with some short explanations and weblinks. 
 * This was tested on a freshly installed Ubuntu LTS 24.04.1. 
 * The order of the commands is crucial and must not be skipped. 
@@ -214,6 +214,7 @@ Navigate to a folder where you want the repository to be in:
 ```
 cd <INSERT PATH TO YOUR FOLDER HERE>
 ```
+###
 
 Clone the IIC-OSIC-TOOLS:
 ```
@@ -227,11 +228,16 @@ git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git
 A shell window pops up, in which the docker runs. 
 
 ### Step 6: Get the OpenROAD flow scripts
--To be written-
+* To be written
+* This should be matching to option C (IHP server)
+* Waiting on IHP information about their docker / server install.
 
-## Option 3: Guide to use an IHP server with installed EDA tools
+## Install Option C: Guide to use an IHP server with installed EDA tools
+* To be written (t.b.w)
+* Waiting on IHP information about their docker / server install.
 
 ### Ask at IHP for a login
+t.b.w.
 
 ### Getting started on the server
-
+t.b.w.

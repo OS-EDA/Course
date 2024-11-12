@@ -170,7 +170,9 @@ Some things are really hard to remember:
 ## The Training sessions
 
 ### Login at IHP
-- Onboarding for everyone to the computers
+Now:
+
+- Onboarding to the computers for everyone
 
 ### Levels
 * Success points inbetween lectures

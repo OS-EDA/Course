@@ -1,7 +1,7 @@
 ---
 title: "Chapter 05 Training"
 subtitle: "Process Design Kit (PDK) Examination"
-author: "Thorsten Knoll"
+author: "Course authors (Git file)"
 aspectratio: 169
 theme: "CambridgeUS"
 colortheme: "rose"
