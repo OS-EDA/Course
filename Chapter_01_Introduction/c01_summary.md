@@ -38,7 +38,7 @@ An interactive session for welcoming and warm-up starts the course. The particip
 
 #### Questions from the participants
 * Opportunity to ask questions about chapter 1.
-
+ 
 ## Goals
 The trainer should get known to the background and motivations of the participants.
 

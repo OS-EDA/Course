@@ -42,7 +42,7 @@ You:
 ## Course overview
 
 ### Chapter names
-
+ 
 ::: columns
 
 :::: {.column width=50%}

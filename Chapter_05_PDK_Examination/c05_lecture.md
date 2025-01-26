@@ -37,7 +37,7 @@ With publishing a PDK under a open-source license, the development from there on
 Some of the main principles of open-source are the permissions to use, study, change and re-distribute the published code and data according to the license. This leads to a open collaboration in which everyone can participate.
 
 GitHub enables a workflow that was designed and build with these principles and opportunities in mind. A good starting point to explore the open collaboration in the IHP PDK are
-
+ 
 * [Issues (open and closed)](https://github.com/IHP-GmbH/IHP-Open-PDK/issues)
 * [Pull requests (open and closed)](https://github.com/IHP-GmbH/IHP-Open-PDK/pulls)
 

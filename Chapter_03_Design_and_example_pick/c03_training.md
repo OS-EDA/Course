@@ -12,3 +12,4 @@ toc: true
 ---
 
 # Chapter 3 - Design and example pick - TRAINING
+ 

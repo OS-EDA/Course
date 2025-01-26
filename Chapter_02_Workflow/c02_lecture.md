@@ -20,3 +20,4 @@ toc: true
 ## Flow components
 
 ![OpenROAD flow 2](pics_lecture/flow_02.png "OpenROAD flow 2")
+ 
