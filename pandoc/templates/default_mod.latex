@@ -251,14 +251,14 @@ $if(listings)$
 \usepackage{listings}
 \newcommand{\passthrough}[1]{#1}
 \lstset{defaultdialect=sh}
-\lstset{framexleftmargin=0mm, frame=trBL,backgroundcolor=\color{blanchedalmond!5},numbers=left,numberstyle=\scriptsize,basicstyle=\small}
+\lstset{framexleftmargin=0mm, frame=trBL,backgroundcolor=\color{blanchedalmond!5},numbers=left,numberstyle=\scriptsize,basicstyle=\tiny}
 \lstset{aboveskip=5mm,belowskip=5mm,xleftmargin=20pt,xrightmargin=5pt}
 % \lstset{prebreak={\raisebox{0ex}[0ex][0ex]}}
 % \lstset{postbreak={\raisebox{0ex}[0ex][0ex]\space}}
 \lstset{breaklines=true,breakatwhitespace=true}
 $endif$
 $if(lhs)$
-\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\footnotesize\ttfamily}}{}
 $endif$
 $if(highlighting-macros)$
 $highlighting-macros$
