@@ -13,3 +13,22 @@ toc: true
 
 # Chapter 8 - Tapeout
 
+## Open-source Tapeout informations from IHP
+
+### Repositories
+
+### Read the docs
+
+### Github ACtions
+
+### Examples
+
+## Contribute to open-source
+
+### Contributing with Git 
+
+### The PDK
+
+### This course
+
+

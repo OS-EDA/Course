@@ -500,9 +500,9 @@ endmodule
 
 ### Synthesis result of the modulo counter
 
-In this case, next state logic and output logic are of course much more complicated:
+In this case, next state logic and output logic are of course  more complex:
 
-**TODO: Picture here**
+![Modulo Counter](pics_lecture/modulo_counter.png)
 
 ### A register file
 RISC-V processors have a register file with a special zero register. Reading always provides 0 and writing operations are ignored.
