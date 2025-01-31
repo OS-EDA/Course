@@ -11,7 +11,7 @@ section-titles: true
 toc: true
 ---
 
-# Chapter 5 - Process Design Kit (PDK) Examination
+# Chapter 5 - Process Design Kit (PDK)
 
 ## What is a PDK? 
 
