@@ -5,6 +5,8 @@ aspectratio: 169
 theme: "AnnArbor"
 colortheme: "crane"
 fonttheme: "professionalfonts"
+urlcolor: red
+linkstyle: bold
 logo: icons/lecture.png
 date:
 section-titles: true

@@ -5,6 +5,8 @@ aspectratio: 169
 theme: "CambridgeUS"
 colortheme: "rose"
 fonttheme: "professionalfonts"
+urlcolor: red
+linkstyle: bold
 logo: icons/common.jpg
 date:
 section-titles: false

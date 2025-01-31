@@ -5,6 +5,8 @@ aspectratio: 169
 theme: "AnnArbor"
 colortheme: "crane"
 fonttheme: "professionalfonts"
+urlcolor: red
+linkstyle: bold
 logo: icons/lecture.jpg
 date:
 section-titles: true
@@ -15,11 +17,22 @@ toc: true
 
 ## Open-source Tapeout informations from IHP
 
-### Repositories
+### IHP - Repositories
 
-### Read the docs
+- Open PDK: [https://github.com/IHP-GmbH/IHP-Open-PDK](https://github.com/IHP-GmbH/IHP-Open-PDK)
+- Open DesignLib: [https://github.com/IHP-GmbH/IHP-Open-DesignLib](https://github.com/IHP-GmbH/IHP-Open-DesignLib)
+- Tapeout May 2024: [https://github.com/IHP-GmbH/TO_May2024](https://github.com/IHP-GmbH/TO_May2024)
+- Tapeout Nov 2024: [https://github.com/IHP-GmbH/TO_Nov2024](https://github.com/IHP-GmbH/TO_Nov2024) 
 
-### Github ACtions
+### IHP - Read the docs
+
+- Open PDK Docu: [https://ihp-open-pdk-docs.readthedocs.io/en/latest/index.html](https://ihp-open-pdk-docs.readthedocs.io/en/latest/index.html)
+- Open DesignLib Docu: [https://ihp-open-ip.readthedocs.io/en/latest/](https://ihp-open-ip.readthedocs.io/en/latest/)
+
+### Github Actions
+
+- Tapeout Nov 2024 Actions drc.yml: [https://github.com/IHP-GmbH/TO_Nov2024/blob/main/.github/workflows/drc.yml](https://github.com/IHP-GmbH/TO_Nov2024/blob/main/.github/workflows/drc.yml)
+- Tapeout Nov 2024 Actions runs: [https://github.com/IHP-GmbH/TO_Nov2024/actions](https://github.com/IHP-GmbH/TO_Nov2024/actions)
 
 ### Examples
 
