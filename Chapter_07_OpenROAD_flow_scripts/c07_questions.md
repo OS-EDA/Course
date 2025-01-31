@@ -17,9 +17,17 @@ Recap questions for Chapter 7
 
 ### Questions
 
-1 - zzz
+Questions about:
 
-2 - zzz
+::: nonincremental
 
-3 - zzz
+- Power
+- Perfomance
+- Area
+- How to change?
+- Configuration of a design:
+  * pdk specific configs
+  * design specific configs
+- Structure of a design project in ORFS?
+
 

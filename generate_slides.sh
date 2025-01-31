@@ -461,7 +461,7 @@ pandoc -s \
 # Questions
 pandoc -s \
     --verbose \
-    --output=build/c07_questions.pdf \
+    --output=build/c08_questions.pdf \
     --slide-level 2 \
     --shift-heading-level=-1 \
     --listings \
@@ -471,4 +471,4 @@ pandoc -s \
     --template pandoc/templates/default_mod.latex \
     -t beamer \
     --from=markdown+rebase_relative_paths \
-    Chapter_07_OpenROAD_flow_scripts/c07_questions.md 
+    Chapter_08_Tapeout/c08_questions.md 

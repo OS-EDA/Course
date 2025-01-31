@@ -16,10 +16,12 @@ toc: false
 Recap questions for Chapter 6
 
 ### Questions
+::: nonincremental
 
-1 - zzz
-
-2 - zzz
-
-3 - zzz
+- Is the OR-GUI a HDL code editor?
+- Is the OR-GUI a full RTL-2-GDS graphic tool?
+- What is OR-GUI instead?
+- If you have a ready-build project (GDS), what can you do with it in OR-GUI?
+- Explain heatmaps
+- How to make better chip designs with the analysis in OR-GUI?
 

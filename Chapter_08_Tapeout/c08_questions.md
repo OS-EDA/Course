@@ -16,10 +16,12 @@ toc: false
 Recap questions for Chapter 8
 
 ### Questions
+::: nonincremental
 
-1 - zzz
-
-2 - zzz
-
-3 - zzz
-
+- How to submitt a Tepaout at IHP?
+- What parts a still in the making of ORFS to come soon?
+- Explain Sealring, IO-Cells, Filler-Cells, PDN?
+- Reference these to the designs of this course.
+- How to contribute to this course?
+- How to contribute to the PDK?
+- What to do in case you discovered an error in ORFS?

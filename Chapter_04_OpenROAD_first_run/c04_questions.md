@@ -16,10 +16,10 @@ toc: false
 Recap questions for Chapter 4
 
 ### Questions
+::: nonincremental
 
-1 - zzz
-
-2 - zzz
-
-3 - zzz
-
+- How to choose the design for a run?
+- How to do a run of ORFS?
+- What is expected for a succesfull run?
+- Name some of the steps in the console output that gets created during the run.
+- What is the content of the final table?
