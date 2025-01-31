@@ -23,6 +23,22 @@ toc: true
 
 ### Examples
 
+## DRC clean
+
+What is DRC clean?
+
+### Missing parts in the ORFS
+
+### Workarounds (example masked_aes)
+
+### Bleeding edge and getting help
+
+### To be solved soon
+
+Via pull resquests in ORFS Git repository.
+
+What is a pull request? And how to do?
+
 ## Contribute to open-source
 
 ### Contributing with Git 
