@@ -35,6 +35,11 @@ Rebuild the picture with any design!
 
 Rebuild the picture with any design!
 
+### Challenge 4
+
+![What is this?](pics_trainings/masked_aes_pins.png)
+
+Rebuild the picture with any design!
 
 
 
@@ -44,4 +49,4 @@ Rebuild the picture with any design!
 1. Ibex clocktree without most other layers (IHP PDK)
 2. Ibex power density >15 uW (IHP PDK)
 3. Ibex single clock path with all layers off, but the timing paths (IHP PDK)
-
+4. Masked aes without most metals and only pins names (IHP PDK)
