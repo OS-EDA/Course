@@ -398,7 +398,7 @@ pandoc -s \
 #Training common
 pandoc -s \
     --verbose \
-    --output=build/c07_training_common.pdf \
+    --output=build/c07_training_1_common.pdf \
     --slide-level 2 \
     --shift-heading-level=-1 \
     --listings \
@@ -408,7 +408,7 @@ pandoc -s \
     --template pandoc/templates/default_mod.latex \
     -t beamer \
     --from=markdown+rebase_relative_paths \
-    Chapter_07_OpenROAD_flow_scripts/c07_training_common.md 
+    Chapter_07_OpenROAD_flow_scripts/c07_training_1_common.md 
 
 # Questions
 pandoc -s \

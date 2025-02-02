@@ -14,3 +14,34 @@ toc: true
 ---
 
 # Chapter 6 - OpenROAD GUI - TRAINING - Common
+
+## Guess and rebuild
+
+### Challenge 1
+
+![What is this?](pics_trainings/ibex_clocktree.png)
+
+Rebuild the picture with any design!
+
+### Challenge 2
+
+![What is this?](pics_trainings/ibex_power_density.png)
+
+Rebuild the picture with any design!
+
+### Challenge 3
+
+![What is this?](pics_trainings/ibex_single_clock_path.png)
+
+Rebuild the picture with any design!
+
+
+
+
+
+### Solutions (of the challenges)
+
+1. Ibex clocktree without most other layers (IHP PDK)
+2. Ibex power density >15 uW (IHP PDK)
+3. Ibex single clock path with all layers off, but the timing paths (IHP PDK)
+
