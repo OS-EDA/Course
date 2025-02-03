@@ -112,3 +112,21 @@ Matt Venn created a page for EDA terminology:
 ![Zero to Asic Terminology [^1]](pics_lecture/za_terminology.png "Zero to ASIC Terminology page")
 
 [^1]: Source: Screenshot of the webpage.
+
+### Resources list
+
+Awesome open-source asic resources:
+
+[https://github.com/mattvenn/awesome-opensource-asic-resources](https://github.com/mattvenn/awesome-opensource-asic-resources)
+
+Zero-to-ASIC resources list:
+
+[https://www.zerotoasiccourse.com/resources/](https://www.zerotoasiccourse.com/resources/)
+
+AIC 2025 lectures by Carsten Wullf:
+
+[https://github.com/wulffern/aic2025](https://github.com/wulffern/aic2025)
+
+[https://analogicus.com/aic2025/](https://analogicus.com/aic2025/)
+
+

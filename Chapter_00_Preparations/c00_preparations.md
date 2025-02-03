@@ -233,11 +233,6 @@ A shell window pops up, in which the docker runs.
 * Waiting on IHP information about their docker / server install.
 
 ## Install Option C: Guide to use an IHP server with installed EDA tools
-* To be written (t.b.w)
-* Waiting on IHP information about their docker / server install.
-
-### Ask at IHP for a login
-t.b.w.
-
-### Getting started on the server
-t.b.w.
+* This option is still in development.
+* Expect updates when it is ready to use.
+* Till then it is recommended to take Option A or B.
