@@ -300,9 +300,11 @@ Now:
 - Onboarding to the computers for everyone
 
 ### Levels
-* Success points inbetween lectures
-- This is too fast
-- This is too slow
+* The Trainings should create success points inbetween lectures
+- This is going too slow for me:
+    * Try the advanced and bonus trainings (even from past chapters)
+- This keeps me busy every minnute:
+    * Stick to the common trainings. You will be able to follow all chapters then.
 
 ## Certificate
 

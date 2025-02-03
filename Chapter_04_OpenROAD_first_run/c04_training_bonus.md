@@ -15,7 +15,13 @@ toc: true
 
 # Chapter 04 - OpenROAD first run - TRAINING - Bonus
 
-## Integrate a new design into OpenROAD flowscripts
+## 1. Build the IBEX RISC-V design
+
+Build another example from the flow script designs:
+- The IBEX RISC-V example.
+- Modify and follow the steps from the common training for this task.
+
+## 2. Integrate a new design into OpenROAD flowscripts
 
 In this training session you will integrate a new design for using it with OpenROAD flowscripts.
 You can either:
