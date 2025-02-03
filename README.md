@@ -25,6 +25,8 @@ This is the recommended way.
 ### 2. Pre-build pdf slides
 
 Download pre-build slides from the build directory. 
+https://github.com/OS-EDA/Course/tree/main/build
+
 This option does not give much information about the consistency of the slide set.
 
 If you just want to have a look around or look for a single slides this is the way to go.
