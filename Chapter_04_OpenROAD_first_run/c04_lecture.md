@@ -15,10 +15,20 @@ toc: true
 
 # Chapter 04 - OpenROAD first run
 
-## Openroad GUI
-```
-openroad -gui
-```
+## Doing this chapter
+
+- This chapter is mostly a training.
+- We will try to get our first results.
+- Example projects are available.
+
+## Basic ORFS
+
+### Find the flow directory
+
+### Checking the tools
+
+### 
+
 
 ## Example pick
 

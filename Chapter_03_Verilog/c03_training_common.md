@@ -15,23 +15,29 @@ toc: true
 
 # Chapter 3 - Verilog - TRAINING - Common
 
-## LSFR
-### Analyse parts of the Verilog source
+## ORFS examples
 
-Find combinational and synchronous parts in
+### GDC example
 
-* Code 
-* Schematic
+- Find the Verilog file of the gdc example in ORSF
+- Open the Verilog file with an editor
 
-### Generate schematic and JSON
+Questions about the code:
+- What are the port definitions
+- How many inputs and outputs will the chip have?
+- Can you identify other parts of the code?
 
-Generate
-* Schematic
-* JSON
+### IBEX example
 
-### yosys  file
+- Find the top level Verilog file of the ibex example in ORSF
+- Open the top level Verilog file with an editor
 
-Read the .ys file
+Questions about the code:
+- What are the port definitions?
+- How many inputs and outputs has the top level module?
+- Can you identify other parts of the code?
+
+
 
 
 

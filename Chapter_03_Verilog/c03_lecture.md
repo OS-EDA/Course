@@ -532,11 +532,6 @@ module regfile (input clk,
 endmodule
 ```
 
-### Synthesis result of the register file
-The synthesis result is then a little more confusing:
-
-**TODO: Picture here**
-
 ## Selected feature: Parameterized counter
 The newer variants of Verilog offer an improved version of the parameter feature:
 
@@ -605,7 +600,7 @@ endmodule
 
 ### Synthesis result of the parameterized counter
 
-**TODO: Picture here**
+![Parameterized counter](pics_lecture/parameter_counter.png)
 
 ### An alternative version
 Verilog still offers a (older) possibility for the parameterization of a design:
