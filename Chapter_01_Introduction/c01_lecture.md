@@ -49,69 +49,48 @@ You:
 
 :::: {.column width=50%}
 
-* 01 Introduction
-
-* 02 Workflow
-
-* 03 Design and example pick
-
-* 04 OpenROAD first run
-
-* 05 PDK Examination
+* 1 Introduction
+* 2 OpenROAD tools
+* 3 Verilog
+* 4 OpenROAD first run
 
 ::::
 
 :::: {.column width=50%}
 
-* 06 Data in OpenROAD
-* 07 LVS and DRC
-* 08 Simulation and PPA
-* 09 Scripting
-* 10 GDS and Tapeout
+* 5 PDK
+* 6 OpenROAD GUI
+* 7 OpenROAD flow scripts
+* 8 Tapeout
 
 ::::
 
 :::
-
-### Chapter names
-
-::: columns
-
-:::: {.column width=50%}
-
-* 01 Introduction
-
-* 02 Workflow
-
-* 03 Design and example pick
-
-* 04 OpenROAD first run
-
-* 05 PDK Examination
-
-Day 1 - 2
-
-::::
-
-:::: {.column width=50%}
-
-* 06 Data in OpenROAD
-* 07 LVS and DRC
-* 08 Simulation and PPA
-* 09 Scripting
-* 10 GDS and Tapeout
-
-Day 3 - 5
-
-::::
-
-:::
-
 
 ### Schedule for the course
 ![](pics_lecture/course_week.png)
 
 ## Course components
+
+### Get the course materials here:
+
+Course materials (Release):
+
+[https://github.com/OS-EDA/Course/releases](https://github.com/OS-EDA/Course/releases)
+
+- Download the latest release
+- Unpack into a directory on your computer
+
+### Additional links:
+
+OS-EDA Github organization:
+
+[https://github.com/OS-EDA](https://github.com/OS-EDA)
+
+Course Github repository:
+
+[https://github.com/OS-EDA/Course](https://github.com/OS-EDA/Course)
+
 
 ### Lectures
 ::: columns
@@ -209,7 +188,44 @@ Still time left to do some tasks? Want something to take with you as homework? P
 
 :::
 
-### Cheat Sheets
+### Questions
+::: columns
+
+:::: {.column width=15%}
+
+::::
+
+:::: {.column width=85%}
+
+![](pics_lecture/questions.png)
+
+::::
+
+:::
+
+Questions:
+
+* The questions are for re-visiting and remembering a previous chapter. 
+* They guide an interactive session between the trainer and the room:
+    * Trainer: Asks the questions.
+    * Room: Answers the questions. 
+        * Skipping a question is fine. 
+        * Not knowing the answer is fine.
+        * This is not a test nor a challenge.
+        * Think of this as a helpfull recap of yesterdays content.
+    * If no answer is found, the trainer helps with the answer.
+
+## Feedback and Cheat Sheets
+
+- We please you to give us feedback for the course.
+- There is a short timeframe each day reserved for feedback.
+
+We have two ideas about this:
+
+1. Developing Cheatsheets together
+2. Collecting general feedback
+
+### Cheetsheats
 
 ::: columns
 
@@ -240,37 +256,41 @@ Some things are really hard to remember:
 
 #####
  
-* That is why we have Cheat Sheets.
+* That is why we would like to develop Cheat Sheets.
 * They're made for cheating the hard parts.
 * Cheatsheets work best when printed as handouts. 
-* You should have them nearby the computer during the course.
+* One can have them nearby the computer while learning.
 
-### Questions
-::: columns
+### Cheatsheet example
 
-:::: {.column width=15%}
+![Cheatsheet Chapter 1](pics_lecture/c01_cheatsheet.png)
 
-::::
+### Cheatsheet example
 
-:::: {.column width=85%}
+![Cheatsheet Chapter 5](pics_lecture/c05_cheatsheet.png)
 
-![](pics_lecture/questions.png)
+### Empty Cheatsheet printversion
 
-::::
+![Cheatsheet Chapter 5](pics_lecture/c01_cheatsheet_empty.png)
 
-:::
+### General feedback
 
-Questions:
+Genral feedback:
 
-* The questions are for re-visiting and remembering a previous chapter. 
-* They guide an interactive session between the trainer and the room:
-    * Trainer: Asks the questions.
-    * Room: Answers the questions. 
-        * Skipping a question is fine. 
-        * Not knowing the answer is fine.
-        * This is not a test nor a challenge.
-        * Think of this as a helpfull recap of yesterdays content.
-    * If no answer is found, the trainer helps with the answer.
+- The general feedback will be collected verbaly in the room. 
+- Everyone has the opportunity to give feedback
+- We will write down the feedback, without your name.
+
+### What will happen with your feedback?
+
+- We will put the feedback into Github issues.
+- Right now, think of Github issues as some sort of tracker- or ticketsystem.
+- Your feedback will not be connected to you (Anonymous).
+- You can join a public discussion in the Github issues, if you want to.
+
+Weblink to the issues of the course:
+
+[https://github.com/OS-EDA/Course/issues?q=is%3Aissue](https://github.com/OS-EDA/Course/issues?q=is%3Aissue)
 
 ## The Training sessions
 
@@ -284,9 +304,9 @@ Now:
 - This is too fast
 - This is too slow
 
-### Availablitily GitHub PDF Downloads
-- Follow in your own tempo. Get all the data here:
-- Link / QR to the course materials
+## Certificate
+
+We will explain live about the certificate of the course.
 
 ## Open-source EDA for digital designs
 
@@ -296,14 +316,6 @@ Now:
 ### RTL to GDS - Workflow
 ![](pics_lecture/rtl_to_gds_1.png)
 
-### The cheatsheet
-First usage of the cheatsheet:
-
-- EDA
-- RTL
-- GDS II
-- ....
-
 ### Further topics
 * What is the new thing with this course?
 * Advantages of open-source in EDA
@@ -312,5 +324,3 @@ First usage of the cheatsheet:
 * How to participate and interact with this course.
 * Producing chips at IHP with the open PDK 
 
-## AMA (Ask me anything)
-* Opportunity to ask questions about everything (chapter 1 ?).
