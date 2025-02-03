@@ -318,9 +318,62 @@ We will explain live about the certificate of the course.
 ### RTL to GDS - Workflow
 ![](pics_lecture/rtl_to_gds_1.png)
 
-### Further topics
-* What is the new thing with this course?
-* Advantages of open-source in EDA
+
+### Naming of RTL-to_GDS tools:
+
+The naming of the tools is confusing:
+
+- RTL-to-GDS 
+- = RTL-2-GDS 
+- = End-to-End-ASIC tools 
+- = EDA toolchain
+
+They all mean the same.
+
+### Different open-Source EDA toolchains
+
+Most known RTl-to-GDS toolchains:
+
+- [OpenLANE](https://github.com/The-OpenROAD-Project/OpenLane)
+- [OpenLANE 2](https://github.com/efabless/openlane2)
+- [Silicon Compiler](https://www.siliconcompiler.com/)
+- [Coriolis](https://github.com/lip6/coriolis)
+
+Used with IHP PDK and in this course:
+
+- [OpenROAD flow scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
+
+which is based on
+
+- [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)
+
+### A toolchain based on scripts and configuration files
+
+OpenROAD flow scripts are
+
+- based on scripts (obvious in the name)
+- based on configuration files
+
+Want most developers know from the commercial tools is:
+
+- Graphical GUIs, used with a mouse and keyboard (shortcuts).
+- Configuration through graphical masks, windows, forms.
+
+This might feel uncomfortable at the beginning.
+But it still has some advantages.
+
+## Further introductionary topics
+
+### Advantages of open-source in EDA
+* A word by Andrew Kahng (head of OpenROAD) about the relevance of open-source EDA
+
+Andrews slides from the keynote speech at the Chipdesign Network June 2024. As pptx:
+
+[https://vlsicad.ucsd.edu/NEWS24/InnovationKeynote-v6-ACTUAL-DISTRIBUTED.pptx](https://vlsicad.ucsd.edu/NEWS24/InnovationKeynote-v6-ACTUAL-DISTRIBUTED.pptx)
+
+Andrews news page with the link (scroll to june 2024)
+[https://vlsicad.ucsd.edu/](https://vlsicad.ucsd.edu/)
+
 * The actual state of open-source EDA
 * Goals of this course.
 * How to participate and interact with this course.
