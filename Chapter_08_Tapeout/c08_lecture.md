@@ -168,6 +168,19 @@ If you plan to do a Tapeout with open-source to a Shuttlerun at IHP:
 - Inform yourself about the actual changes in the tools, the PDK and the submission repositories.
 - Look for recent examples from the CoreExpert Group.
 
+### Non public and non open-source designs
+
+IMPORTANT NOTICE:
+
+- Using open-source doesn't mean you have to publish your work in open-source!
+
+With using the open-source EDA tools and the open-source IHP PDK it is possible
+
+- to design and fabricate closed source microchips at IHP.
+- to not make a design public.
+
+If you plan to do this: Talk to IHP!
+
 ## Contribute to open-source
 
 ### Contributing with Git
