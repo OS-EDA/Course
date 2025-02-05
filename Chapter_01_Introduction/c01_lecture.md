@@ -68,6 +68,7 @@ You:
 :::
 
 ### Schedule for the course
+
 ![](pics_lecture/course_week.png)
 
 ## Course components

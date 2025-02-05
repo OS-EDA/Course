@@ -57,11 +57,20 @@ The topics and discussions that you can read and study there will draw a picture
 
 ![Pull requests closed](pics_lecture/pull_requests_closed.png "Pull requests closed")
 
-### Resources for you
- 
+### License file
 
-### Contributing?
-Wiki
+The IHp open-source PDK is published with an Apache 2.0 license:
+
+[https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/LICENSE](https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/LICENSE)
+
+Apache 2.0 is a permissive open-source license. Read more about different open-source licenses here:
+
+https://choosealicense.com/licenses/
+ 
+##### 
+**Tip:**
+
+Know about the permissions, conditions and limitations of the licenses you are using for your projects! 
 
 ## Content of the PDK ihp-sg13g2
 
@@ -132,6 +141,15 @@ IHP sg13g2 Layers in a picture.
 ![Layer stack](pics_lecture/layer_stack_0.png "Layer stack")
 
 Source: https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_process_spec.pdf
+
+### Layerr table from Stefffen
+
+ToDo: Add Steffens layer table here
+
+### Picture of a cell
+
+ToDo: Insert the 3d rendering of a IHP cell from Tinytapeout.
+Try to match the layers
 
 ## File formats
 
@@ -206,3 +224,15 @@ MP3 X net1 VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
 ```
 
 ## Ruleset documents
+
+### Layout rules document
+
+[https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main/ihp-sg13g2/libs.doc/doc](https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main/ihp-sg13g2/libs.doc/doc)
+
+![Layour rules document](pics_lecture/layout_rules.png)
+
+### Process specification document
+
+[https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main/ihp-sg13g2/libs.doc/doc](https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main/ihp-sg13g2/libs.doc/doc)
+
+![Process specification](pics_lecture/process_specs.png)
