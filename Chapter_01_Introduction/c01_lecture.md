@@ -343,11 +343,11 @@ We will explain live about the certificate of the course.
 
 ### GDS: Graphic Data System (II)
 
-![GDS (Screenshot from Wikipedia [^1])](pics_lecture/gds_wikipedia.png)
+![GDS (Screenshot from Wikipedia [^2])](pics_lecture/gds_wikipedia.png)
 
-[^1]: [https://en.wikipedia.org/wiki/GDSII](https://en.wikipedia.org/wiki/GDSII)
+[^2]: [https://en.wikipedia.org/wiki/GDSII](https://en.wikipedia.org/wiki/GDSII)
 
-### The GDS II Format (Specification)
+### The GDS II Format (Specifications)
 
 Here are two links about the strcuture, format and elements of GDS II. The links are for reference reasons. It is not strictly necessary to read or learn the GDS II format for this course. But it might help understanding.
 
@@ -401,7 +401,7 @@ Want most developers know from the commercial tools is:
 This might feel uncomfortable at the beginning.
 But it still has some advantages.
 
-## Further introductionary topics
+## About open-source EDA
 
 ### Advantages of open-source in EDA
 * A word by Andrew Kahng (head of OpenROAD) about the relevance of open-source EDA
@@ -423,11 +423,112 @@ Andrews news page with the link (scroll to june 2024)
 
 - No NDAs, No licence costs, Start with a laptop and internet.
 
-### SKY130, Efabless, Google
+### What people have done with open-source EDA
 
+- The following slides contain some works that were made with open-source EDA tools and open-source PDKs. 
+- Most of this would not have been possible in closed source (because of NDAs)
+- Open-source EDA drives people to experiemnt and play with the technology.
 
-### Goals of this course.
+###
+![3d cell parts [^3]](pics_lecture/pics_os/cells_3dprint_1.png)
 
+[^3]: Picture by T.Knoll under Creative commons
+
+###
+![3d cell inverter [^4]](pics_lecture/pics_os/cells_3dprint_2.png)
+
+[^4]: Picture by T.Knoll under Creative commons
+
+###
+![3d cell AND4_1 [^5]](pics_lecture/pics_os/cells_3dprint_3.png)
+
+[^5]: Picture by T.Knoll under Creative commons
+
+###
+![inverter [^6]](pics_lecture/pics_os/inv_gdsviewer.png)
+
+[^6]: Picture by T.Knoll under Creative commons
+
+###
+![inverter [^7]](pics_lecture/pics_os/inv_layers.png)
+
+[^7]: Picture by T.Knoll under Creative commons
+
+###
+![inverter [^8]](pics_lecture/pics_os/inv_stl.png)
+
+[^8]: Picture by T.Knoll under Creative commons
+
+###
+![Maximo Borga Rendering 1 [^9]](pics_lecture/pics_os/maximo_1.png)
+
+[^9]: Picture by Maximo B. under Creative commons
+
+###
+![Maximo Borga Rendering 2 [^10]](pics_lecture/pics_os/maximo_2.png)
+
+[^10]: Picture by Maximo B. under Creative commons
+
+###
+![Maximo Borga Rendering 3 [^11]](pics_lecture/pics_os/maximo_3.png)
+
+[^11]: Picture by Maximo B. under Creative commons
+
+###
+![Maximo Borga Rendering 4 [^12]](pics_lecture/pics_os/maximo_4.png)
+
+[^12]: Picture by Maximo B. under Creative commons
+
+###
+![Tinytapeout GDS [^13]](pics_lecture/pics_os/tinytapeout_gds.png)
+
+[^13]: Picture by T.Knoll under Creative commons
+
+###
+![Webviewer Tinytapeout zoomed out [^14]](pics_lecture/pics_os/webviewer_1.png)
+
+[^14]: Picture by T.Knoll under Creative commons
+
+###
+![Webviewer Tinytapeout zoomed in [^15]](pics_lecture/pics_os/webviewer_2.png)
+
+[^15]: Picture by T.Knoll under Creative commons
+
+###
+![Webviewer Tinytapeout single cell [^16]](pics_lecture/pics_os/webviewer_3.png)
+
+[^16]: Picture by T.Knoll under Creative commons
+
+### Webviewer of Tinytapout designs with the IHP PDK
+
+See a TinyTapeout design (GVA clock by Matt Venn) in a 3D viewer:
+
+[https://tinytapeout.com/runs/ttihp0p2/tt_um_vga_clock](https://tinytapeout.com/runs/ttihp0p2/tt_um_vga_clock)
+
+It is made with the IHP open-source PDK.
+
+### Siliwiz - How do semiconductors work?
+
+Play with Siliwiz or take the lessons:
+
+[https://tinytapeout.com/runs/ttihp0p2/tt_um_vga_clock](https://tinytapeout.com/runs/ttihp0p2/tt_um_vga_clock)
 
 ### A few words about open-source in general
+
+Wikipedia: Open-source
+
+[https://en.wikipedia.org/wiki/Open_source](https://en.wikipedia.org/wiki/Open_source)
+
+Wikipedia: Open-source software
+
+[https://en.wikipedia.org/wiki/Open-source_software](https://en.wikipedia.org/wiki/Open-source_software)
+
+Wikipedia: Open-source hardware
+
+[https://en.wikipedia.org/wiki/Open-source_hardware](https://en.wikipedia.org/wiki/Open-source_hardware)
+
+Questions:
+
+- Do you see the differences in the terminologies?
+- Where should the article about the content of this course be in?
 
