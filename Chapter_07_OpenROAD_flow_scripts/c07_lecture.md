@@ -87,31 +87,35 @@ We have to:
 - Where to find?
 - How to read?
 
-##### Training Logs
+##### Training: Design logs
 
-Training Logs
+Training: Design logs
 
 ### Results
 
 - Where to find?
 - How to read?
 
-#### Training Results
+#### Training: Design results
 
-Training Results
+Training: Design results
 
 ### Reports
 
 - Where to find?
 - How to read?
 
-##### Training Reports
+##### Training: Design reports
 
-Training Reports
+Training: Design reports
 
 ## Design config variables
 
 - Where to find?
 - How to change?
 - See the changes in the design data
+
+##### Training: Changing the density
+
+Training: Changing the density
 

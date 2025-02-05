@@ -2,8 +2,14 @@
 Home of the open-source EDA course.
 Development of this course is funded by a public German
 project `FMD-QNC (16ME083): https://www.elektronikforschung.de/projekte/fmd-qnc  
+
 ### License
 Apache 2.0
+
+### Code of conduct
+
+There is a code of conduct for this repository. Please read it. It is the same code of conduct as in the IHP open-source PDK.
+
 
 ## Course instance: 1 Week, hands on
 ![1 week](pics/course_week.png)
