@@ -79,9 +79,10 @@ Course materials (Release):
 [https://github.com/OS-EDA/Course/releases](https://github.com/OS-EDA/Course/releases)
 
 - Download the latest release
-- Unpack into a directory on your computer
+- Unpack into a directory
+- There might be daily updates during the course week!
 
-### Additional links:
+### Additional course related links:
 
 OS-EDA Github organization:
 
@@ -91,6 +92,21 @@ Course Github repository:
 
 [https://github.com/OS-EDA/Course](https://github.com/OS-EDA/Course)
 
+### Duplicated content versus internet links
+
+The course slides
+
+- contain Links to the Internet for a lot of topics.
+- do not contain duplicated content (or as less as possible).
+
+This means:
+
+- Follow the links and read there. It is important content for the course.
+- The links are carefully curated. It's not spamming.
+- Don't expect all the content beeing duplicated into the course slides.
+
+#####
+A brief discussion about pros and cons of this.
 
 ### Lectures
 ::: columns
@@ -211,8 +227,8 @@ Questions:
     * Room: Answers the questions. 
         * Skipping a question is fine. 
         * Not knowing the answer is fine.
-        * This is not a test nor a challenge.
-        * Think of this as a helpfull recap of yesterdays content.
+        * This is not an exam, not a test and not a challenge.
+        * It is meant as a helpfull and hoepfully enjoyable way to recap yesterdays content.
     * If no answer is found, the trainer helps with the answer.
 
 ## Feedback and Cheat Sheets
@@ -225,7 +241,7 @@ We have two ideas about this:
 1. Developing Cheatsheets together
 2. Collecting general feedback
 
-### Cheetsheats
+### Cheetsheets
 
 ::: columns
 
@@ -256,7 +272,7 @@ Some things are really hard to remember:
 
 #####
  
-* That is why we would like to develop Cheat Sheets.
+* That is why we would like to develop Cheatsheets with you.
 * They're made for cheating the hard parts.
 * Cheatsheets work best when printed as handouts. 
 * One can have them nearby the computer while learning.
@@ -295,7 +311,6 @@ Weblink to the issues of the course:
 ## The Training sessions
 
 ### Login at IHP
-Now:
 
 - Onboarding to the computers for everyone
 
@@ -312,27 +327,51 @@ We will explain live about the certificate of the course.
 
 ## Open-source EDA for digital designs
 
-### From Design to Microchip
+### From design to microchip
 ![](pics_lecture/rtl_to_gds.png)
 
-### RTL to GDS - Workflow
+### RTL to GDS toolchain
 ![](pics_lecture/rtl_to_gds_1.png)
 
 
-### Naming of RTL-to_GDS tools:
+### RTL: Register Transfer Level
+
+![RTL (Screenshot from Wikipedia [^1])](pics_lecture/rtl_wikipedia.png)
+
+[^1]: [https://en.wikipedia.org/wiki/Register-transfer_level](https://en.wikipedia.org/wiki/Register-transfer_level)
+
+
+### GDS: Graphic Data System (II)
+
+![GDS (Screenshot from Wikipedia [^1])](pics_lecture/gds_wikipedia.png)
+
+[^1]: [https://en.wikipedia.org/wiki/GDSII](https://en.wikipedia.org/wiki/GDSII)
+
+### The GDS II Format (Specification)
+
+Here are two links about the strcuture, format and elements of GDS II. The links are for reference reasons. It is not strictly necessary to read or learn the GDS II format for this course. But it might help understanding.
+
+[https://boolean.klaasholwerda.nl/interface/bnf/gdsformat.html](https://boolean.klaasholwerda.nl/interface/bnf/gdsformat.html)
+
+[https://www.rulabinsky.com/cavd/text/chapc.html](https://www.rulabinsky.com/cavd/text/chapc.html)
+
+### Naming of RTL-to-GDS tools:
 
 The naming of the tools is confusing:
 
 - RTL-to-GDS 
 - = RTL-2-GDS 
 - = End-to-End-ASIC tools 
-- = EDA toolchain
+- = End-to-End EDA toolchain
 
 They all mean the same.
 
-### Different open-Source EDA toolchains
+### In this course: ORFS - OpenROAD flow scripts
+![](pics_lecture/rtl_to_gds_2.png)
 
-Most known RTl-to-GDS toolchains:
+### Many open-Source RTL-to-GDS toolchains
+
+Most known RTL-to-GDS toolchains:
 
 - [OpenLANE](https://github.com/The-OpenROAD-Project/OpenLane)
 - [OpenLANE 2](https://github.com/efabless/openlane2)
@@ -374,8 +413,21 @@ Andrews slides from the keynote speech at the Chipdesign Network June 2024. As p
 Andrews news page with the link (scroll to june 2024)
 [https://vlsicad.ucsd.edu/](https://vlsicad.ucsd.edu/)
 
-* The actual state of open-source EDA
-* Goals of this course.
-* How to participate and interact with this course.
-* Producing chips at IHP with the open PDK 
+### Some aspects of open-source EDA
+
+- Three well known PDKs are open-source and production-ready.
+- Some other open-source PDKs are not that visible or prominent (MiniFab, Pragmatic(soon?), ...)
+- More then one RTL-to-GDS toolchain is production tested.
+- Academia starts teaching a lot with open-source EDA.
+- Building microchips with open-source became easy and affordable.
+
+- No NDAs, No licence costs, Start with a laptop and internet.
+
+### SKY130, Efabless, Google
+
+
+### Goals of this course.
+
+
+### A few words about open-source in general
 

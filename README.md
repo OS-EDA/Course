@@ -10,7 +10,6 @@ Apache 2.0
 
 There is a code of conduct for this repository. Please read it. It is the same code of conduct as in the IHP open-source PDK.
 
-
 ## Course instance: 1 Week, hands on
 ![1 week](pics/course_week.png)
 
