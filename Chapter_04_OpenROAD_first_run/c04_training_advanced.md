@@ -17,8 +17,6 @@ toc: true
 
 ## Build an external example
 
-
-
 ### EDA tools
 * One of the options of chapter 0 (preparations) is needed.
 * Navigate to the ```/flow``` folder
@@ -34,8 +32,6 @@ In a nutshell (clone via https):
 ```
 git clone https://github.com/HEP-Alliance/masked-aes-tapeout.git <ORFS-Root>/flow/designs/ihp-sg13g2/masked_aes
 ```
-
- 
 
 ### Enable the design in the Makefile
 * Edit the Makefile:
@@ -67,3 +63,4 @@ Log                            Elapsed seconds Peak Memory/MB
 ```
 
 CONGRATS! Your design got build to a GDS!
+

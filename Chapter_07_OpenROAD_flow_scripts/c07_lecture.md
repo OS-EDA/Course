@@ -21,16 +21,18 @@ toc: true
 What happend on the way to here:
 
 - GDS-2-RTL: OpenROAD
-- OpenROAD flow scripts (ORFS)
+- OpenROAD flow scripts (ORFS) overview
 - ORFS flow steps and flow components
 - First run of the flow scripts
+- A Dive into the PDK (Klayout)
 - Analysing: Heatmaps and more (ORFS GUI)
-- A Dive into the PDK
 
 ### This chapter
+
 NOW:
 
-Make your design better.
+- One day of using ORFS
+- Getting a hands on with important data and features.
 
 ### Idea of today
 
@@ -44,10 +46,72 @@ The ORFS online-tutorial was not written for the use with the IHP PDK especially
 
 ![ORFS Online Tutorial](pics_lecture/orfs_intro.png)
 
-## The features of ORFS
+### Lecture and trainings more interactive
 
-### 
+### Caveats
 
-### Design config variables (some)
+- ORFS does not handle multiple runs for a single design.
+- The design run must be cleared with make clear_all, before a new runs can be started.
+- !!! The previous data from the previous run will be lost. 
 
+Side feature:
+
+- A run can start over where you left it.
+
+My opinion:
+
+- Both should be possible:
+    * Kkeep data 
+    * Start over where left behind
+
+But it is not.
+
+### Workaround for this
+
+We have to:
+
+- Manully save the previous data.
+- Maybe just be renaming the directory.
+- make gui_final only works on the actual design data.
+
+##### Training: Multiple design runs
+
+## The tools in ORFS
+
+## Structure of flow directories
+
+## Important data locations
+
+### Logs
+
+- Where to find?
+- How to read?
+
+##### Training Logs
+
+Training Logs
+
+### Results
+
+- Where to find?
+- How to read?
+
+#### Training Results
+
+Training Results
+
+### Reports
+
+- Where to find?
+- How to read?
+
+##### Training Reports
+
+Training Reports
+
+## Design config variables
+
+- Where to find?
+- How to change?
+- See the changes in the design data
 
