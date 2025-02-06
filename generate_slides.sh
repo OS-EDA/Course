@@ -62,6 +62,34 @@ pandoc -s \
     --from=markdown+rebase_relative_paths \
     Chapter_01_Introduction/c01_training_common.md 
 
+pandoc -s \
+    --verbose \
+    --output=build/c01_training_advanced.pdf \
+    --slide-level 2 \
+    --shift-heading-level=-1 \
+    --listings \
+    --toc \
+    --columns=50 \
+    -f "$SOURCE_FORMAT" \
+    --template pandoc/templates/default_mod.latex \
+    -t beamer \
+    --from=markdown+rebase_relative_paths \
+    Chapter_01_Introduction/c01_training_advanced.md 
+
+pandoc -s \
+    --verbose \
+    --output=build/c01_training_bonus.pdf \
+    --slide-level 2 \
+    --shift-heading-level=-1 \
+    --listings \
+    --toc \
+    --columns=50 \
+    -f "$SOURCE_FORMAT" \
+    --template pandoc/templates/default_mod.latex \
+    -t beamer \
+    --from=markdown+rebase_relative_paths \
+    Chapter_01_Introduction/c01_training_bonus.md 
+
 # Questions
 pandoc -s \
     --verbose \

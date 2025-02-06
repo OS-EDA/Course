@@ -25,9 +25,9 @@ The PC environment for the course will be provied by IHP.
 
 ### Connect to the IHP server
 
-Follow these steps:
+##### Follow these steps:
 
-1. Open ThinLinc on the host PC
+1. Open ThinLinc on the host PC (Windows?)
 2. Connect with the login data, given to you by IHP
 3. Ubuntu with Gnome desktop should start in ThinLinc
 4. Make it fullscreen
@@ -38,11 +38,11 @@ Follow these steps:
 - Please ask if there is questions!
 - We`ll try to do this for all participants first, before proceeding to the next steps of the training.
 
-## First lookaround in Gnome
+## GNOME desktop: First lookaround
 
 ### Search, start and close programs
 
-Create and save a textfile:
+##### Create and save a textfile:
 
 1. Search for a texteditor (gedit)
 2. Open gedit
@@ -53,16 +53,18 @@ Create and save a textfile:
 
 ### Tab-switching between programs
 
-Tab-switch between opened programs:
+##### Tab-switch between opened programs:
 
 1. Search and open at least three different programs (office, gedit, document viewer?)
 2. Tab between the programs (with ALT+TAB on the keyboard)
 3. It is a circle. After three Tabs you should be at the first again.
 4. Close all programs
 
-## Load the course data
+## The course data
 
 ### Download and unpack
+
+#### Get the course data
 
 - Get the latest release download package:
 
@@ -75,6 +77,24 @@ Tab-switch between opened programs:
 ### Look around in the course data
 
 ![Course directory structure](pics_lecture/coursed_repo_structure.png)
+
+### The chapters and slides
+
+You will find the slides in the ```build``` dirctory.
+
+- If sorted alphabetical, it makes most sense.
+- C0X is the chapter number.
+- In each chapter:
+    * Start with the lecture
+    * Cheasheet (if available) is a single slide
+    * Trainnings in the order commcon, advanced and bonus
+    * Questions are for the next day (mornings)
+
+##### Task:
+
+- Examine the ```build``` directory. 
+- Open and close some of the pdf files.
+- Become comfortable with the course structure.
 
 ### Links from the slides
 
@@ -100,22 +120,77 @@ Suggestions or Options:
 
 ## Linux shell
 
-### Short commandlist of a linux shell
+### Short commandl ist of a linux shell
 
 - ```ls``` (list content of directory)
-- ```ls -al``` (list with more information)
+- ```ls -al``` (list with option for more information)
 - ```cd``` directoryname (change to directory)
 - ```cd ..``` (change to upper directory)
 - ```mkdir``` (make directory)
 - ```touch``` (make file)
 - ```mv``` (move)
 - ```cp``` (copy)
+- ```nano``` (opens the nano file editor)
 
-If unsure how to use the commands, read the man-page:
+### Man pages
+
+If unsure how to use a command, read the man-page:
 
 ```
 man <command>
 ```
+
+##### Task:
+
+- Open the man pages of all the commands in the above list (last slide)
+- Find the syntax for the commands (it is given on the top of the man page)
+- What are ```OPTION```, ```SOURCE``` and ```DEST``` ? 
+- Find the definition of the option ```-al``` for the command ```ls```
+
+### IMPORTANT: Setup the environment
+
+To get ready for working with the open-source EDA tools, you must run (execute) a shell script in your shell terminal.
+
+**This is aboslutly neccessary for the rest of the course**
+
+**This must be done every time you open a shell and want to work with the tools**
+
+##### Task: Setup the linux tool environment 
+
+- Open a shell terminal
+- Run ```source /eda/or/env.sh```
+- Do this every time you open a new shell.
+- It doesn't hurt of you do it multiple times. Nothing breaks.
+- It will lead to strange behaviour and not results if it is not done.
+
+##### 
+
+You should get a message like ```copied flow directory``` or ```flow directory already there```
+
+### IMPORTANT: Check the environment
+
+- Check if the setup was successfull.
+- **Don't continue if the checks are errornous, but ask for help from the trainer**
+
+##### Task: Check the environment
+- Open a shell terminal
+- Run ```source /eda/or/env.sh```
+- See if the tools are sourced (available) with getting their versions:
+    * ```openroad -version``` should give your the version number
+    * ```yosys --version``` should give you the version number
+    * ```klayout -v``` should give you the version number
+
+### Congratulations!
+
+**Congratulations:**
+
+**You have succesfully run some of the open-source EDA tools on a linux server.**
+
+- You did run openroad, yosys and klayout.
+- They did not do much, but giving you their version numbers.
+- But it is the needed base for the rest of the course.
+
+**You are on a good way**
 
 ### Online shell tutorial
 
@@ -135,8 +210,9 @@ Again here is the tutorial that has helped me most:
 
 ### Tips and tricks
 
-- TAB for autocompletion
-- 2xTAB for all choices of autocompletion
-- Open a new terminal with the mouse:
- * Right click on an empty space in the directory window
- * Choose "open in Terminal"
+- shell: TAB for autocompletion
+- shell: 2xTAB for all choices of autocompletion
+- Open a new shell terminal with the mouse:
+    * Right click on an empty space in the directory window
+    * Choose "open in Terminal"
+
