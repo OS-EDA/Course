@@ -104,7 +104,7 @@ Kudos to this course:
 
 ### Help with the terminology
 
-Searching the terms with a standard search engine might not bring usefull results.
+Searching the terms with a standard search engine might not bring usefull results every time.
 Matt Venn created a page for EDA terminology:
 
 [https://www.zerotoasiccourse.com/terminology/](https://www.zerotoasiccourse.com/terminology/)

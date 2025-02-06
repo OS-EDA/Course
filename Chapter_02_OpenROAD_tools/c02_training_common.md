@@ -19,14 +19,32 @@ toc: true
 
 ### Browse the resources
 
-- Search all the flow steps in the resources
-- Search all the flow components in the resources
+##### Task: Review the flow terminology
+- Search for each of the flow steps
+    * Synthesis
+    * Floorplan
+    * Placement
+    * Clock Tree Synthesis
+    * Routing
+    * Finishing
+- Search for as much flow components as possible (see the components names in the diagram in the lecture slides)
+- If no result is found, try a search engine (or chatGPT).
 - Try to formulate the meaning and purpose of them in your own words.
 
-### Discuss the EDA terminology
+Matt Venns list:
 
-- Discuss the termoinology in the room, supervised by the tutor.
+[https://www.zerotoasiccourse.com/terminology/](https://www.zerotoasiccourse.com/terminology/)
 
-### What is missing?
 
-- Did you find resources that should be added?
+### Getting the words in place
+
+In the beginning it can be hard to learn all the new words and give them meaningful connections immediately.
+
+Let's try to create a timeline (or taskline) for "How to make microchips?" in a joint effort.
+
+##### Task: Create a diageram "How to make a microchip?" 
+
+- Everyone can give a keyword of the topic "How to make a microchip?"
+- We try to figure out the meaning and the position in a timeline / taskline?
+- Flipchart, Whiteboard, Texteditor?
+

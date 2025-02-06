@@ -51,9 +51,24 @@ Startpoint:
 
 - Browser the designs from the shuttle runs.
 - Find a design that looks fitting for you
-- Take exmaples with good documentation!!!
+- Only take designs with good documentation!!!
 - Find the Github repository of the design.
 - Review the documentation and the Verilog code.
 
 [https://tinytapeout.com/runs/](https://tinytapeout.com/runs/)
 
+### Next steps (roughly)
+
+After chapter 3 + 4 (Verilog and First run):
+
+- Take a pre-configured example design (gcd) as template
+- Copy the template as a new design (see ORFS tutorial)
+- Add the Verilog from the TT design
+
+After chapter 5 + 6 +7 (PDK and OpenROAD GUI):
+
+- Try to modify the rest of the new design:
+    * config files
+    * constraints
+    * Makefile
+- Give it a try: run the design
