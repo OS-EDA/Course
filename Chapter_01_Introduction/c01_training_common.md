@@ -28,10 +28,15 @@ The PC environment for the course will be provied by IHP.
 ##### Follow these steps:
 
 1. Open ThinLinc on the host PC (Windows?)
-2. Connect with the login data, given to you by IHP
-3. Ubuntu with Gnome desktop should start in ThinLinc
-4. Make it fullscreen
+2. Go to the Options and set "Fullscreen on this monitor"
+3. Connect with the login data, given to you by IHP
+4. Ubuntu with Gnome desktop should start in ThinLinc
 5. "Forget about the host system?"
+
+##### For Log out:
+
+1. Just "Log out". Don't Power Off.
+2. This will take you back to the host system.
 
 ##### Notice:
 
@@ -147,6 +152,8 @@ man <command>
 - What are ```OPTION```, ```SOURCE``` and ```DEST``` ? 
 - Find the definition of the option ```-al``` for the command ```ls```
 
+## IMPORTANT Task
+
 ### IMPORTANT: Setup the environment
 
 To get ready for working with the open-source EDA tools, you must run (execute) a shell script in your shell terminal.
@@ -158,7 +165,7 @@ To get ready for working with the open-source EDA tools, you must run (execute) 
 ##### Task: Setup the linux tool environment 
 
 - Open a shell terminal
-- Run ```source /eda/or/env.sh```
+- Run ```source /eda/or2/env.sh```
 - Do this every time you open a new shell.
 - It doesn't hurt of you do it multiple times. Nothing breaks.
 - It will lead to strange behaviour and not results if it is not done.
@@ -174,7 +181,7 @@ You should get a message like ```copied flow directory``` or ```flow directory a
 
 ##### Task: Check the environment
 - Open a shell terminal
-- Run ```source /eda/or/env.sh```
+- Run ```source /eda/or2/env.sh```
 - See if the tools are sourced (available) with getting their versions:
     * ```openroad -version``` should give your the version number
     * ```yosys --version``` should give you the version number
@@ -191,6 +198,40 @@ You should get a message like ```copied flow directory``` or ```flow directory a
 - But it is the needed base for the rest of the course.
 
 **You are on a good way**
+
+## Flow directory
+
+The last step (the important one) created a directory in your linux home directory:
+
+- The ```flow``` directory
+
+This is the most important directory for the course!
+
+### Examine the flow directory
+
+##### Task: Examine the flow directory
+
+- Open a shell terminal
+- Run ```source /eda/or2/env.sh```
+- Navigate to the ```flow``` directory as you learned before
+- List the content with ```ls -al```
+- Find:
+    * The ```Makefile```
+    * The ```/flow/designs/src``` directory. What is inside?
+    * The ```flow/designs/ihp-sg13g2``` directory. What is inside?
+
+### The Makefile
+
+##### Task: Open the Makefile
+
+- Open the Makefile in a texteditor (with gedit)
+- What is inside the Makefile?
+- What could be the meaning of 
+    * ```DESIGN_CONFIG=....```
+    * ```#DESIGN_CONFIG=----```
+- Close texteditor without changes in the Makefile
+
+## Online shell resources
 
 ### Online shell tutorial
 
