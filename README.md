@@ -1,7 +1,8 @@
-# Course
-Home of the open-source EDA course.
-Development of this course is funded by a public German
-project `FMD-QNC (16ME083): https://www.elektronikforschung.de/projekte/fmd-qnc  
+# Digital Course
+Home of the open-source EDA digital course.
+
+Development of this course is funded by a public German project FMD-QNC (16ME083):  
+https://www.elektronikforschung.de/projekte/fmd-qnc  
 
 ### License
 Apache 2.0
