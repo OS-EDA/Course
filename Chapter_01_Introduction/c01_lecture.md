@@ -290,6 +290,12 @@ Some things are really hard to remember:
 
 ![Cheatsheet Chapter 5](pics_lecture/c01_cheatsheet_empty.png)
 
+### Empty Cheatsheet document link
+
+Empty Cheatsheet OpenOffice doc:
+
+[https://github.com/OS-EDA/Course/tree/main/Chapter_01_Introduction/pics_lecture](https://github.com/OS-EDA/Course/tree/main/Chapter_01_Introduction/pics_lecture)
+
 ### General feedback
 
 Genral feedback:

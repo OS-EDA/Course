@@ -31,7 +31,6 @@ The PC environment for the course will be provied by IHP.
 2. Go to the Options and set "Fullscreen on this monitor"
 3. Connect with the login data, given to you by IHP
 4. Ubuntu with Gnome desktop should start in ThinLinc
-5. "Forget about the host system?"
 
 ##### For Log out:
 
@@ -152,15 +151,18 @@ man <command>
 - What are ```OPTION```, ```SOURCE``` and ```DEST``` ? 
 - Find the definition of the option ```-al``` for the command ```ls```
 
-## IMPORTANT Task
-
-### IMPORTANT: Setup the environment
+## IMPORTANT Tasks
 
 To get ready for working with the open-source EDA tools, you must run (execute) a shell script in your shell terminal.
 
 **This is aboslutly neccessary for the rest of the course**
 
-**This must be done every time you open a shell and want to work with the tools**
+There are two options to do this:
+
+1. Every time you open a shell and want to work with the tools
+2. Once in the bashrc 
+
+### Option 1: Source every time in the shell
 
 ##### Task: Setup the linux tool environment 
 
@@ -174,10 +176,23 @@ To get ready for working with the open-source EDA tools, you must run (execute) 
 
 You should get a message like ```copied flow directory``` or ```flow directory already there```
 
-### IMPORTANT: Check the environment
+### Option 2: Source in the bashrc
+
+##### Task: Madify .bashrc with source command
+
+- Open the file ```.bashrc``` in a texteditor. (```.bashrc``` is in your home directory)
+- At the bottom line, add the command ```source /eda/or2/env.sh```
+- Save the file and close the editor
+- In a shell terminal: reload bashrc with the command ```. ~/.bashrc```
+
+##### 
+
+You should get a message like ```copied flow directory``` or ```flow directory already there```
+
+### Check the environment
 
 - Check if the setup was successfull.
-- **Don't continue if the checks are errornous, but ask for help from the trainer**
+- **Don't continue if the following checks are errornous, but ask for help from the trainer**
 
 ##### Task: Check the environment
 - Open a shell terminal
@@ -198,6 +213,17 @@ You should get a message like ```copied flow directory``` or ```flow directory a
 - But it is the needed base for the rest of the course.
 
 **You are on a good way**
+
+### Linux Power settings
+
+By default the screen goes black after 5 minutes of idle. Additionaly the screen locks and you have to enter your password again.
+
+This is good and intended. But might be a little too annoying for the course.
+
+##### Task: Disable screen black out
+
+- Find the linux "power settings"
+- Disable the "screen black after 5 mins" or higher the value.
 
 ## Flow directory
 
