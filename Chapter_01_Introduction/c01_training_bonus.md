@@ -24,17 +24,21 @@ toc: true
 ## Do the siliwiz lessons
 
 - Doing the siliwiz lessons helps a lot to learn more about semiconductors in general.
-- In the course chapter about the open-source PDK the knowledge from Siliwiz will definatly be helpful for deeper understanding.
+- In the course chapter about the open-source PDK the knowledge from Siliwiz will definitely be helpful for deeper understanding.
 - If you want to go into analog circuit design, this might be a good start too.
 
-Here you go (Link to lesson is upper left corner):
+##### Task: Start doing the SiliWiz lessons
 
-[https://app.siliwiz.com/](https://app.siliwiz.com/)
+- Here you go (Link to lesson is upper left corner):
+
+- [https://app.siliwiz.com/](https://app.siliwiz.com/)
+
+- Come back to the lessons whenever there is free time in the course.
 
 ## Look for a tinytapeout design
 
 - In this course we have pre-configured and tested examples for the chip designs,
-- But you could try an own designs. The course trainer might not be able to guide you fully. You're mostly on your own.
+- But you could try to build an own designs. The course trainer might not be able to guide you fully. You're mostly on your own.
 
 ### What to expect
 
@@ -47,15 +51,15 @@ This idea is for:
 
 ### Where and how to start
 
-Startpoint:
+##### Task: Find a design from TinyTapeout
 
-- Browser the designs from the shuttle runs.
-- Find a design that looks fitting for you
+- [https://tinytapeout.com/runs/](https://tinytapeout.com/runs/)
+- Browse the designs from the TinyTapeout shuttle runs.
+- Look a design that looks fitting for you
 - Only take designs with good documentation!!!
 - Find the Github repository of the design.
 - Review the documentation and the Verilog code.
 
-[https://tinytapeout.com/runs/](https://tinytapeout.com/runs/)
 
 ### Next steps (roughly)
 

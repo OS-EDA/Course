@@ -17,6 +17,10 @@ toc: true
 
 ## Welcome
 
+### The next 5 days
+
+- A few words to start with.
+
 ### Trainer profile
 
 Me:
@@ -334,6 +338,19 @@ We will explain live about the certificate of the course.
 
 ## Open-source EDA for digital designs
 
+### Digital designs
+
+There are:
+
+- **Digital designs** This course!
+- Analog designs (Upcoming course)
+- Mixed signal designs
+- Artwork designs (i.e. Minimal Fab Contest)
+    * [https://github.com/mineda-support/Semicon2023-MinimalFab-Design-Contest](https://github.com/mineda-support/Semicon2023-MinimalFab-Design-Contest)
+- Your fancy design?
+
+**From now on: This course means digital design, even if not mentioned everywhere again**
+
 ### From design to microchip
 ![](pics_lecture/rtl_to_gds.png)
 
@@ -434,7 +451,7 @@ Andrews news page with the link (scroll to june 2024)
 
 - The following slides contain some works that were made with open-source EDA tools and open-source PDKs. 
 - Most of this would not have been possible in closed source (because of NDAs)
-- Open-source EDA drives people to experiemnt and play with the technology.
+- Open-source EDA drives people to experiement and play with the technology.
 
 ###
 ![3d cell parts [^3]](pics_lecture/pics_os/cells_3dprint_1.png)

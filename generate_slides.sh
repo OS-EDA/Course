@@ -138,6 +138,21 @@ pandoc -s \
     --from=markdown+rebase_relative_paths \
     Chapter_02_OpenROAD_tools/c02_training_common.md 
 
+# Training advanced
+pandoc -s \
+    --verbose \
+    --output=build/c02_training_advanced.pdf \
+    --slide-level 2 \
+    --shift-heading-level=-1 \
+    --listings \
+    --toc \
+    --columns=50 \
+    -f "$SOURCE_FORMAT" \
+    --template pandoc/templates/default_mod.latex \
+    -t beamer \
+    --from=markdown+rebase_relative_paths \
+    Chapter_02_OpenROAD_tools/c02_training_advanced.md 
+
 # Questions
 pandoc -s \
     --verbose \
