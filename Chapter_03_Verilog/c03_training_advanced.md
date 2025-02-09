@@ -15,23 +15,23 @@ toc: true
 
 # Chapter 3 - Verilog - TRAINING - Advanced
 
-## LSFR - Linear Feedback Shift Register
+## LFSR - Linear Feedback Shift Register
 
-This Trainnig makes use of the Verilog code of the Linear Feedback Shift Register (LSFR) from the lecture slides.
+This Trainnig makes use of the Verilog code of the Linear Feedback Shift Register (LFSR) from the lecture slides.
 
-### LSFR as example
+### LFSR as example
 
 ##### Task: Create directory and Verilog file
 
-- Create a new directory for the LSFR example (in your Documents dir?)
-- Create a new file ```lsfr.v``` inside that directory
-- Copy the Verilog code from the lecture slides into the file ```lsfr.v```
+- Create a new directory for the LFSR example (in your Documents dir?)
+- Create a new file ```lfsr.v``` inside that directory
+- Copy the Verilog code from the lecture slides into the file ```lfsr.v```
 
 ### Analyse parts of the Verilog source
 
 ##### Task: Identify parts in the code
 
-Find combinational and synchronous parts of the LSFR in
+Find combinational and synchronous parts of the LFSR in
 
 - the Verilog code 
 - the Schematic drawing (from the lecture slides)
@@ -54,14 +54,14 @@ Generate
 - Schematic graphic file
 - JSON Netlist
 
-from the LSFR Verilog code
+from the LFSR Verilog code
 
 ### yosys file
 
 ##### Task: Create a yosys config file .ys
 
-- Create a new and empty lsfr.ys file inside your lsfr directory, next to the Verilog file
-- Modify and use the lsfr.ys with yosys to generate the schenatic and the JSON netlist of the LSFR in one go.
+- Create a new and empty lfsr.ys file inside your lfsr directory, next to the Verilog file
+- Modify and use the lfsr.ys with yosys to generate the schenatic and the JSON netlist of the LFSR in one go.
 
 
 

@@ -17,11 +17,11 @@ toc: true
 
 ## Start the first run
 
-### EDA tools
-* One of the options of chapter 0 (preparations) is needed.
-* Navigate to the ```/flow``` folder
+### Makefile
 
-### Enable the design in the Makefile
+##### Task: Enable the design in the Makefile
+
+* Navigate to the ```/flow``` folder
 * Edit the Makefile:
     * Uncomment the line with your choosen DESIGN_CONFIG from ihp-sg13g2.
     For example the gcd design:
@@ -40,7 +40,10 @@ toc: true
     * The line with the default design does not need to be commented. This only applies when no previous line with DESIGN_CONFIG is set.
 
  
-### Run the flowscript
+### Run
+
+##### Task: Run ORFS with the design
+
 * Run ```make``` from inside the ```/flow``` folder.
 
 ### Success
@@ -72,3 +75,21 @@ Total                                       96            899
 ```
 
 CONGRATS! Your first(?) design got build to a GDS!
+
+## Examine the results
+
+### The flow steps
+
+##### Task: Match the shell output
+
+- Scroll the shell output from the command to the (successfull) end,
+- Identify the flow steps in the shell output
+- Try to match your findings to the flow steps and flow components from chapter 2
+- Can you identify single open-source tools in the output of the flow? Name the ones you identified.
+
+### The GDS
+
+##### Task: Examine the GDS
+
+- See the GDS with the command ```make gui_final```
+

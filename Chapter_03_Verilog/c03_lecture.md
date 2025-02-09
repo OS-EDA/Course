@@ -104,13 +104,13 @@ Port list and port declaration can be brought together in modern verilog.
 
 // introduces a comment.
 
-### Example: A linear shiftregister
+### Example: A linear feedback shiftregister
 ::: columns
 
 :::: column
 
 ```Verilog
-module LSFR (
+module LFSR (
 
 input  wire   load,
 input  wire   loadIt,
