@@ -129,4 +129,11 @@ AIC 2025 lectures by Carsten Wullf:
 
 [https://analogicus.com/aic2025/](https://analogicus.com/aic2025/)
 
+### The list of open-source tools
+
+The list of flow steps and flow components in ORFS contains the information about the original open-source tools.
+
+We will dive a little deeper into this list with the course training:
+
+[https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#running-the-automated-rtl-to-gds-flow](https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#running-the-automated-rtl-to-gds-flow)
 
