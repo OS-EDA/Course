@@ -29,7 +29,7 @@ toc: true
 
 ##### Task: Start doing the SiliWiz lessons
 
-- Here you go (Link to lesson is upper left corner):
+- Here you go (Link to lesson is upper right corner):
 
 - [https://app.siliwiz.com/](https://app.siliwiz.com/)
 
