@@ -28,6 +28,6 @@ Recap questions for Chapter 2
   * OpenROAD (OR)?
   * OpenROAD flow scripts (ORFS)?
 - How many close (open) issues (pull requests) has ORFS?
-- Name the flow steps in ORFS (in a relay race in the room)
-- Name the flow components in ORFS (in a relay race in the room)
+- Name the flow steps in ORFS (round robin in the room)
+- Name the flow components in ORFS (round robin in the room)
   * (Bonus) Can you describe what the componnent does?

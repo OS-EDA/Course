@@ -45,12 +45,6 @@ git clone https://github.com/HEP-Alliance/masked-aes-tapeout.git <ORFS-Root>/flo
         ```
     
     * Re-comment the previous uncommented line with DESIGN_CONFIG.
-    For example the gcd on SKY130 design:
-    
-        ```
-        # DESIGN_CONFIG=./designs/asap7/gcd/config.mk
-        ```
-    
     * The line with the default design does not need to be commented. This only applies when no previous line with DESIGN_CONFIG is set.
 
 ### Run
@@ -85,3 +79,9 @@ CONGRATS! Your design got build to a GDS!
 ##### Task: Examine the GDS
 
 - See the GDS with the command ```make gui_final```
+
+##### Task: Save an image from the GDS
+
+- In the TCL console at the bottom of the GUI:
+    * ```save_image <imagename>.png```
+    * Find the saved image in your directories.

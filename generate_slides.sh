@@ -57,7 +57,7 @@ pandoc -s \
     --toc \
     --columns=50 \
     -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
+    --template pandoc/templates/default_mod_old.latex \
     -t beamer \
     --from=markdown+rebase_relative_paths \
     Chapter_01_Introduction/c01_training_common.md 

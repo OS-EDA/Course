@@ -17,7 +17,7 @@ toc: true
 
 ## LFSR - Linear Feedback Shift Register
 
-This Trainnig makes use of the Verilog code of the Linear Feedback Shift Register (LFSR) from the lecture slides.
+This Training makes use of the Verilog code of the Linear Feedback Shift Register (LFSR) from the lecture slides.
 
 ### LFSR as example
 
@@ -42,26 +42,18 @@ Find combinational and synchronous parts of the LFSR in
 
 Start using the tool ```yosys```. You can get a basic help list with ```yosys --help```. And for the commands it is ```yosys --help <command>```
 
-- Learn how to synthesize a Verilog file
-- Learn how to write the result to a new file
-- What is the result?
-- How to change the format of the result with yosys?
+- Learn how to synthesize a Verilog file to a JSOn netlist.
+- Learn to save the JSON netlist to a file
 
-##### Task: Schematic and Netlist
+**Tip:** Use ChatGPT or a search engine to get information about how to use yosys.
+
+##### Task: Netlist
 
 Generate
 
-- Schematic graphic file
 - JSON Netlist
 
 from the LFSR Verilog code
 
-### yosys file
-
-##### Task: Create a yosys config file .ys
-
-- Create a new and empty lfsr.ys file inside your lfsr directory, next to the Verilog file
-- Modify and use the lfsr.ys with yosys to generate the schenatic and the JSON netlist of the LFSR in one go.
-
-
+- Open the JSON netlist. Can you read it?
 

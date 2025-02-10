@@ -53,6 +53,8 @@ $endif$
 %%% End of definition of colors
 %%
 
+\usepackage{courier}
+
 $for(beameroption)$
 \setbeameroption{$beameroption$}
 $endfor$
@@ -258,7 +260,7 @@ $if(listings)$
 \lstset{breaklines=true,breakatwhitespace=true}
 $endif$
 $if(lhs)$
-\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\footnotesize\ttfamily}}{}
 $endif$
 $if(highlighting-macros)$
 $highlighting-macros$

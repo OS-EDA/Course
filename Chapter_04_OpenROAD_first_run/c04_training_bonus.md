@@ -15,15 +15,7 @@ toc: true
 
 # Chapter 04 - OpenROAD first run - TRAINING - Bonus
 
-## IBEX RISC-V design
-
-### Another example from ORFS
-
-##### Task: Build another example from the flow script designs:
-- The IBEX RISC-V example.
-- Modify and follow the steps from the common training for this task.
-
-## 2. Integrate a new design into OpenROAD flowscripts
+## Create a new design
 
 In this training session you will integrate a new design for using it with OpenROAD flowscripts.
 
@@ -63,13 +55,7 @@ You can either:
         DESIGN_CONFIG=./designs/ihp-sg13g2/<your design>/config.mk
         ```
     
-    * Re-comment the previous uncommented line with DESIGN_CONFIG.
-    For example the gcd on SKY130 design:
-    
-        ```
-        # DESIGN_CONFIG=./designs/asap7/gcd/config.mk
-        ```
-    
+    * Re-comment the previous uncommented line with DESIGN_CONFIG.    
     * The line with the default design does not need to be commented. This only applies when no previous line with DESIGN_CONFIG is set.
 
 ### Run
@@ -87,3 +73,15 @@ Log                            Elapsed seconds Peak Memory/MB
 ``` 
 
 CONGRATS! Your design got build to a GDS!
+
+### The GDS
+
+##### Task: Examine the GDS
+
+- See the GDS with the command ```make gui_final```
+
+##### Task: Save an image from the GDS
+
+- In the TCL console at the bottom of the GUI:
+    * ```save_image <imagename>.png```
+    * Find the saved image in your directories.

@@ -15,30 +15,25 @@ toc: true
 
 # Chapter 04 - OpenROAD first run - TRAINING - Common
 
-## Start the first run
+## gcd example
+
+Start the OpenROAD flow scripts for the gcd example.
+ORFS shall create a GDS in this run.
 
 ### Makefile
 
-##### Task: Enable the design in the Makefile
+##### Task: Enable the gcd design in the Makefile
 
 * Navigate to the ```/flow``` folder
 * Edit the Makefile:
-    * Uncomment the line with your choosen DESIGN_CONFIG from ihp-sg13g2.
-    For example the gcd design:
+    * Uncomment the line with DESIGN_CONFIG from ihp-sg13g2 for the gcd example:
 
         ```
         DESIGN_CONFIG=./designs/ihp-sg13g2/gcd/config.mk
         ```
 
-    * Re-comment the previous uncommented line with DESIGN_CONFIG.
-    For example the gcd on SKY130 design:
-
-        ```
-        # DESIGN_CONFIG=./designs/asap7/gcd/config.mk
-        ```
-        
+    * Re-comment the previous uncommented line with DESIGN_CONFIG.        
     * The line with the default design does not need to be commented. This only applies when no previous line with DESIGN_CONFIG is set.
-
  
 ### Run
 
@@ -47,7 +42,8 @@ toc: true
 * Run ```make``` from inside the ```/flow``` folder.
 
 ### Success
-* The choosen design should finish after a while and a lot of console output with a table (time/memory) like this:
+
+* The choosen design should finish after a while with a table (time/memory) like this:
 ```
 Log                            Elapsed seconds Peak Memory/MB
 1_1_yosys                                    0             24
@@ -76,8 +72,6 @@ Total                                       96            899
 
 CONGRATS! Your first(?) design got build to a GDS!
 
-## Examine the results
-
 ### The flow steps
 
 ##### Task: Match the shell output
@@ -92,4 +86,25 @@ CONGRATS! Your first(?) design got build to a GDS!
 ##### Task: Examine the GDS
 
 - See the GDS with the command ```make gui_final```
+
+##### Task: Save an image from the GDS
+
+- In the TCL console at the bottom of the GUI:
+    * ```save_image <imagename>.png```
+    * Find the saved image in your directories.
+
+## ibex: RISC-V
+
+### Task: Create a GDS of the ibex design
+
+- Do the same as with the gcd example, but now for the ibex example.
+- Do the steps from above:
+    * Makefile: Enable ibex design
+    * Run ORFS with ```make```
+    * Examine the shell output
+    * See the GDS with ```make gui_final```
+    * Save an image of the GDS.
+
+**Be aware:** This ORFS run will take more then 30 minutes to finish!
+
 
