@@ -45,7 +45,7 @@ We have seen reference points from the tools onto the PDK in:
 
 ### Naming
 
-PDKs are refered to as:
+PDKs sometimes are refered to as:
 
 - Process design kits
 - Process node
@@ -67,7 +67,7 @@ GitHub enables a workflow that was designed and build with these principles and 
 
 The topics and discussions that you can read and study there will draw a picture of how the process of open collaboration works for the PDK.
 
-### Issues openss
+### Issues open
 
 ![Issues open](pics_lecture/issues_open.png "Issues open")
 
@@ -139,24 +139,6 @@ There are four different sets of cells (or devices) in the PDK:
 * MOS/HBT Measurements in MDM format
 * Project Roadmap Gantt chart
 
-### Standard cell library
-
-ToDo:
-
-* Where in the RTl-to-GDS is the cell library needed?
-* Design to cells to GDS and Tapeout
-* Naming of the cells
-
-### A single cell from the library
-
-ToDo:
-
-* Pick one cell
-* Pictures of the layers of the cell
-    * Klayout
-    * 3D Rederings?
-* Schematic of the cell
-
 ### Layer stack
 IHP sg13g2 Layers in a picture.
 
@@ -164,16 +146,57 @@ IHP sg13g2 Layers in a picture.
 
 Source: https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_process_spec.pdf
 
-### Layerr table from Stefffen
+### Design rules 
 
-ToDo: Add Steffens layer table here
+- The DRC (design rules check) with ORFS happens in KLayout.
+- The data for the minimal and maximal checks is here:
 
-### Picture of a cell
+[https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main/ihp-sg13g2/libs.tech/klayout/tech/drc](https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main/ihp-sg13g2/libs.tech/klayout/tech/drc)
 
-ToDo: Insert the 3d rendering of a IHP cell from Tinytapeout.
-Try to match the layers
+###
+
+![DRC files lydrc for KLayout](pics_lecture/lydrc_klayout.png)
+
+### Layout versus Schematic
+
+- The LVS check with ORFS happens in KLayout.
+- The data for the LVS is here:
+
+[https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main/ihp-sg13g2/libs.tech/klayout/tech/lvs](https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main/ihp-sg13g2/libs.tech/klayout/tech/lvs)
+
+###
+
+![LVS files lylvs for KLayout](pics_lecture/lylvs_klayout.png)
 
 ## File formats
+
+### List of file types and formats
+
+**CDL**: Circuit design language [Link](https://en.wikipedia.org/wiki/Circuit_design_language)
+
+**LEF**: Library Exchange Format [Link](https://en.wikipedia.org/wiki/Library_Exchange_Format)
+
+**TechLEF**: Technology LEF [Link](https://vlsi.pro/technology-lef/)
+
+**GDS II**: Graphic data system II [Link](https://en.wikipedia.org/wiki/GDSII)
+
+**lib**: Liberty timing and power file [Link](https://teamvlsi.com/2020/05/lib-and-lef-file-in-asic-design.html)
+
+**sym**: Xscheme schematics file [Link](https://xschem.sourceforge.io/stefan/index.html)
+
+**lyp**: Layer properties file (KLayout) 
+
+**lyt**: Technology mapping file (KLayout)
+
+**lydrc**: DRC rules file (KLayout)
+
+**lylvs**: LVS rule deck (KLayout)
+
+## Example: Cell AO21
+
+### Cell AO21: GDS in KLayout
+
+![Cell AO21 GDS](pics_lecture/cell_gds_ao21.png)
 
 ### Cell AO21: VERILOG HDL language
 ```
@@ -244,6 +267,103 @@ MP2 net3 A2 VDD VDD sg13_lv_pmos m=1 w=1.000u l=130.00n ng=1
 MP3 X net1 VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
 .ENDS
 ```
+
+### Cell AO21: LEF
+
+```
+MACRO sg13g2_a21o_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN sg13g2_a21o_1 0 0 ;
+  SIZE 3.36 BY 3.78 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN A2
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAMODEL OXIDE1 ;
+      ANTENNAGATEAREA 0.2132 LAYER Metal1 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.81 0.405 3.215 0.965 ;
+    END
+  END A2
+  PIN A1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAMODEL OXIDE1 ;
+      ANTENNAGATEAREA 0.2132 LAYER Metal1 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.215 1.565 2.545 2 ;
+    END
+  END A1
+  PIN B1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAMODEL OXIDE1 ;
+      ANTENNAGATEAREA 0.2132 LAYER Metal1 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.755 1.57 2.005 2 ;
+    END
+  END B1
+  PIN X
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.6159 LAYER Metal1 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.205 0.885 1.225 1.145 ;
+        RECT 0.205 2.095 0.56 3.105 ;
+        RECT 0.205 0.885 0.445 3.105 ;
+    END
+  END X
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 3.56 3.36 4 ;
+        RECT 2.405 2.585 2.665 4 ;
+        RECT 0.81 2.14 1.07 4 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -0.22 3.36 0.22 ;
+        RECT 2.92 1.145 3.165 1.41 ;
+        RECT 2.455 1.145 3.165 1.31 ;
+        RECT 2.455 -0.22 2.615 1.31 ;
+        RECT 1.455 -0.22 1.715 0.965 ;
+    END
+  END VSS
+  OBS
+    LAYER Metal1 ;
+      RECT 2.915 2.21 3.175 3.125 ;
+      RECT 1.855 2.21 2.115 3.125 ;
+      RECT 1.855 2.21 3.175 2.405 ;
+      RECT 1.335 2.17 1.595 3.125 ;
+      RECT 1.335 1.54 1.575 3.125 ;
+      RECT 1.415 1.22 1.575 3.125 ;
+      RECT 0.625 1.54 1.575 1.87 ;
+      RECT 1.415 1.22 2.27 1.385 ;
+      RECT 2.02 0.825 2.27 1.385 ;
+  END
+  PROPERTY CatenaDesignType "deviceLevel" ;
+END sg13g2_a21o_1
+```
+
+### Cell AO21: Schematic in XScheme
+
+![AO21 in XScheme](pics_lecture/cell_schematic_ao21.png)
 
 ## Ruleset documents
 

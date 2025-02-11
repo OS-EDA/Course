@@ -29,5 +29,3 @@ Recap questions for Chapter 3
 - How to define ports in Verilog?
 - Describe the concept of module instanciation in Verilog.
 - What is the difference between combinational and sequential circuits?
-- Try to explain the synthesized schematic of the parameterized counter in your own words.
-- WHat is the problem with the assignements on the right side of the last slide?
