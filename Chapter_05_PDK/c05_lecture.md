@@ -25,10 +25,32 @@ __A process design kit (PDK)__ is a set of files used within the semiconductor i
 Source: [https://en.wikipedia.org/wiki/Process_design_kit](https://en.wikipedia.org/wiki/Process_design_kit)
 
 ### Open-source viewpoint
-ToDo: 
-Image of the border between development and production
+
+- Semicondutcor industry started to integrate open-soruce.
+- Open-source PDKs created by Semiconductor Fabs were a "missing link" between:
+	* Open-source EDA tools a(RTL-to-GDS) and
+	* Microchip production (GDS-to-Chip)
+- Since there is open-source PDKs, the growth of the open-source ecosystem is measurable.
+- Many of the tools have been the classical "one-person maintainted" open-source projects. It is getting better. 
 
 ### In the context of this course
+
+The PDK (ihp-sg13g2) integrates seemless (to the user) into the OpenROAD flow scripts toolchain.
+
+We have seen reference points from the tools onto the PDK in:
+
+- the configuration files
+- the structure of the design directories
+- some Variables
+
+### Naming
+
+PDKs are refered to as:
+
+- Process design kits
+- Process node
+- Technology node
+- Technology
 
 ## Open-Source PDK and GitHub
 
