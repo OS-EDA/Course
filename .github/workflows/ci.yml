@@ -1,0 +1,45 @@
+name: Build presentations
+
+# This workflow is triggered on pushes to the repository.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Chapter_00_Preparations/**.md'
+      - 'Chapter_01_Introduction/**.md'
+      - 'Chapter_02_Workflow/**.md'
+      - 'Chapter_03_Design_and_example_pick/**.md'
+      - 'Chapter_04_Openroad_first_run/**.md'
+      - 'Chapter_05_PDK_Examination/**.md'
+      - 'Chapter_06_Data_in_Openroad/**.md'
+      - 'Chapter_07_LVS_and_DRC/**.md'
+      - 'Chapter_08_Simulation_and_PPA/**.md'
+      - 'Chapter_09_Scripting/**.md'
+      - 'Chapter_10_GDS_and_Tapeout/**.md'
+  workflow_dispatch:
+    branches:
+      - main
+
+jobs:
+  build-pdfs:
+    name: Build PDFs from Markdown files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pandoc
+        uses: pandoc/actions/setup@v1
+        with:
+          version: 2.19
+      
+      - name: Convert '.md' files to '.pdf'
+        uses: dante-ev/latex-action@latest
+        with:
+          entrypoint: ./generate_slides.sh
+          args: --all
+
+      - uses: actions/upload-artifact@v4
+        with:
+          path: build
+          name: presentation-pdfs

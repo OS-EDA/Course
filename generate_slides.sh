@@ -1,3 +1,5 @@
+#!/bin/bash
+
 SOURCE_FORMAT="markdown_strict\
     +pipe_tables\
     +backtick_code_blocks\
@@ -10,523 +12,104 @@ SOURCE_FORMAT="markdown_strict\
     +smart\
     +fenced_divs"
 
-#############
-# Chapter 0 #
-#############
-# Lecture and Training
-pandoc -s \
-    --verbose \
-    --output=build/c00_preparations.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    --pdf-engine lualatex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_00_Preparations/c00_preparations.md 
+# Assumes the input is in the format: 'Chapter_NN_Title/cNN_name.md'
+function __get_default_output_name() {
+    FILENAME="$(basename $(basename "$1") ".md")"
+    echo "${FILENAME}.pdf"
+}
 
-#############
-# Chapter 1 #
-#############
-# Lecture
-pandoc -s \
-    --verbose \
-    --output=build/c01_lecture.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_01_Introduction/c01_lecture.md 
+function generate_chapter_slides() {
+    local OUTPUT
+    local S_FMT
+    local TEMPLATE
+    local INPUT
 
-# Training common
-pandoc -s \
-    --verbose \
-    --output=build/c01_training_common.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod_old.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_01_Introduction/c01_training_common.md 
+    while [[ $# > 0 ]]
+    do
+        case "$1" in
+            -o|--output)
+                OUTPUT="$2"
+                shift
+                shift
+                ;;
+            -f|--source-fmt)
+                S_FMT="$2"
+                shift
+                shift
+                ;;
+            -t|--template)
+                TEMPLATE="$2"
+                shift
+                shift
+                ;;
+            -i|--input)
+                INPUT="$2"
+                shift
+                shift
+                ;;
+            --*|-*)
+                echo "Unknown option: $1"
+                return 1
+                ;;
+            *)
+                echo "Unexpected input: '$1'"
+                return 1
+                ;;
+        esac
+    done
 
-pandoc -s \
-    --verbose \
-    --output=build/c01_training_advanced.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_01_Introduction/c01_training_advanced.md 
+    OUTPUT="${OUTPUT:-"build/$(__get_default_output_name "${INPUT}")"}"
+    S_FMT="${S_FMT:-"${SOURCE_FMT}"}"
+    TEMPLATE="${TEMPLATE:-"pandoc/templates/default_mod.latex"}"
 
-pandoc -s \
-    --verbose \
-    --output=build/c01_training_bonus.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_01_Introduction/c01_training_bonus.md 
+    OUTPUT_DIR="$(dirname "${OUTPUT}")"
 
-# Questions
-pandoc -s \
-    --verbose \
-    --output=build/c01_questions.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_01_Introduction/c01_questions.md 
+    if [ ! -d "$OUTPUT_DIR" ]
+    then
+        echo "Creating output directory: ${OUTPUT_DIR}"
+        mkdir -p "${OUTPUT_DIR}"
+    fi
 
-#############
-# Chapter 2 #
-#############
-# Lecture
-pandoc -s \
-    --verbose \
-    --output=build/c02_lecture.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_02_OpenROAD_tools/c02_lecture.md 
+    pandoc -s \
+        --verbose \
+        --output="${OUTPUT}" \
+        --slide-level 2 \
+        --shift-heading-level=-1 \
+        --listings \
+        --toc \
+        --columns=50 \
+        -f "${S_FMT}" \
+        --template "${TEMPLATE}" \
+        --pdf-engine lualatex \
+        -t beamer \
+        --from=markdown+rebase_relative_paths \
+        "${INPUT}"
+}
 
-# Training common
-pandoc -s \
-    --verbose \
-    --output=build/c02_training_common.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_02_OpenROAD_tools/c02_training_common.md 
+ALL_MD_FILES=($(find ./Chapter* -iname "*.md"))
 
-# Training advanced
-pandoc -s \
-    --verbose \
-    --output=build/c02_training_advanced.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_02_OpenROAD_tools/c02_training_advanced.md 
+CUSTOM_OPTS=("./Chapter_01_Introduction/c01_training_common.md|--template "pandoc/templates/default_mod_old.latex"")
+for CUSTOM in "${CUSTOM_OPTS[@]}"
+do
+    FILE="$(echo "${CUSTOM}" | cut -d '|' -f 1)"
+    OPTS="$(echo "${CUSTOM}" | cut -d '|' -f 2)"
+    echo "file with custom opts: ${FILE}"
+    generate_chapter_slides --input "${FILE}" ${OPTS[@]} || exit $?
+done
 
-# Questions
-pandoc -s \
-    --verbose \
-    --output=build/c02_questions.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_02_OpenROAD_tools/c02_questions.md 
+DEFAULT=()
+for FILE in "${ALL_MD_FILES[@]}"
+do
+    if [[ "${FILE}" != "" ]]
+    then
+        DEFAULT+=("${FILE}")
+    fi
+done
 
-#############
-# Chapter 3 #
-#############
-# Lecture
-pandoc -s \
-    --verbose \
-    --output=build/c03_lecture.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_03_Verilog/c03_lecture.md 
+for FILE in "${DEFAULT[@]}"
+do
+    echo "running default build for file: ${FILE}"
+    generate_chapter_slides --input "${FILE}" || exit $?
+done
 
-# Training common
-pandoc -s \
-    --verbose \
-    --output=build/c03_training_common.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_03_Verilog/c03_training_common.md 
-
-# Training advanced
-pandoc -s \
-    --verbose \
-    --output=build/c03_training_advanced.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_03_Verilog/c03_training_advanced.md 
-
-# Questions
-pandoc -s \
-    --verbose \
-    --output=build/c03_questions.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_03_Verilog/c03_questions.md 
-
-#############
-# Chapter 4 #
-#############
-# Lecture
-pandoc -s \
-    --verbose \
-    --output=build/c04_lecture.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_04_OpenROAD_first_run/c04_lecture.md
-
-# Training common
-pandoc -s \
-    --verbose \
-    --output=build/c04_training_common.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_04_OpenROAD_first_run/c04_training_common.md 
-
-# Training advanced
-pandoc -s \
-    --verbose \
-    --output=build/c04_training_advanced.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_04_OpenROAD_first_run/c04_training_advanced.md 
-
-# Training bonus
-pandoc -s \
-    --verbose \
-    --output=build/c04_training_bonus.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_04_OpenROAD_first_run/c04_training_bonus.md 
-
-# Questions
-pandoc -s \
-    --verbose \
-    --output=build/c04_questions.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_04_OpenROAD_first_run/c04_questions.md 
-
-#############
-# Chapter 5 #
-#############
-# Lecture
-pandoc -s \
-    --verbose \
-    --output=build/c05_lecture.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_05_PDK/c05_lecture.md 
-
-#Training common
-pandoc -s \
-    --verbose \
-    --output=build/c05_training_common.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_05_PDK/c05_training_common.md 
-
-#Training advanced
-pandoc -s \
-    --verbose \
-    --output=build/c05_training_advanced.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_05_PDK/c05_training_advanced.md 
-
-#Training bonus
-pandoc -s \
-    --verbose \
-    --output=build/c05_training_bonus.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_05_PDK/c05_training_bonus.md 
-
-# Questions
-pandoc -s \
-    --verbose \
-    --output=build/c05_questions.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_05_PDK/c05_questions.md 
-
-#############
-# Chapter 6 #
-#############
-#Lecture
-pandoc -s \
-    --verbose \
-    --output=build/c06_lecture.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_06_OpenROAD_gui/c06_lecture.md 
-
-#Training common
-pandoc -s \
-    --verbose \
-    --output=build/c06_training_common.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_06_OpenROAD_gui/c06_training_common.md 
-
-# Questions
-pandoc -s \
-    --verbose \
-    --output=build/c06_questions.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_06_OpenROAD_gui/c06_questions.md 
-
-#############
-# Chapter 7 #
-#############
-#Lecture
-pandoc -s \
-    --verbose \
-    --output=build/c07_lecture.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_07_OpenROAD_flow_scripts/c07_lecture.md 
-
-#Training common
-pandoc -s \
-    --verbose \
-    --output=build/c07_training_1_common.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_07_OpenROAD_flow_scripts/c07_training_1_common.md 
-
-# Questions
-pandoc -s \
-    --verbose \
-    --output=build/c07_questions.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_07_OpenROAD_flow_scripts/c07_questions.md 
-
-#############
-# Chapter 8 #
-#############
-#Lecture
-pandoc -s \
-    --verbose \
-    --output=build/c08_lecture.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_08_Tapeout/c08_lecture.md 
-
-#Training common
-pandoc -s \
-    --verbose \
-    --output=build/c08_training_common.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_08_Tapeout/c08_training_common.md 
-
-# Questions
-pandoc -s \
-    --verbose \
-    --output=build/c08_questions.pdf \
-    --slide-level 2 \
-    --shift-heading-level=-1 \
-    --listings \
-    --toc \
-    --columns=50 \
-    -f "$SOURCE_FORMAT" \
-    --template pandoc/templates/default_mod.latex \
-    -t beamer \
-    --from=markdown+rebase_relative_paths \
-    Chapter_08_Tapeout/c08_questions.md 
+exit 0
