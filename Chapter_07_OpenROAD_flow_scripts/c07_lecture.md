@@ -15,9 +15,8 @@ toc: true
 
 # Chapter 7 - OpenROAD flow scripts
 
-## What are we going to do now?
+## Introduction
 
-### Previous chapters
 What happend on the way to here:
 
 - GDS-2-RTL: OpenROAD
@@ -27,14 +26,12 @@ What happend on the way to here:
 - A Dive into the PDK (Klayout)
 - Analysing: Heatmaps and more (ORFS GUI)
 
-### This chapter
-
 NOW:
 
 - One day of using ORFS
 - Getting a hands on with important data and features.
 
-### Idea of today
+## ORFS Tutorial
 
 There is a good tutorial about ORFS in the official documentation:
 
@@ -46,9 +43,9 @@ The ORFS online-tutorial was not written for the use with the IHP PDK especially
 
 ![ORFS Online Tutorial](pics_lecture/orfs_intro.png)
 
-### Lecture and trainings more interactive
+## Multiple runs
 
-### Caveats
+### Caveats of multiple runs in ORFS
 
 - ORFS does not handle multiple runs for a single design.
 - The design run must be cleared with make clear_all, before a new runs can be started.
@@ -58,14 +55,6 @@ Side feature:
 
 - A run can start over where you left it.
 
-My opinion:
-
-- Both should be possible:
-    * Kkeep data 
-    * Start over where left behind
-
-But it is not.
-
 ### Workaround for this
 
 We have to:
@@ -74,48 +63,42 @@ We have to:
 - Maybe just be renaming the directory.
 - make gui_final only works on the actual design data.
 
-##### Training: Multiple design runs
-
-## The tools in ORFS
-
 ## Structure of flow directories
 
-## Important data locations
+## TCL Console and commands
 
-### Logs
-
-- Where to find?
-- How to read?
-
-##### Training: Design logs
-
-Training: Design logs
-
-### Results
+## Reports
 
 - Where to find?
 - How to read?
 
-#### Training: Design results
-
-Training: Design results
-
-### Reports
+## Logs
 
 - Where to find?
 - How to read?
 
-##### Training: Design reports
+## Results
 
-Training: Design reports
+- Where to find?
+- How to read?
+
+## Basic design initialization
+
+### Design configuration (config.mk)
+
+[https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#design-configuration](https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#design-configuration)
+
+### Clock constraints (constraints.sdc)
+
+[https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#timing-constraints](https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#timing-constraints)
+
+### Design Verilog input
+
+[https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#design-input-verilog](https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#design-input-verilog)
 
 ## Design config variables
 
 - Where to find?
 - How to change?
 - See the changes in the design data
-
-##### Training: Changing the density
-
-Training: Changing the density
 

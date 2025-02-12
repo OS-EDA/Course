@@ -466,7 +466,7 @@ pandoc -s \
     --template pandoc/templates/default_mod.latex \
     -t beamer \
     --from=markdown+rebase_relative_paths \
-    Chapter_07_OpenROAD_flow_scripts/c07_training_1_common.md 
+    Chapter_07_OpenROAD_flow_scripts/c07_training_common.md 
 
 # Questions
 pandoc -s \
