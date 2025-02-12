@@ -264,16 +264,16 @@ docker tag tucanae47/orfs openroad/flow-ubuntu22.04-builder:latest
 ```
 
 ### Verify the builds
-start docker using the provided scripts for starting a build executing `make` from the flow dir, using the `docker_shell` utility:
+start docker using the provided scripts for starting openroad executing `make` from the flow directory using the `docker_shell` utility:
 
 ```
 cd flow
 ./util/docker_shell make
 ```
 
-the `docker_shell` script will pull the builder image from openroad `openroad/flow-ubuntu22.04-builder:latest`
+the `docker_shell` script will execute comands from docker with correct config.
 The rest of the commands part of the make targets of `ORFS` will work in the same way:
- 
+
 
 ```
 ./util/docker_shell make clean_all
