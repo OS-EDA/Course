@@ -27,6 +27,7 @@ Recap questions for Chapter 5
 - What are layers?
 - What is a layer stack?
 - Can you name some layers and their purpose?
-- Try to explain the picture on page XXX of the layout rules document.
-- Describe the content of the process specification document.
 - Name some of the important file formats from the PDK. What are they used for? (round robin).
+- Describe the content of the design rules document.
+- Which tool does the DRC?
+- Which tool does the LVS?

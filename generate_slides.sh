@@ -456,7 +456,7 @@ pandoc -s \
 #Training common
 pandoc -s \
     --verbose \
-    --output=build/c07_training_1_common.pdf \
+    --output=build/c07_training_common.pdf \
     --slide-level 2 \
     --shift-heading-level=-1 \
     --listings \
@@ -467,6 +467,21 @@ pandoc -s \
     -t beamer \
     --from=markdown+rebase_relative_paths \
     Chapter_07_OpenROAD_flow_scripts/c07_training_common.md 
+
+#Training bonus
+pandoc -s \
+    --verbose \
+    --output=build/c07_training_bonus.pdf \
+    --slide-level 2 \
+    --shift-heading-level=-1 \
+    --listings \
+    --toc \
+    --columns=50 \
+    -f "$SOURCE_FORMAT" \
+    --template pandoc/templates/default_mod.latex \
+    -t beamer \
+    --from=markdown+rebase_relative_paths \
+    Chapter_07_OpenROAD_flow_scripts/c07_training_bonus.md 
 
 # Questions
 pandoc -s \
