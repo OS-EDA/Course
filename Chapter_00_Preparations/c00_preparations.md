@@ -257,7 +257,7 @@ cd OpenROAD-flow-scripts
 ### Use a working image
 without building a docker image is possible just to start working
 #### workaround prerequisite
-the dockerhub image provided by openroad after multiple tests was not working, so one fully fresh docker image was built and uploaded to https://hub.docker.com/r/tucanae47/orfs. After that pull the image and tag it so that the `docker_shell` utility can use it.
+the dockerhub [image](https://hub.docker.com/r/openroad/flow-ubuntu22.04-builder) provided by openroad after multiple tests was not working, so one fully fresh docker image was built and uploaded to https://hub.docker.com/r/tucanae47/orfs. After that pull the image and tag it so that the `docker_shell` utility can use it.
 ```
 docker pull tucanae47/orfs
 docker tag tucanae47/orfs openroad/flow-ubuntu22.04-builder:latest
@@ -287,7 +287,7 @@ docker compose allows the creation of complex docker setups inside a yaml file
 sudo apt-get update
 sudo apt-get install docker-compose-plugin
 ```
-2. paste the following yaml snippet into a file named `docker-compose.yml`.
+2. paste the following yaml snippet into a file named `docker-compose.yml` and place it on the root in the ORFS directory `/path/to/OpenROAD-flow-scripts` 
 
 ```
 version: '3.8'
