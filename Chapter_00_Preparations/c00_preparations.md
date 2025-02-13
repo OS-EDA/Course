@@ -320,6 +320,8 @@ services:
 3. get inside the docker and continue the normal workflow for the course
 
 ```
+# allow docker client to connect to your xserver
+xhost +
 docker-compose run openroad
 # inside the docker run all cmds learned 
 root@userX:/OpenROAD-flow-scripts# source env.sh
