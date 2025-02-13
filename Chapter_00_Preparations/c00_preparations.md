@@ -287,7 +287,7 @@ docker compose allows the creation of complex docker setups inside a yaml file
 sudo apt-get update
 sudo apt-get install docker-compose-plugin
 ```
-2. paste the following yaml snippet into a file named `docker-compose.yml` and place it on the root in the ORFS directory `/path/to/OpenROAD-flow-scripts` 
+2. paste the following yaml snippet into a file named `docker-compose.yml` and place it on the flow in the ORFS directory `/path/to/OpenROAD-flow-scripts/flow` 
 
 ```
 version: '3.8'
