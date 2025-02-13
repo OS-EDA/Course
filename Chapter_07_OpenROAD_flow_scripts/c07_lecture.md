@@ -61,7 +61,7 @@ Side feature:
     * Rename the results directory to something different:
         * flow/results/ihp-sg13g2/designname/base
         * flow/results/ihp-sg13g2/designname/base_old_1
-    * Rename the reports directory to somethins different:
+    * Rename the reports directory to something different:
         * flow/reports/ihp-sg13g2/designname/base
         * flow/reports/ihp-sg13g2/designname/base_old_1
 2. With the start of the next run (make):
@@ -256,6 +256,30 @@ In a nutshell:
 - Set ABC_SPEED=1 or ABC_AREA=1 in the config.mk
 - Rerun.
 
+### DIE_AREA and CORE_AREA
+
+- Set DIE_AREA and CORE_AREA in the config.mk
+- Rerun
+
+This is an examplefor the two variables, taken from the config.mk in the masked_aes example earlier. The comments contain a list of added spaces around the core area.
+
+masked_aes config.mk:
+```
+# (Sealring: roughly 60um)
+# I/O pads: 180um
+# Bondpads: 70um
+# Margin for core power ring: 20um
+# Total margin to core area: 270um
+export DIE_AREA  =   0   0 940 940
+export CORE_AREA = 270 270 670 670
+```
+
+### masked_aes areas
+
+The area calculations from the masked_aes config.mk in a GDS:
+
+![Area of masked_aes](pics_lecture/gds_masked_aes.png)
+
 ### Density
 
 In a nutshell:
@@ -292,9 +316,50 @@ Read how this should change the GDS.
 
 - Synthesis Explorations
 - Floorplanning
-- IO Pin Placement
 - Power Planning And Analysis
 - Macro or Standard Cell Placement
 - Timing Optimizations
 - Clock Tree Synthesis
 - ... 
+
+## Finishing a design
+
+### Footprint for IOPads
+
+- A TCL script is needed to arrange the IOPads around the core design area.
+- This TCL script must be referenced in the config.mk:
+
+```
+export FOOTPRINT_TCL = $(DESIGN_HOME)/$(PLATFORM)/$(DESIGN_NICKNAME)/footprint.tcl
+```
+
+A working example of such a footprint.tcl can be found inside the masked_aes example:
+
+masked_aes footprint.tcl:
+
+[https://github.com/HEP-Alliance/masked-aes-tapeout/blob/main/footprint.tcl](https://github.com/HEP-Alliance/masked-aes-tapeout/blob/main/footprint.tcl)
+
+### Sealring
+
+- A sealring GDS must be generated and merged with the design GDS.
+- Information about how to create a sealring is available as an example in the masked_aes README:
+
+![Sealring Information masked_aes](pics_lecture/masked_aes_sealring.png)
+
+###
+
+[https://github.com/HEP-Alliance/masked-aes-tapeout/tree/main?tab=readme-ov-file#sealring](https://github.com/HEP-Alliance/masked-aes-tapeout/tree/main?tab=readme-ov-file#sealring)
+
+### Metal fill
+
+- Ongoing issue discussion about the Metall fill:
+
+[https://github.com/IHP-GmbH/IHP-Open-PDK/pull/229](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/229)
+
+It is solved and merged to the repo, but the issue is kept open for enhancement reasons.
+
+![Metal fill information masked_aes](pics_lecture/masked_aes_metal_fill.png)
+
+
+
+
