@@ -48,7 +48,7 @@ The ORFS online-tutorial was not written for the use with the IHP PDK especially
 ### Caveats of multiple runs in ORFS
 
 - ORFS does not handle multiple runs for a single design.
-- The design run must be cleared with make clear_all, before a new runs can be started.
+- The design run must be cleared with make clean_all, before a new runs can be started.
 - !!! The previous data from the previous run will be lost. 
 
 Side feature:
