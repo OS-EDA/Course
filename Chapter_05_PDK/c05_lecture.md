@@ -170,6 +170,11 @@ IHP sg13g2 Layers in a picture. [Source PDF](https://github.com/IHP-GmbH/IHP-Ope
 
 ### List of file types and formats
 
+::: columns
+
+:::: column
+
+
 **CDL**: Circuit design language [Link](https://en.wikipedia.org/wiki/Circuit_design_language)
 
 **LEF**: Library Exchange Format [Link](https://en.wikipedia.org/wiki/Library_Exchange_Format)
@@ -180,7 +185,13 @@ IHP sg13g2 Layers in a picture. [Source PDF](https://github.com/IHP-GmbH/IHP-Ope
 
 **lib**: Liberty timing and power file [Link](https://teamvlsi.com/2020/05/lib-and-lef-file-in-asic-design.html)
 
-**sym**: Xscheme schematics file [Link](https://xschem.sourceforge.io/stefan/index.html)
+**sym**: Symbol file (Xschem) [Link](https://xschem.sourceforge.io/stefan/index.html)
+
+**sch**: Schematic file (Xschem) [Link](https://xschem.sourceforge.io/stefan/index.html)
+
+::::
+
+:::: column
 
 **lyp**: Layer properties file (KLayout) 
 
@@ -189,6 +200,11 @@ IHP sg13g2 Layers in a picture. [Source PDF](https://github.com/IHP-GmbH/IHP-Ope
 **lydrc**: DRC rules file (KLayout)
 
 **lylvs**: LVS rule deck (KLayout)
+
+::::
+
+:::
+
 
 ## Example: Cell AO21
 
