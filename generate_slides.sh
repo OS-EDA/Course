@@ -1,4 +1,5 @@
 SOURCE_FORMAT="markdown_strict\
+    +simple_tables\
     +pipe_tables\
     +backtick_code_blocks\
     +auto_identifiers\
