@@ -380,7 +380,7 @@ sg13g2_stdcell_slow_1p35V_125C.lib    1.35 V      125° C
 sg13g2_stdcell_typ_1p20V_25C.lib      1.20 V      25° C
 sg13g2_stdcell_typ_1p50V_25C.lib      1.50 V      25° C
 
-- There are .lib file for RAM macros and io cells too.
+- The PDK contains .lib files for RAM macros and io cells too.
 
 ### Cell AO21: Liberty description
 
