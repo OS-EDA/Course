@@ -537,7 +537,7 @@ It is made with the IHP open-source PDK.
 
 Play with Siliwiz or take the lessons:
 
-[https://tinytapeout.com/runs/ttihp0p2/tt_um_vga_clock](https://tinytapeout.com/runs/ttihp0p2/tt_um_vga_clock)
+[https://app.siliwiz.com/](https://app.siliwiz.com/)
 
 ### A few words about open-source in general
 
