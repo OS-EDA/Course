@@ -87,7 +87,7 @@ The IHp open-source PDK is published with an Apache 2.0 license:
 
 Apache 2.0 is a permissive open-source license. Read more about different open-source licenses here:
 
-https://choosealicense.com/licenses/
+[https://choosealicense.com/licenses/](https://choosealicense.com/licenses/)
  
 ##### 
 **Tip:**
@@ -140,11 +140,9 @@ There are four different sets of cells (or devices) in the PDK:
 * Project Roadmap Gantt chart
 
 ### Layer stack
-IHP sg13g2 Layers in a picture.
+IHP sg13g2 Layers in a picture. [Source PDF](https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_process_spec.pdf)
 
 ![Layer stack](pics_lecture/layer_stack_0.png "Layer stack")
-
-Source: https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_process_spec.pdf
 
 ### Design rules 
 
