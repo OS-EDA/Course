@@ -395,13 +395,7 @@ They all mean the same.
 
 ### Many open-Source RTL-to-GDS toolchains
 
-Most known RTL-to-GDS toolchains:
-
-- [OpenLANE](https://github.com/The-OpenROAD-Project/OpenLane)
-- [OpenLANE 2](https://github.com/efabless/openlane2)
-- [Silicon Compiler](https://www.siliconcompiler.com/)
-- [Coriolis](https://github.com/lip6/coriolis)
-
+#####
 Used with IHP PDK and in this course:
 
 - [OpenROAD flow scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
@@ -409,6 +403,14 @@ Used with IHP PDK and in this course:
 which is based on
 
 - [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)
+
+##### 
+Most known other RTL-to-GDS toolchains:
+
+- [OpenLANE](https://github.com/The-OpenROAD-Project/OpenLane) (based on OpenROAD)
+- [OpenLANE 2](https://github.com/efabless/openlane2) (based on OpenROAD)
+- [Silicon Compiler](https://www.siliconcompiler.com/) (works with many toolchains, close and open-source)
+- [Coriolis](https://github.com/lip6/coriolis) (developed at University Sorbonne, LIP-6)
 
 ### A toolchain based on scripts and configuration files
 
