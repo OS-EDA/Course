@@ -137,3 +137,22 @@ We will dive a little deeper into this list with the course training:
 
 [https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#running-the-automated-rtl-to-gds-flow](https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#running-the-automated-rtl-to-gds-flow)
 
+### Meet the developers
+
+There is a slack community with most of the open-source silicon projects and people in it:
+
+[https://open-source-silicon.dev](https://open-source-silicon.dev)
+
+This is the perfect place, if you 
+
+- search for people you heard of in open-source EDA.
+- want to reach out to tool developers.
+- have all sorts of questions in open-source EDA.
+- look for a specific problem and want to see if others already are in a discussion about it.
+- want to share your experience and help others.
+
+### 
+
+Most of the tools in open-source EDA have their own channel in this slack. Just try search and add for the channel names.
+
+![Channels in the open-source-silicon.dev slack](pics_lecture/slack_channels.png)
