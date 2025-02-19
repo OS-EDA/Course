@@ -110,6 +110,22 @@ A GANTT chart of the roadmap for the open-source PDK is available under this web
 
 ![Gantt chart](pics_lecture/gantt_0.png "Gantt chart")
 
+### Tool support
+
+The PDK supports a bunch of tools with the included file formats. A list of the file types and formats follows later in this chapter.
+
+The main tools for this course are 
+
+- OpenROAD flow scripts
+- OpenROAD
+- KLayout
+
+### 
+
+The list of supported tools from the README in the PDK:
+
+![Suppoerted tools](pics_lecture/supported_tools.png)
+
 ### Cells in the PDK
 There are four different sets of cells (or devices) in the PDK:
 

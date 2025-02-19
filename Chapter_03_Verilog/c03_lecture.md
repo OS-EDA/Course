@@ -109,7 +109,7 @@ Port list and port declaration can be brought together in modern verilog.
 
 :::: column
 
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module LFSR (
 
 input  wire   load,
@@ -138,7 +138,7 @@ end
 
 :::: column
 
-```Verilog
+```{.Verilog .numberLines startFrom="24"}
 assign newBit = fsReg[0];
 assign fsRegN = {genBit,fsReg[17 : 1]};
 
@@ -239,7 +239,7 @@ Boolean operations exist as usual:
 ### Parameters (old style)
 In order to be able to adapt designs easier, Verilog offers the use of parameters.
 
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module mux (
   in1, in2,
   sel,
@@ -262,7 +262,7 @@ If you describe a circuit through its (internal) structure or if a partial circu
 ::: columns
 
 :::: column
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module xor2 (
   input  wire a,
   input  wire b,
@@ -273,7 +273,7 @@ endmodule
 ::::
 
 :::: column
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module xor3 (
   input  wire a,
   input  wire b,
@@ -303,7 +303,7 @@ endmodule
 ### Code for sequential circuits
 A flip-flop takes over the input of the rising or falling edges of the clock. For this, the block entry is used with the *@-symbol* and *always* blocks:
 
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module FF (input  clk,
            input  rst,
            input  d,
@@ -327,7 +327,7 @@ The list of signals after the @-symbol means sensitivity list. The reset is sync
 ###
 Combinational circuits correspond to pure boolean functions and therefore do not contain the key word *reg*. No memory (flip-flops) gets generated and assignments are done with *assign*.
 
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module mux4to1 (in1, in2, in3, in4, sel, out);
 
   parameter WIDTH = 8; 
@@ -346,7 +346,7 @@ endmodule
 ### Priority encoder
 Similarly to the VHDL version, we describe the priority encoder as follows:
 
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module prienc (input  wire [4 : 1] req, 
                output wire [2 : 0] idx);
 
@@ -362,7 +362,7 @@ endmodule
 ### Priority encoder (alternative version)
 For a priority encoder you can use the *don't care* feature from Verilog.
 
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module prienc (input  [4:1] req,
                output reg [2:0] idx);
 
@@ -398,7 +398,7 @@ The structure of synchronous circuits is idealized as follows:
 ### A binary counter
 According to the synchronous design, a free running binary counter can be realized:
 
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module freecnt (value, clk, reset);
 
   parameter WIDTH = 8;
@@ -453,7 +453,7 @@ According to the synchronous design, a freely running modulo counter can be real
 
 :::: column
 
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module modcnt (value, clk, reset, sync);
 
   parameter WIDTH  = 10,
@@ -473,7 +473,7 @@ module modcnt (value, clk, reset, sync);
 
 :::: column
 
-```Verilog
+```{.Verilog .numberLines startFrom="15"}
   always @(posedge clk) begin
    
     if (reset) begin // Synchron reset
@@ -507,7 +507,7 @@ In this case, next state logic and output logic are of course  more complex:
 ### A register file
 RISC-V processors have a register file with a special zero register. Reading always provides 0 and writing operations are ignored.
 
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module regfile (input clk,
                 input [4:0] writeAdr, input [31 : 0] dataIn,
                 input wrEn,
@@ -537,7 +537,7 @@ The newer variants of Verilog offer an improved version of the parameter feature
 
 ::: columns
 :::: column
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module cnt
   #(parameter N = 8,
     parameter DOWN = 0)
@@ -568,7 +568,7 @@ endmodule
 ::::
 
 :::: column
-``` Verilog
+```{.Verilog .numberLines startFrom="1"}
 module doubleSum
   #(parameter N = 8)
    (input clk,
@@ -607,7 +607,7 @@ Verilog still offers a (older) possibility for the parameterization of a design:
 
 ::: columns
 :::: column
-```Verilog
+```{.Verilog .numberLines startFrom="1"}
 module double
   #(parameter N = 8)
   (input clk,
@@ -629,7 +629,7 @@ module double
 ::::
 
 :::: column
-``` Verilog
+```{.Verilog .numberLines startFrom="18"}
   // Counter 1
   defparam c1.N = N;
   defparam c1.DOWN = 1;
