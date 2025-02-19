@@ -102,6 +102,56 @@ Kudos to this course:
 
 [^1]: Source: OpenROAD documentation.
 
+## Fill insertion
+
+There are two flow components that take care of filling area gaps in the design:
+
+- Filler cell insertion
+- Metal fill insertion
+
+Both will be explained in the following section.
+
+### Filler cells: Reasons
+
+Why filling the design area with more cells?
+
+- After floorplaning and placement there will always be gaps between the standard cells
+- These gaps must be filled to keep the continuity of
+    - n-well and p-well spacing
+    - railing
+    - implants
+- The filling with cells helps against the WPE (well proximity effect)
+
+### Filler cells: Properties
+
+Filler cells
+
+- have no logic function
+- have no inputs and no outputs
+- are not in the netlist of the design
+- are available in different widths
+
+### Filler cells: GDS
+
+![Filler cells in different widths (1, 4, 8)](pics_lecture/filler_cells_gds.png)
+
+### Metal fill
+
+What is metal filling?
+
+- Metal filling adds polygons and shapes to the metal layer(s).
+- These fillings have no logic functionality.
+- The purpose is creating a more even or uniform distribution of the metal area.
+- Physical reasons are planarity and reducing thinkness variations (CMP).
+- Metal filling can affect timing and signal integrity. 
+- Metal filling is done algorithmical (mostly with scripts).
+
+More to read:
+
+[https://semiengineering.com/knowledge_centers/materials/fill/](https://semiengineering.com/knowledge_centers/materials/fill/)
+
+## Resources
+
 ### Help with the terminology
 
 Searching the terms with a standard search engine might not bring usefull results every time.
@@ -113,7 +163,15 @@ Matt Venn created a page for EDA terminology:
 
 [^1]: Source: Screenshot of the webpage.
 
-### Resources list
+### The list of open-source tools
+
+The list of flow steps and flow components in ORFS contains the information about the original open-source tools.
+
+We will dive a little deeper into this list with the course training:
+
+[https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#running-the-automated-rtl-to-gds-flow](https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#running-the-automated-rtl-to-gds-flow)
+
+### Additional links
 
 Awesome open-source asic resources:
 
@@ -129,13 +187,6 @@ AIC 2025 lectures by Carsten Wullf:
 
 [https://analogicus.com/aic2025/](https://analogicus.com/aic2025/)
 
-### The list of open-source tools
-
-The list of flow steps and flow components in ORFS contains the information about the original open-source tools.
-
-We will dive a little deeper into this list with the course training:
-
-[https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#running-the-automated-rtl-to-gds-flow](https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#running-the-automated-rtl-to-gds-flow)
 
 ### Meet the developers
 
