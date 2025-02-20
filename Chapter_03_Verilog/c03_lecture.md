@@ -160,6 +160,43 @@ endmodule
 
 **input** and **output** define the directions of the ports. 
 
+###
+
+This part of the code
+
+```{.Verilog .numberLines startFrom="18"}
+always @(*) begin
+  genBit = (taps_0 ^ taps_1);
+  if(loadIt) begin
+    genBit = load;
+  end
+end
+```
+
+becomes this combinational circuit:
+
+![combinational part](pics_lecture/feedback_logic.png)
+
+### 
+
+And this part of the code
+
+```{.Verilog .numberLines startFrom="18"}
+always @(posedge clk) begin
+  if(reset) begin
+    fsReg <= 18'h0;
+  end else begin
+    if(enable) begin
+      fsReg <= fsRegN;
+    end
+  end
+end
+```
+
+becomes a sequential with memory (flip flops) in it. The flip flops will look something like this:
+
+![sequential part](pics_lecture/feedback_sequential.png)
+
 ### Constants and Operators
 
 There are four values available for constants and signals:
