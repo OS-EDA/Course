@@ -432,12 +432,17 @@ But it still has some advantages.
 ### Advantages of open-source in EDA
 * A word by Andrew Kahng (head of OpenROAD) about the relevance of open-source EDA
 
-Andrews slides from the keynote speech at the Chipdesign Network June 2024. As pptx:
+Andrews slides from the keynote speech at the Chipdesign Network June 2024. As the ucsd server is down, this is a link to the wayback machine:
 
-[https://vlsicad.ucsd.edu/NEWS24/InnovationKeynote-v6-ACTUAL-DISTRIBUTED.pptx](https://vlsicad.ucsd.edu/NEWS24/InnovationKeynote-v6-ACTUAL-DISTRIBUTED.pptx)
+[https://web.archive.org/web/20240609214401/https://vlsicad.ucsd.edu/NEWS24/InnovationKeynote-v6-ACTUAL-DISTRIBUTED.pptx](https://web.archive.org/web/20240609214401/https://vlsicad.ucsd.edu/NEWS24/InnovationKeynote-v6-ACTUAL-DISTRIBUTED.pptx)
 
-Andrews news page with the link (scroll to june 2024)
-[https://vlsicad.ucsd.edu/](https://vlsicad.ucsd.edu/)
+##### Slides to have a eye on:
+
+- Slide 06: EDA is an optimization problem
+- Slide 10: Open-source EDA and disruptive Innovations
+- Slide 13: Open-source accelerates EDA
+- The complete chapter "Optimization and Virtuous Cycles" starting at slide 25
+- Slides 39-43 about AI and proxies.
 
 ### Some aspects of open-source EDA
 
