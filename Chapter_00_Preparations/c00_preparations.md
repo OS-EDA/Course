@@ -1,6 +1,6 @@
 ---
 title: "Preparations"
-subtitle: "Before the course (Optional)"
+subtitle: "(Optional)"
 author: "Course authors (Git file)"
 aspectratio: 169
 theme: "CambridgeUS"
@@ -14,9 +14,19 @@ toc: true
 # Chapter 0 - Preparations
 
 ## Description
-Before the course starts, you can take some optional preparations regarding the open-source EDA software tools that will be used during the course. Either you can install them locally on your own computer or get access to a preconfigured server from IHP. 
 
-Here comes a short description of the three options, followed by their detailed guides:
+About chapter 0 - Preparations:
+
+- This chapter is not needed when you participate in an on-site course at IHP.
+- The tools and computers at IHP are ready-to-use.
+
+This chapter can help you if:
+
+- You want to do the course on your own.
+- You want to give this course as a trainer.
+- Want to have everything running in your own environment.
+
+Here comes a short description of the options, followed by their detailed guides:
 
 ### Option A: OpenROAD Flow Scripts (ORFS) on your computer
 * A plain installation of OpenROAD, Yosys, Klayout and some flow scripts into your system. 
@@ -29,12 +39,6 @@ Here comes a short description of the three options, followed by their detailed 
 * All the tools for the course are in it. 
 * It requires the permissions to install software on your computer. 
 * The guide makes use of Ubuntu Linux.
-
-### Option C: IHP server with installed tools 
-* Working on the IHP server is the more convenient approach and does not require to install anything on your computer. 
-* The tools are ready to use installed on the IHP server. 
-* A permanent connnection to the server is needed (reliable internet connection). 
-* This option will work on various computers and operating systems (Linux/Win/Mac).
 
 ## Install Option A: OpenROAD Flow Scripts (ORFS) on your computer 
 * This guide is a list of shell commands with some short explanations and weblinks. 
@@ -231,8 +235,3 @@ A shell window pops up, in which the docker runs.
 * To be written
 * This should be matching to option C (IHP server)
 * Waiting on IHP information about their docker / server install.
-
-## Install Option C: Guide to use an IHP server with installed EDA tools
-* This option is still in development.
-* Expect updates when it is ready to use.
-* Till then it is recommended to take Option A or B.
