@@ -203,7 +203,7 @@ There are four values available for constants and signals:
 
 * 0 / 1
 * X or x (unknown)
-* Z or Z (high impedance)
+* Z or z (high impedance)
 
 One can specify the width of constants:
 
@@ -267,11 +267,22 @@ then_statement;
 
 Boolean operations exist as usual:
 
-**bitwise operators:** & (AND), | (OR, ~ (NOT), ^ (XOR) und auch ~^ (XNOR)
+**bitwise operators:** & (AND), | (OR, ~ (NOT), ^ (XOR) and ~^ (XNOR)
 
-**logic operators:** && (AND), || (OR) und ! (NOT)
+**logic operators:** && (AND), || (OR) and ! (NOT)
 
-**Shiftoperations:** a << b (shift a for b positions to the left) und a >> b (shift a for b positions to the right). A negative number b is not permitted, empty spots are filled with 0.
+###
+
+**Shiftoperations:** 
+
+- ```<<``` Shift Left, Logical (fill with zero)
+- ```>>``` Shift Right, Logical (fill with zero)
+- ```<<<``` Shift Left, Arithmetic (keep sign)
+- ```>>>``` Shift Right, Arithmetic (keep sign)
+
+Syntax: ```a<<b```, ```a>>b```, ```a<<<b```, ```a>>>b```.
+
+A negative number b is not permitted.
 
 ### Parameters (old style)
 In order to be able to adapt designs easier, Verilog offers the use of parameters.
