@@ -379,6 +379,10 @@ Here are two links about the strcuture, format and elements of GDS II. The links
 
 [https://www.rulabinsky.com/cavd/text/chapc.html](https://www.rulabinsky.com/cavd/text/chapc.html)
 
+### Example of a GDS in KLayout
+
+![GDS in KLayout: gcd design with ihp130-sg13g2](pics_lecture/gds_klayout.png)
+
 ### Naming of RTL-to-GDS tools:
 
 The naming of the tools is confusing:
@@ -456,8 +460,10 @@ Andrews slides from the keynote speech at the Chipdesign Network June 2024. As t
 
 ### What people have done with open-source EDA
 
-- The following slides contain some works that were made with open-source EDA tools and open-source PDKs. 
-- Most of this would not have been possible in closed source (because of NDAs)
+- The following slides contain some works that were made with open-source EDA tools and open-source PDKs.
+- All the pictures represent GDS data in different ways. 
+- A few slides back a picture of GDS in KLayout was shown. The following GDS pictures were created with various other open-source tools (Blender, 3d prints, STL files, ...).
+- Most of these works would not have been possible to integrate here in closed source (because of NDAs and licenses)
 - Open-source EDA drives people to experiement and play with the technology.
 
 ###
