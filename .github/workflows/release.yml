@@ -1,0 +1,70 @@
+name: GitHub Release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.*'
+
+jobs:
+  build-pdfs:
+    name: Build PDFs from Markdown files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pandoc
+        uses: pandoc/actions/setup@v1
+        with:
+          version: 2.19
+
+      - name: Convert '.md' files to '.pdf'
+        uses: dante-ev/latex-action@latest
+        with:
+          entrypoint: ./generate_slides.sh
+          args: --all
+      
+      - name: Make archives
+        shell: bash
+        run: |
+          mv build presentation-pdfs
+          tar -cf presentation-pdfs.tar.gz presentation-pdfs/
+          zip -r presentation-pdfs.zip presentation-pdfs
+
+      - uses: actions/upload-artifact@v4
+        with:
+          path: |
+            presentation-pdfs.tar.gz
+            presentation-pdfs.zip
+          name: presentation-pdfs
+  
+  create-release:
+    name: "Create GitHub release"
+    needs:
+      - build-pdfs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: taiki-e/create-gh-release-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  upload-pdfs:
+    name: "Upload release PDFs"
+    needs:
+      - create-release
+      - build-pdfs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: presentation-pdfs
+      - name: Upload artifact
+        shell: bash
+        run: |
+          TAG="$(echo "${tag}" | sed -E 's@refs/tags/(.+)@\1@')"
+          gh release upload "${TAG}" "presentation-pdfs.tar.gz" "presentation-pdfs.zip" --clobber
+        env:
+          tag: ${{ github.ref }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
