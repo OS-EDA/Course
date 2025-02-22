@@ -225,6 +225,7 @@ There is an array notation:
 
 * wire [7:0] serDat;
 * reg [0:32] shiftReg;
+
 * Arrays can be sliced to Bits:
     * serDat[3 : 0] (low-nibble) 
     * serDat[7] (MSB).

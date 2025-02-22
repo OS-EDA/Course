@@ -6,6 +6,8 @@ aspectratio: 169
 theme: "CambridgeUS"
 colortheme: "rose"
 fonttheme: "professionalfonts"
+urlcolor: red
+linkstyle: bold
 date:
 section-titles: true
 toc: true
@@ -20,11 +22,16 @@ About chapter 0 - Preparations:
 - This chapter is not needed when you participate in an on-site course at IHP.
 - The tools and computers at IHP are ready-to-use.
 
-This chapter can help you if:
+This chapter can help you if ...:
 
-- You want to do the course on your own.
-- You want to give this course as a trainer.
-- Want to have everything running in your own environment.
+- you want to do the course on your own.
+- you want to give this course as a trainer.
+- you Want to have everything running in your own environment.
+
+Freshness:
+
+- The development of the tools is moving fast.
+- Expect the installation tutorials to break often.
 
 Here comes a short description of the options, followed by their detailed guides:
 
@@ -40,8 +47,13 @@ Here comes a short description of the options, followed by their detailed guides
 * It requires the permissions to install software on your computer. 
 * The guide makes use of Ubuntu Linux.
 
-### Option C: ORFS docker images in a docker container on your computer 
-* same requirements as with Options B
+### Option C: ORFS docker images in a docker container on your computer
+
+- This option was provided by a previous participant of the course:
+  - **tucanae47**: [https://github.com/tucanae47](https://github.com/tucanae47)
+- It links you to a docker that was build and uploaded by **tucanae47** 
+
+* The requirements are the same as with Options B
 
 ## Install Option A: OpenROAD Flow Scripts (ORFS) on your computer 
 * This guide is a list of shell commands with some short explanations and weblinks. 
@@ -118,12 +130,12 @@ With the following steps a preconfigured docker gets installed. The docker is cr
 Institute for Integrated Circuits (IIC) at the Johannes Kepler University Linz (JKU)
 
 and is avaiable in their Github with more detailed installation instructions:
-https://github.com/iic-jku/IIC-OSIC-TOOLS
+[https://github.com/iic-jku/IIC-OSIC-TOOLS](https://github.com/iic-jku/IIC-OSIC-TOOLS)
 
 ### Step 1: Install docker with apt:
 
 Weblink for detailed informations: 
-https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+[https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
 Add Docker's official GPG key:
 ```
@@ -165,7 +177,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ### Step 2: Manage docker as a non-root user
 
 Weblink for detailed informations:
-https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
+[https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user)
 
 ```
 sudo groupadd docker
@@ -209,7 +221,7 @@ To generate this message, Docker took the following steps:
 ### Step 4: Clone the IIC-OSIC-TOOLS git repository to your computer:
 
 Weblink for detailed informations about the steps 4 - 5:
-https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/README.md
+[https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/README.md](https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/README.md)
 
 
 Install git:
@@ -239,37 +251,59 @@ A shell window pops up, in which the docker runs.
 * This should be matching to option C (IHP server)
 * Waiting on IHP information about their docker / server install.
 
-## Option C: ORFS docker images in a docker container on your computer 
+## Install Option C: ORFS docker images in a docker container on your computer 
 
-### Prerequisites and Docker install
+### Foreword about Option C:
+
+- This option was provided by a previous participant of the course:
+  - **tucanae47**: [https://github.com/tucanae47](https://github.com/tucanae47)
+- It links you to a docker that was build and uploaded by **tucanae47** 
+
+#### Prerequisites and Docker install
+
 * same as option B
 
 ### Build your own docker image 
-This is taken from the ORFS documentation here https://openroad-flow-scripts.readthedocs.io/en/latest/user/BuildWithDocker.html#clone-and-build
+This is taken from the ORFS documentation here 
+
+[https://openroad-flow-scripts.readthedocs.io/en/latest/user/BuildWithDocker.html#clone-and-build](https://openroad-flow-scripts.readthedocs.io/en/latest/user/BuildWithDocker.html#clone-and-build)
+
 and only tested with the designs from the IHP
 ```
 git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
 cd OpenROAD-flow-scripts
 ./build_openroad.sh
 ```
-### Use a working image
-without building a docker image is possible just to start working
-#### workaround prerequisite
-the dockerhub [image](https://hub.docker.com/r/openroad/flow-ubuntu22.04-builder) provided by openroad after multiple tests was not working, so one fully fresh docker image was built and uploaded to https://hub.docker.com/r/tucanae47/orfs. After that pull the image and tag it so that the `docker_shell` utility can use it.
+### Use a pre-build docker image by tucanae47
+
+- Here is a pre-build docker image by **tucanae47**
+- This image can be used without building a docker image yourself.
+
+#### Workaround with a pre-build image
+
+- The dockerhub [image](https://hub.docker.com/r/openroad/flow-ubuntu22.04-builder) provided by openroad after multiple tests was not working.
+
+- As a workaround, one fully fresh docker image was built and uploaded to 
+
+  - [https://hub.docker.com/r/tucanae47/orfs](https://hub.docker.com/r/tucanae47/orfs). 
+
+- Pull the image and tag it so that the `docker_shell` utility can use it.
+
 ```
 docker pull tucanae47/orfs
 docker tag tucanae47/orfs openroad/flow-ubuntu22.04-builder:latest
 ```
 
 ### Verify the builds
-start docker using the provided scripts for starting openroad executing `make` from the flow directory using the `docker_shell` utility:
+
+Start docker using the provided scripts for starting openroad executing `make` from the flow directory using the `docker_shell` utility:
 
 ```
 cd flow
 ./util/docker_shell make
 ```
 
-the `docker_shell` script will execute comands from docker with correct config.
+The `docker_shell` script will execute comands from docker with correct config.
 The rest of the commands part of the make targets of `ORFS` will work in the same way:
 
 
@@ -277,15 +311,31 @@ The rest of the commands part of the make targets of `ORFS` will work in the sam
 ./util/docker_shell make clean_all
 ./util/docker_shell make gui_final
 ```
+
 ### Access docker and execute cmds with docker-compose (advanced):
+
 docker compose allows the creation of complex docker setups inside a yaml file
 
-1. install docker-compose 
+### Step 1 
+
+install docker-compose 
+
 ```
 sudo apt-get update
 sudo apt-get install docker-compose-plugin
 ```
-2. paste the following yaml snippet into a file named `docker-compose.yml` and place it on the flow in the ORFS directory `/path/to/OpenROAD-flow-scripts/flow` 
+
+### Step 2
+
+Paste the following yaml snippet into a file named 
+
+`docker-compose.yml` 
+
+and place it on the flow in the ORFS directory 
+
+`/path/to/OpenROAD-flow-scripts/flow` 
+
+### 
 
 ```
 version: '3.8'
@@ -315,7 +365,9 @@ services:
 ```
  This will allow a linux computer to execute gui commands too.
 
-3. get inside the docker and continue the normal workflow for the course
+### Step 3
+
+Get inside the docker and continue the normal workflow for the course
 
 ```
 # allow docker client to connect to your xserver
