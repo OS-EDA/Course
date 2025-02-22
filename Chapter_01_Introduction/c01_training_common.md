@@ -170,7 +170,7 @@ There are two options to do this:
 - Run ```source /eda/or2/env.sh```
 - Do this every time you open a new shell.
 - It doesn't hurt of you do it multiple times. Nothing breaks.
-- It will lead to strange behaviour and not results if it is not done.
+- It will lead to strange behaviour and no results if it is not done.
 
 ##### 
 
@@ -178,9 +178,12 @@ You should get a message like ```copied flow directory``` or ```flow directory a
 
 ### Option 2: Source in the bashrc
 
-##### Task: Madify .bashrc with source command
+##### Task: Modify .bashrc with source command
 
-- Open the file ```.bashrc``` in a texteditor. (```.bashrc``` is in your home directory)
+- Find the file ```.bashrc```:
+    - Location: go to the users home directory ```cd ~```
+    - Hidden files have a point as pre-fix in their name. List the files with ```ls -al```  
+- Open the file ```.bashrc``` in a texteditor. ```nano .bashrc```
 - At the bottom line, add the command ```source /eda/or2/env.sh```
 - Save the file and close the editor
 - In a shell terminal: reload bashrc with the command ```. ~/.bashrc```

@@ -15,18 +15,4 @@ toc: true
 
 # Chapter 8 - Tapeout - TRAINING - Common
 
-## The IHP repos
-
-### OpenLib
-
-### PDK
-
-### TO_XYZ
-
-### Read the docs
-
-### Github Actions
-
-* Look at some Github Actions in the Tapeout repositories
-* What is a yaml workflow?
 

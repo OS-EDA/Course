@@ -87,7 +87,7 @@ The IHp open-source PDK is published with an Apache 2.0 license:
 
 Apache 2.0 is a permissive open-source license. Read more about different open-source licenses here:
 
-https://choosealicense.com/licenses/
+[https://choosealicense.com/licenses/](https://choosealicense.com/licenses/)
  
 ##### 
 **Tip:**
@@ -109,6 +109,22 @@ A GANTT chart of the roadmap for the open-source PDK is available under this web
 [https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/roadmap/open_PDK_gantt.png](https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/roadmap/open_PDK_gantt.png)
 
 ![Gantt chart](pics_lecture/gantt_0.png "Gantt chart")
+
+### Tool support
+
+The PDK supports a bunch of tools with the included file formats. A list of the file types and formats follows later in this chapter.
+
+The main tools for this course are 
+
+- OpenROAD flow scripts
+- OpenROAD
+- KLayout
+
+### 
+
+The list of supported tools from the README in the PDK:
+
+![Suppoerted tools](pics_lecture/supported_tools.png)
 
 ### Cells in the PDK
 There are four different sets of cells (or devices) in the PDK:
@@ -140,11 +156,9 @@ There are four different sets of cells (or devices) in the PDK:
 * Project Roadmap Gantt chart
 
 ### Layer stack
-IHP sg13g2 Layers in a picture.
+IHP sg13g2 Layers in a picture. [Source PDF](https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_process_spec.pdf)
 
 ![Layer stack](pics_lecture/layer_stack_0.png "Layer stack")
-
-Source: https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_process_spec.pdf
 
 ### Design rules 
 
@@ -172,6 +186,11 @@ Source: https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/d
 
 ### List of file types and formats
 
+::: columns
+
+:::: column
+
+
 **CDL**: Circuit design language [Link](https://en.wikipedia.org/wiki/Circuit_design_language)
 
 **LEF**: Library Exchange Format [Link](https://en.wikipedia.org/wiki/Library_Exchange_Format)
@@ -182,7 +201,13 @@ Source: https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/d
 
 **lib**: Liberty timing and power file [Link](https://teamvlsi.com/2020/05/lib-and-lef-file-in-asic-design.html)
 
-**sym**: Xscheme schematics file [Link](https://xschem.sourceforge.io/stefan/index.html)
+**sym**: Symbol file (Xschem) [Link](https://xschem.sourceforge.io/stefan/index.html)
+
+**sch**: Schematic file (Xschem) [Link](https://xschem.sourceforge.io/stefan/index.html)
+
+::::
+
+:::: column
 
 **lyp**: Layer properties file (KLayout) 
 
@@ -191,6 +216,11 @@ Source: https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/d
 **lydrc**: DRC rules file (KLayout)
 
 **lylvs**: LVS rule deck (KLayout)
+
+::::
+
+:::
+
 
 ## Example: Cell AO21
 
@@ -364,6 +394,61 @@ END sg13g2_a21o_1
 ### Cell AO21: Schematic in XScheme
 
 ![AO21 in XScheme](pics_lecture/cell_schematic_ao21.png)
+
+### Liberty files
+
+- Liberty files (.lib) contain information about timing, power and temperature of the cells.
+- The ihp130-sg13g2 PDK contains six different Liberty files for the standard cells.
+- These six files are categorized by nominal voltages and nominal temperatures:
+
+Liberty file                         Voltage     Temperature 
+----------------------------------   -------     -----------
+sg13g2_stdcell_fast_1p32V_m40C.lib    1.32 V      -40° C 
+sg13g2_stdcell_fast_1p65V_m40C.lib    1.65 V      -40° C
+sg13g2_stdcell_slow_1p08V_125C.lib    1.08 V      125° C
+sg13g2_stdcell_slow_1p35V_125C.lib    1.35 V      125° C
+sg13g2_stdcell_typ_1p20V_25C.lib      1.20 V      25° C
+sg13g2_stdcell_typ_1p50V_25C.lib      1.50 V      25° C
+
+- The PDK contains .lib files for RAM macros and io cells too.
+
+### Cell AO21: Liberty description
+
+- The cell AO21 (first cell in the standard cell library list) has 622 lines of data in the lib file.
+- The cell description contains:
+  - First comes the leakage power for the whole truth table on the inputs.
+  - After that each pin gets described with its timing and power characteristics 
+  - The order of the pins starts with the output. Order: X, A1, A2, B1
+
+
+### Cell AO21: Liberty file extract:
+
+```
+  cell (sg13g2_a21o_1) {
+    area : 12.7008;
+    cell_footprint : "AO21";
+    cell_leakage_power : 158.343;
+    leakage_power () {
+      value : 163.606;
+      when : "!A1&!A2&!B1";
+    }
+
+...
+
+    pin (X) {
+      direction : "output";
+      function : "((A1*A2)+B1)";
+
+...
+
+    pin (B1) {
+      direction : "input";
+      max_transition : 2.5074;
+
+...
+
+```
+
 
 ## Ruleset documents
 

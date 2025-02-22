@@ -379,6 +379,10 @@ Here are two links about the strcuture, format and elements of GDS II. The links
 
 [https://www.rulabinsky.com/cavd/text/chapc.html](https://www.rulabinsky.com/cavd/text/chapc.html)
 
+### Example of a GDS in KLayout
+
+![GDS in KLayout: gcd design with ihp130-sg13g2](pics_lecture/gds_klayout.png)
+
 ### Naming of RTL-to-GDS tools:
 
 The naming of the tools is confusing:
@@ -395,13 +399,7 @@ They all mean the same.
 
 ### Many open-Source RTL-to-GDS toolchains
 
-Most known RTL-to-GDS toolchains:
-
-- [OpenLANE](https://github.com/The-OpenROAD-Project/OpenLane)
-- [OpenLANE 2](https://github.com/efabless/openlane2)
-- [Silicon Compiler](https://www.siliconcompiler.com/)
-- [Coriolis](https://github.com/lip6/coriolis)
-
+#####
 Used with IHP PDK and in this course:
 
 - [OpenROAD flow scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
@@ -409,6 +407,14 @@ Used with IHP PDK and in this course:
 which is based on
 
 - [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)
+
+##### 
+Most known other RTL-to-GDS toolchains:
+
+- [OpenLANE](https://github.com/The-OpenROAD-Project/OpenLane) (based on OpenROAD)
+- [OpenLANE 2](https://github.com/efabless/openlane2) (based on OpenROAD)
+- [Silicon Compiler](https://www.siliconcompiler.com/) (works with many toolchains, close and open-source)
+- [Coriolis](https://github.com/lip6/coriolis) (developed at University Sorbonne, LIP-6)
 
 ### A toolchain based on scripts and configuration files
 
@@ -430,12 +436,17 @@ But it still has some advantages.
 ### Advantages of open-source in EDA
 * A word by Andrew Kahng (head of OpenROAD) about the relevance of open-source EDA
 
-Andrews slides from the keynote speech at the Chipdesign Network June 2024. As pptx:
+Andrews slides from the keynote speech at the Chipdesign Network June 2024. As the ucsd server is down, this is a link to the wayback machine:
 
-[https://vlsicad.ucsd.edu/NEWS24/InnovationKeynote-v6-ACTUAL-DISTRIBUTED.pptx](https://vlsicad.ucsd.edu/NEWS24/InnovationKeynote-v6-ACTUAL-DISTRIBUTED.pptx)
+[https://web.archive.org/web/20240609214401/https://vlsicad.ucsd.edu/NEWS24/InnovationKeynote-v6-ACTUAL-DISTRIBUTED.pptx](https://web.archive.org/web/20240609214401/https://vlsicad.ucsd.edu/NEWS24/InnovationKeynote-v6-ACTUAL-DISTRIBUTED.pptx)
 
-Andrews news page with the link (scroll to june 2024)
-[https://vlsicad.ucsd.edu/](https://vlsicad.ucsd.edu/)
+##### Slides to have a eye on:
+
+- Slide 06: EDA is an optimization problem
+- Slide 10: Open-source EDA and disruptive Innovations
+- Slide 13: Open-source accelerates EDA
+- The complete chapter "Optimization and Virtuous Cycles" starting at slide 25
+- Slides 39-43 about AI and proxies.
 
 ### Some aspects of open-source EDA
 
@@ -449,8 +460,10 @@ Andrews news page with the link (scroll to june 2024)
 
 ### What people have done with open-source EDA
 
-- The following slides contain some works that were made with open-source EDA tools and open-source PDKs. 
-- Most of this would not have been possible in closed source (because of NDAs)
+- The following slides contain some works that were made with open-source EDA tools and open-source PDKs.
+- All the pictures represent GDS data in different ways. 
+- A few slides back a picture of GDS in KLayout was shown. The following GDS pictures were created with various other open-source tools (Blender, 3d prints, STL files, ...).
+- Most of these works would not have been possible to integrate here in closed source (because of NDAs and licenses)
 - Open-source EDA drives people to experiement and play with the technology.
 
 ###
@@ -535,7 +548,7 @@ It is made with the IHP open-source PDK.
 
 Play with Siliwiz or take the lessons:
 
-[https://tinytapeout.com/runs/ttihp0p2/tt_um_vga_clock](https://tinytapeout.com/runs/ttihp0p2/tt_um_vga_clock)
+[https://app.siliwiz.com/](https://app.siliwiz.com/)
 
 ### A few words about open-source in general
 
