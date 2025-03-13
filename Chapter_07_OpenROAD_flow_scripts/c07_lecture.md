@@ -243,9 +243,14 @@ ibex_dummy_instr.v         ibex_prefetch_buffer.v  prim_lfsr.v
 - It might take some time to become comforatable with tweaking. 
 - Don't give up!
 
+### 
 In the following we present
 
 - some easy tweaking possibilities to start with
+
+A list of environment variables is here:
+
+[https://openroad-flow-scripts.readthedocs.io/en/latest/user/FlowVariables.html#environment-variables-for-the-openroad-flow-scripts](https://openroad-flow-scripts.readthedocs.io/en/latest/user/FlowVariables.html#environment-variables-for-the-openroad-flow-scripts)
 
 ### Synthesis AREA or SPEED
 

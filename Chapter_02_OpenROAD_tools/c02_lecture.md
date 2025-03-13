@@ -90,11 +90,90 @@ Kudos to this course:
 
 ## OpenROAD Flow Scripts
 
-### Flow steps
+### Flow steps: Overview
 
 ![OpenROAD flow steps [^1]](pics_lecture/flow_01.png "OpenROAD flow steps")
 
 [^1]: Source: OpenROAD documentation.
+
+### Flow step: Synthesis
+
+##### Wikipedia:
+
+[https://en.wikipedia.org/wiki/Logic_synthesis](https://en.wikipedia.org/wiki/Logic_synthesis)
+
+##### Zero to ASIC Terminilogy:
+
+[https://www.zerotoasiccourse.com/terminology/synthesis/](https://www.zerotoasiccourse.com/terminology/synthesis/)
+
+##### One sentence:
+
+Synthesis takes the RTL (HDL, Verilog) and transforms it to a netlist (wires and components, standard cells).
+
+### Flow step: Floorplan
+
+##### Wikpedia:
+
+[https://en.wikipedia.org/wiki/Floorplan_(microelectronics)#Floorplanning](https://en.wikipedia.org/wiki/Floorplan_(microelectronics)#Floorplanning)
+
+##### Zero to ASIC Terminilogy:
+
+[https://www.zerotoasiccourse.com/terminology/floorplan/](https://www.zerotoasiccourse.com/terminology/floorplan/)
+
+##### One sentence:
+
+Floorplaning creates a rough plan of the component areas (netlist, padframe, ) and macros onto the space of the microchip (die area).
+
+### Flow step: Placement
+
+##### Wikpedia:
+
+[https://en.wikipedia.org/wiki/Placement_(electronic_design_automation)](https://en.wikipedia.org/wiki/Placement_(electronic_design_automation))
+
+##### Zero to ASIC Terminilogy:
+
+[https://www.zerotoasiccourse.com/terminology/place_and_route/](https://www.zerotoasiccourse.com/terminology/place_and_route/)
+
+##### One sentence:
+
+Placement algorithmically determines fixed places for every component of the design, according to the floorplan. 
+
+### Flow step: Clock Tree Synthesis
+
+##### Wikpedia:
+
+[https://en.wikipedia.org/wiki/Physical_design_(electronics)#Clock_tree_synthesis](https://en.wikipedia.org/wiki/Physical_design_(electronics)#Clock_tree_synthesis)
+
+##### Zero to ASIC Terminilogy:
+
+[https://www.zerotoasiccourse.com/terminology/place_and_route/](https://www.zerotoasiccourse.com/terminology/place_and_route/)    Scroll down the page!
+
+##### One sentence:
+
+Clock tree synthesis builds a tree out of signal paths (with the root as the start point) for a given clock signal under the premise of given timing constraints.
+
+### Flow step: Routing 
+
+##### Wikpedia:
+[https://en.wikipedia.org/wiki/Routing_(electronic_design_automation)](https://en.wikipedia.org/wiki/Routing_(electronic_design_automation))
+
+##### Zero to ASIC Terminilogy:
+
+[https://www.zerotoasiccourse.com/terminology/place_and_route/](https://www.zerotoasiccourse.com/terminology/place_and_route/)    Scroll down the page!
+
+##### One sentence:
+
+Routing algorithmically creates all the wires between the components of the design obeying all given design rules and timing contraints. 
+
+### Flow step: Finishing
+
+##### Wikpedia:
+
+[https://en.wikipedia.org/wiki/Physical_design_(electronics)#Layout_post_processing](https://en.wikipedia.org/wiki/Physical_design_(electronics)#Layout_post_processing)
+
+##### One sentence:
+
+The step of finishing the design can include creating metal fills, finalising the logs and reports, merging multiple GDS to a final one and do the final LVS/DRC checks.
 
 ### Flow components
 
