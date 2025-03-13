@@ -17,32 +17,40 @@ toc: true
 
 ## Guess and rebuild
 
+### Rebuild the challenges
+
+##### Task: 
+Rebuild the next four pictures with any design!
+
 ### Challenge 1
 
 ![What is this?](pics_trainings/ibex_clocktree.png)
-
-Rebuild the picture with any design!
 
 ### Challenge 2
 
 ![What is this?](pics_trainings/ibex_power_density.png)
 
-Rebuild the picture with any design!
-
 ### Challenge 3
 
 ![What is this?](pics_trainings/ibex_single_clock_path.png)
-
-Rebuild the picture with any design!
 
 ### Challenge 4
 
 ![What is this?](pics_trainings/masked_aes_pins.png)
 
-Rebuild the picture with any design!
 
+## Play the DRC example from ORFS
 
+The ORFS tutorial contains an example for DRC errors in a design and how to view the DRC errors with the ORFS gui.
 
+##### Task: Do the DRC error example
+
+Link:
+
+[https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#drc-viewer](https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html#drc-viewer)
+
+- Do the steps in the order from the tutorial
+- Try to get to the 0 DRC errors.
 
 ### Solutions (of the challenges)
 

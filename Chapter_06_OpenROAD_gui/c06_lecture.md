@@ -56,3 +56,7 @@ toc: true
 ### Power report
 
 ![Power report](pics_lecture/or_gui_power.png)
+
+### DRC viewer
+
+![DRC viewer](pics_lecture/or_gui_drc_viewer.png)
