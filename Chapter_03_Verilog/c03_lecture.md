@@ -816,5 +816,127 @@ Wrong: ![always_ff demo: wrong](pics_lecture/always_demo_wrong.png)
 ::::
 :::
 
+## Simulation and Verification
 
-  
+### Introduction
+
+What can be done and what not (in open-source EDA):
+
+- A complete simulation and verification of arbitrary complex digital designs at GDS level is not available at the moment.
+- Spice and Xyce can do electrical simulations of small digital circuits, like for single standard cells. This topic resides way more in the analog design domain and is therefore not part of this course. A good starting point are the Siliwiz lessons:
+  - [https://app.siliwiz.com/](https://app.siliwiz.com/)
+- Verification at RTL level is an ongoing (WiP) research effort. SymbiYosys offers formal verification. Other tools might be available soon. For verification with SymbiYosys a good starting point is this tutorial: 
+  - [https://github.com/SymbioticEDA/getting-started-FV](https://github.com/SymbioticEDA/getting-started-FV)
+- Simulation at RTL level (Verilog) is available with some tools. 
+- The following slides provide an overview and a small example.
+
+### Simulating Verilog
+
+##### Why simulate a microchip design?
+
+- Find errors in the design before the production of microchips.
+- Production of microchips takes long and is expensive.
+- Microchips can't be updated, like software.
+- Many more reasons... (Name some yourself, round-robin in the room).
+
+##### What is simulating a design?
+
+- The design gets different inputs over time.
+- The outputs can be observed and analyzed.
+- it can be checked, if the output shows the wanted behaviour.
+
+### Verilog Testbenches
+
+1. The Verilog that shall get simulated is now handled as the **Device Under Test (DUT)**. It still is the same Verilog module(s).
+2. The DUT gets a **stimulus input over time**. This is done with a **testbench**, also written in Verilog. In this simple example, a clock signal starts running into the DUT.
+3. Simulated **output gets generated**. The output can be **asserted** (in tb.v) or **viewed** (i.e. gtkwave) as a diagram over time.
+
+![Device under test overview](pics_lecture/dut.png)
+
+### iVerilog example
+
+- The following slides contain an example with iVerilog. 
+- It is copied from the iVerilog documentation as it is.
+- [https://steveicarus.github.io/iverilog/usage/getting_started.html](https://steveicarus.github.io/iverilog/usage/getting_started.html)
+
+### DUT module: counter.v
+
+counter.v:
+```
+module counter(out, clk, reset);
+
+  parameter WIDTH = 8;
+
+  output [WIDTH-1 : 0] out;
+  input clk, reset;
+
+  reg [WIDTH-1 : 0] out;
+  wire clk, reset;
+
+  always @(posedge clk)
+    out <= out + 1;
+
+  always @reset
+    if (reset)
+      assign out = 0;
+    else
+      deassign out;
+
+endmodule // counter
+```
+
+### Testbench verilog module: tb.v
+
+tb.v:
+```
+module test;
+
+  /* Make a reset that pulses once. */
+  reg reset = 0;
+  initial begin
+     $dumpfile("test.vcd");
+     $dumpvars(0,test);
+
+     # 17 reset = 1;
+     # 11 reset = 0;
+     # 29 reset = 1;
+     # 5  reset =0;
+     # 513 $finish;
+  end
+
+  /* Make a regular pulsing clock. */
+  reg clk = 0;
+  always #1 clk = !clk;
+
+  wire [7:0] value;
+  counter c1 (value, clk, reset);
+
+  initial
+     $monitor("At time %t, value = %h (%0d)",
+              $time, value, value);
+endmodule // test
+```
+### Simulation output with gtkwave
+
+![Simulation output of the counter with gtkwave](pics_lecture/gtkwave.png)
+
+What is to see?
+
+- The counter (8 bits) increments binary +1 with each clock input.
+
+### More Tools
+
+##### SymbiYosys
+Frontend for Yosys based formal verification flows.
+
+[https://github.com/YosysHQ/sby](https://github.com/YosysHQ/sby)
+
+##### Verilator
+Converts Verilog to cycle-accurate C++/SystemC excetuable code.
+
+[https://github.com/verilator](https://github.com/verilator)
+
+##### CocoTB
+Test and verify chip designs in Python. Supports VHDL and (System)Verilog.
+
+[https://github.com/cocotb/cocotb](https://github.com/cocotb/cocotb)
